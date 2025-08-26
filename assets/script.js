@@ -1034,7 +1034,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Collect survey data - using the same structure as Contact form
             const templateParams = {
-                email: 'feedback@graciousangeli.com', // Always send feedback to your email
+                email: 'graciousangeli.santiago@gmail.com', // Always send feedback to your email
                 booking_ease: document.querySelector('input[name="booking-ease"]:checked')?.value || 'Not answered',
                 information_clarity: document.querySelector('input[name="information-clarity"]:checked')?.value || 'Not answered',
                 value_money: document.querySelector('input[name="value-money"]:checked')?.value || 'Not answered',
@@ -1162,7 +1162,7 @@ function testEmailJS() {
     console.log('EmailJS object:', typeof emailjs);
     
     const templateParams = {
-        email: 'angelica.linglingon@gmail.com', // Always send to your email
+        email: 'graciousangeli.santiago@gmail.com', // Always send to your email
         booking_ease: 'Very Easy',
         information_clarity: 'Very Clear',
         value_money: 'Excellent Value',
