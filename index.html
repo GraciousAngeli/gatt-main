@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gracious Angeli Travel & Tours - Your Trusted Travel Partner Since 1999</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Gracious Angeli Travel & Tours offers international and domestic travel packages, visa assistance, air ticketing, and study abroad programs. 26 years of trusted travel services in Baguio City and Santiago City.">
+    <meta name="keywords" content="travel agency, tour packages, visa assistance, air ticketing, study abroad, Baguio travel, Philippines travel, international tours, domestic tours">
+    <meta name="author" content="Gracious Angeli Travel & Tours">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Gracious Angeli Travel & Tours">
+    <meta property="og:description" content="Your trusted travel partner since 1999. International and domestic tours, visa assistance, and study abroad programs.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://graciousangeli.com">
+    <meta property="og:image" content="https://graciousangeli.com/assets/og-image.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gracious Angeli Travel & Tours">
+    <meta name="twitter:description" content="Your trusted travel partner since 1999">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/style.css">
+         <!-- Back to Top Button CSS moved to external stylesheet -->
+</head>
+<body class="bg-gradient-to-br from-blue-50 via-white to-blue-50">
+    <!-- Navigation -->
+    <nav id="navbar" class="nav-gradient shadow-lg fixed top-0 w-full z-50 transition-transform duration-300">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="#" onclick="showTab('home'); return false;" class="nav-logo flex items-center hover:opacity-80 transition-opacity duration-300 cursor-pointer">
+                        <img src="assets/gatt_logo_circle.png" alt="GATT Logo" class="w-16 h-12 mr-3 shadow-lg">
+                        <div>
+                            <h1 class="text-2xl font-bold text-white">Gracious Angeli</h1>
+                            <span class="text-blue-100 text-sm">Travel & Tours</span>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <button onclick="showTab('home')" class="tab-button active px-4 py-2 rounded-lg transition-all text-white">Home</button>
+                    <button onclick="showTab('about')" class="tab-button px-4 py-2 rounded-lg transition-all text-blue-100 hover:text-white">About Us</button>
+                    <button onclick="showTab('services')" class="tab-button px-4 py-2 rounded-lg transition-all text-blue-100 hover:text-white">Services</button>
+                    <button onclick="showTab('partners')" class="tab-button px-4 py-2 rounded-lg transition-all text-blue-100 hover:text-white">Partners</button>
+                    <button onclick="showTab('contact')" class="tab-button px-4 py-2 rounded-lg transition-all text-blue-100 hover:text-white">Contact Us</button>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobileMenuBtn" class="text-white hover:text-blue-200 focus:outline-none focus:text-blue-200">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation Menu -->
+            <div id="mobileMenu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-blue-800 rounded-lg mt-4">
+                    <button onclick="showTab('home'); toggleMobileMenu()" class="tab-button-mobile active block w-full text-left px-3 py-2 rounded-md text-white hover:bg-blue-700 transition-all">Home</button>
+                    <button onclick="showTab('about'); toggleMobileMenu()" class="tab-button-mobile block w-full text-left px-3 py-2 rounded-md text-blue-100 hover:bg-blue-700 hover:text-white transition-all">About Us</button>
+                    <button onclick="showTab('services'); toggleMobileMenu()" class="tab-button-mobile block w-full text-left px-3 py-2 rounded-md text-blue-100 hover:bg-blue-700 hover:text-white transition-all">Services</button>
+                    <button onclick="showTab('partners'); toggleMobileMenu()" class="tab-button-mobile block w-full text-left px-3 py-2 rounded-md text-blue-100 hover:bg-blue-700 hover:text-white transition-all">Partners</button>
+                    <button onclick="showTab('contact'); toggleMobileMenu()" class="tab-button-mobile block w-full text-left px-3 py-2 rounded-md text-blue-100 hover:bg-blue-700 hover:text-white transition-all">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Spacer to prevent content from hiding behind fixed navbar -->
+    <div class="h-24"></div>
+
+    <!-- Home Tab -->
+    <div id="home" class="tab-content active">
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 text-white py-20">
+            <div class="max-w-7xl mx-auto px-4 text-center">
+                <h2 class="text-5xl font-bold mb-6 text-white">Discover Your Next Adventure</h2>
+                <p class="text-xl mb-8 text-blue-100">26 years of creating unforgettable travel experiences</p>
+                <button onclick="showTab('services')" class="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl">
+                    Explore Our Services
+                </button>
+            </div>
+        </section>
+
+        <!-- Featured Destinations -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4">
+                <h3 class="text-3xl font-bold text-center mb-12 text-indigo-600">Popular Destinations</h3>
+                <div class="grid lg:grid-cols-3 gap-8">
+                           <!-- Boracay Island Package -->
+       <div class="travel-card bg-white rounded-lg shadow-lg overflow-hidden border-2 border-blue-200">
+           <div class="h-48 bg-cover bg-center flex items-center justify-center border-b-2 border-blue-300" style="background-image: url('assets/GATT WEBSITE UPDATES/HOME/Boracay.png');">
+           </div>
+                        <div class="p-6 border-l-4 border-blue-400">
+                            <h4 class="text-xl font-bold mb-2 pb-2 border-b-2 border-blue-300">Boracay Island</h4>
+                            <p class="text-gray-600 mb-3 pb-3 border-b border-gray-200">White sand beaches and crystal clear waters</p>
+                            <div class="bg-gray-50 p-3 rounded-lg mb-4 border-2 border-gray-300">
+                                <p class="text-sm font-semibold text-gray-700 border-b border-gray-400 pb-1">4 Days 3 Nights - Tour Package</p>
+                                <p class="text-sm text-gray-600 pt-1">Min of 2 persons</p>
+                            </div>
+                            
+                            <div class="mb-4 p-3 border-2 border-green-300 rounded-lg bg-green-50">
+                                <h5 class="font-semibold text-green-600 mb-2 border-b-2 border-green-400 pb-1">Inclusions:</h5>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li class="border-b border-green-200 pb-1">• Hotel Accommodation</li>
+                                    <li class="border-b border-green-200 pb-1">• Daily Breakfast</li>
+                                    <li class="border-b border-green-200 pb-1">• Airport Transfer</li>
+                                    <li class="border-b border-green-200 pb-1">• Island Hopping</li>
+                                    <li>• Land Tours</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mb-4 p-3 border-2 border-red-300 rounded-lg bg-red-50">
+                                <h5 class="font-semibold text-red-600 mb-2 border-b-2 border-red-400 pb-1">Exclusions:</h5>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li class="border-b border-red-200 pb-1">• Roundtrip Airfare Ticket</li>
+                                    <li>• Other Personal Expenses</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="border-t-2 border-blue-300 pt-4 border-l-2 border-r-2 border-blue-200 pl-3 pr-3 rounded-b-lg">
+                                <div class="flex justify-between items-center mb-2 border-b border-blue-200 pb-2">
+                                    <span class="text-2xl font-bold price-gradient">₱9,999/pax</span>
+                                </div>
+                                <p class="text-sm text-gray-500 mb-3 border-b border-gray-200 pb-2">Land Arrangement Only</p>
+                                <button onclick="bookSpecificTour('Boracay Island', '₱9,999/pax')" class="w-full button-gradient text-white py-2 rounded-lg transition-all shadow-md hover:shadow-lg border-2 border-blue-600">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                           <!-- Hong Kong Package -->
+       <div class="travel-card bg-white rounded-lg shadow-lg overflow-hidden border-2 border-indigo-200">
+           <div class="h-48 bg-cover bg-center flex items-center justify-center border-b-2 border-indigo-300" style="background-image: url('assets/GATT WEBSITE UPDATES/HOME/HONGKONG.png');">
+           </div>
+                        <div class="p-6 border-l-4 border-indigo-400">
+                            <h4 class="text-xl font-bold mb-2 pb-2 border-b-2 border-indigo-300">Hong Kong</h4>
+                            <p class="text-gray-600 mb-3 pb-3 border-b border-gray-200">Experience the vibrant city and magical Disneyland</p>
+                            <div class="bg-gray-50 p-3 rounded-lg mb-4 border-2 border-gray-300">
+                                <p class="text-sm font-semibold text-gray-700 border-b border-gray-400 pb-1">4 Days 3 Nights - Tour Package</p>
+                                <p class="text-sm text-gray-600 pt-1">Min of 2 persons</p>
+                            </div>
+                            
+                            <div class="mb-4 p-3 border-2 border-green-300 rounded-lg bg-green-50">
+                                <h5 class="font-semibold text-green-600 mb-2 border-b-2 border-green-400 pb-1">Inclusions:</h5>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li class="border-b border-green-200 pb-1">• Hotel Accommodation</li>
+                                    <li class="border-b border-green-200 pb-1">• Daily Breakfast</li>
+                                    <li class="border-b border-green-200 pb-1">• Airport Transfer</li>
+                                    <li class="border-b border-green-200 pb-1">• City Tours</li>
+                                    <li>• Disneyland</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mb-4 p-3 border-2 border-red-300 rounded-lg bg-red-50">
+                                <h5 class="font-semibold text-red-600 mb-2 border-b-2 border-red-400 pb-1">Exclusions:</h5>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li class="border-b border-red-200 pb-1">• Roundtrip Airfare Ticket</li>
+                                    <li>• Other Personal Expenses</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="border-t-2 border-indigo-300 pt-4 border-l-2 border-r-2 border-indigo-200 pl-3 pr-3 rounded-b-lg">
+                                <div class="flex justify-between items-center mb-2 border-b border-indigo-200 pb-2">
+                                    <span class="text-2xl font-bold price-gradient">₱19,999/pax</span>
+                                </div>
+                                <p class="text-sm text-gray-500 mb-3 border-b border-gray-200 pb-2">Land Arrangement Only</p>
+                                <button onclick="bookSpecificTour('Hong Kong', '₱19,999/pax')" class="w-full button-gradient text-white py-2 rounded-lg transition-all shadow-md hover:shadow-lg border-2 border-blue-600">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                           <!-- Europe Multi-City Package -->
+       <div class="travel-card bg-white rounded-lg shadow-lg overflow-hidden border-2 border-purple-200">
+           <div class="h-48 bg-cover bg-center flex items-center justify-center border-b-2 border-purple-300" style="background-image: url('assets/GATT WEBSITE UPDATES/HOME/EUROPE.png');">
+           </div>
+                        <div class="p-6 border-l-4 border-purple-400">
+                            <h4 class="text-xl font-bold mb-2 pb-2 border-b-2 border-purple-300">Europe Multi-City</h4>
+                            <p class="text-gray-600 mb-3 pb-3 border-b border-gray-200">Switzerland, Germany, Liechtenstein, Czech Republic, Hungary, Slovakia, Austria</p>
+                            <div class="bg-gray-50 p-3 rounded-lg mb-4 border-2 border-gray-300">
+                                <p class="text-sm font-semibold text-gray-700 border-b border-gray-400 pb-1">10 Days Tour</p>
+                            </div>
+                            
+                            <div class="mb-4 p-3 border-2 border-green-300 rounded-lg bg-green-50">
+                                <h5 class="font-semibold text-green-600 mb-2 border-b-2 border-green-400 pb-1">Inclusions:</h5>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li class="border-b border-green-200 pb-1">• Hotel Accommodation</li>
+                                    <li class="border-b border-green-200 pb-1">• Daily Hotel Breakfast</li>
+                                    <li class="border-b border-green-200 pb-1">• All Airport Transfer</li>
+                                    <li class="border-b border-green-200 pb-1">• Tours & Guided Tours</li>
+                                    <li>• Travel Tax</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mb-4 p-3 border-2 border-red-300 rounded-lg bg-red-50">
+                                <h5 class="font-semibold text-red-600 mb-2 border-b-2 border-red-400 pb-1">Exclusions:</h5>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li class="border-b border-red-200 pb-1">• Roundtrip Airfare Ticket</li>
+                                    <li class="border-b border-red-200 pb-1">• Other Personal Expenses</li>
+                                    <li class="border-b border-red-200 pb-1">• Visa Fee</li>
+                                    <li class="border-b border-red-200 pb-1">• Optional Tours</li>
+                                    <li>• Tippings & Hotel City Tax</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="border-t-2 border-purple-300 pt-4 border-l-2 border-r-2 border-purple-200 pl-3 pr-3 rounded-b-lg">
+                                <div class="flex justify-between items-center mb-2 border-b border-purple-200 pb-2">
+                                    <span class="text-2xl font-bold price-gradient">₱125,999/pax</span>
+                                </div>
+                                <button onclick="bookSpecificTour('Europe Multi-City', '₱125,999/pax')" class="w-full button-gradient text-white py-2 rounded-lg transition-all shadow-md hover:shadow-lg border-2 border-blue-600">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Study Visa Section -->
+        <section class="py-16 bg-gradient-to-br from-purple-50 via-indigo-50 to-blue-50">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center mb-12">
+                    <div class="text-6xl mb-4">🎓</div>
+                    <h3 class="text-4xl font-bold text-indigo-600 mb-4">Study Abroad Programs</h3>
+                    <p class="text-xl text-gray-700">Your gateway to world-class education in Australia & Canada</p>
+                </div>
+                
+                <div class="grid lg:grid-cols-2 gap-8 mb-12">
+                           <!-- Australia Study Visa -->
+       <div class="bg-white rounded-lg shadow-xl overflow-hidden border-2 border-yellow-200 transform hover:scale-105 transition-all duration-300">
+           <div class="h-48 bg-cover bg-center flex items-center justify-center relative overflow-hidden" style="background-image: url('assets/GATT WEBSITE UPDATES/HOME/Study in Australia.png');">
+               <div class="relative z-10 text-center text-white">
+                   <h4 class="text-2xl font-bold">Study in Australia</h4>
+               </div>
+           </div>
+                        <div class="p-6">
+                            <div class="mb-6">
+                                <h5 class="text-xl font-bold text-gray-800 mb-3 border-b-2 border-yellow-300 pb-2">Why Choose Australia?</h5>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-center"><span class="text-yellow-500 mr-2">🌟</span>World-renowned universities</li>
+                                    <li class="flex items-center"><span class="text-yellow-500 mr-2">💼</span>Work while studying opportunities</li>
+                                    <li class="flex items-center"><span class="text-yellow-500 mr-2">🏖️</span>Beautiful lifestyle & climate</li>
+                                    <li class="flex items-center"><span class="text-yellow-500 mr-2">🛡️</span>Safe and welcoming environment</li>
+                                    <li class="flex items-center"><span class="text-yellow-500 mr-2">🎯</span>Pathway to permanent residency</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="bg-yellow-50 p-4 rounded-lg border-2 border-yellow-200 mb-4">
+                                <h6 class="font-semibold text-yellow-700 mb-2">Popular Programs:</h6>
+                                <div class="grid grid-cols-2 gap-2 text-sm text-gray-700">
+                                    <span class="bg-white px-2 py-1 rounded border">Engineering</span>
+                                    <span class="bg-white px-2 py-1 rounded border">Business</span>
+                                    <span class="bg-white px-2 py-1 rounded border">IT & Computing</span>
+                                    <span class="bg-white px-2 py-1 rounded border">Healthcare</span>
+                                </div>
+                            </div>
+                            
+                            <button onclick="handlePackageClick('australia')" class="w-full bg-gradient-to-r from-yellow-500 to-orange-500 text-white py-3 rounded-lg hover:from-yellow-600 hover:to-orange-600 font-semibold transition-all shadow-lg hover:shadow-xl border-2 border-yellow-600">
+                                🚀 Start Your Australia Journey
+                            </button>
+                        </div>
+                    </div>
+
+                           <!-- Canada Study Visa -->
+       <div class="bg-white rounded-lg shadow-xl overflow-hidden border-2 border-red-200 transform hover:scale-105 transition-all duration-300">
+           <div class="h-48 bg-cover bg-center flex items-center justify-center relative overflow-hidden" style="background-image: url('assets/GATT WEBSITE UPDATES/HOME/Study in Canada.png');">
+               <div class="relative z-10 text-center text-white">
+                   <h4 class="text-2xl font-bold">Study in Canada</h4>
+               </div>
+           </div>
+                        <div class="p-6">
+                            <div class="mb-6">
+                                <h5 class="text-xl font-bold text-gray-800 mb-3 border-b-2 border-red-300 pb-2">Why Choose Canada?</h5>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-center"><span class="text-red-500 mr-2">🏆</span>Top-quality education system</li>
+                                    <li class="flex items-center"><span class="text-red-500 mr-2">💰</span>Affordable tuition fees</li>
+                                    <li class="flex items-center"><span class="text-red-500 mr-2">🌍</span>Multicultural society</li>
+                                    <li class="flex items-center"><span class="text-red-500 mr-2">❄️</span>Four beautiful seasons</li>
+                                    <li class="flex items-center"><span class="text-red-500 mr-2">🏠</span>Immigration-friendly policies</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="bg-red-50 p-4 rounded-lg border-2 border-red-200 mb-4">
+                                <h6 class="font-semibold text-red-700 mb-2">Popular Programs:</h6>
+                                <div class="grid grid-cols-2 gap-2 text-sm text-gray-700">
+                                    <span class="bg-white px-2 py-1 rounded border">Medicine</span>
+                                    <span class="bg-white px-2 py-1 rounded border">MBA</span>
+                                    <span class="bg-white px-2 py-1 rounded border">Computer Science</span>
+                                    <span class="bg-white px-2 py-1 rounded border">Environmental Studies</span>
+                                </div>
+                            </div>
+                            
+                            <button onclick="handlePackageClick('canada')" class="w-full bg-gradient-to-r from-red-500 to-red-600 text-white py-3 rounded-lg hover:from-red-600 hover:to-red-700 font-semibold transition-all shadow-lg hover:shadow-xl border-2 border-red-600">
+                                🚀 Start Your Canada Journey
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Call to Action -->
+                <div class="bg-white rounded-lg shadow-xl p-8 border-2 border-indigo-200 text-center">
+                    <div class="text-4xl mb-4">✨</div>
+                    <h4 class="text-2xl font-bold text-indigo-600 mb-4">Ready to Transform Your Future?</h4>
+                    <p class="text-gray-700 mb-6 text-lg">Our expert visa consultants will guide you through every step of your study abroad journey</p>
+                    
+                    <div class="grid md:grid-cols-3 gap-6 mb-8">
+                        <div class="text-center">
+                            <div class="text-3xl mb-2">📋</div>
+                            <h5 class="font-semibold text-gray-800">Free Consultation</h5>
+                            <p class="text-sm text-gray-600">Personalized guidance for your goals</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl mb-2">📄</div>
+                            <h5 class="font-semibold text-gray-800">Document Assistance</h5>
+                            <p class="text-sm text-gray-600">Complete visa application support</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl mb-2">🎯</div>
+                            <h5 class="font-semibold text-gray-800">Success Guarantee</h5>
+                            <p class="text-sm text-gray-600">26 years of proven results</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button onclick="showTab('contact')" class="bg-gradient-to-r from-indigo-600 to-blue-600 text-white px-8 py-3 rounded-lg hover:from-indigo-700 hover:to-blue-700 font-semibold transition-all shadow-lg hover:shadow-xl border-2 border-indigo-700">
+                            📞 Book Free Consultation
+                        </button>
+                        <button onclick="showTab('services')" class="bg-gradient-to-r from-green-600 to-teal-600 text-white px-8 py-3 rounded-lg hover:from-green-700 hover:to-teal-700 font-semibold transition-all shadow-lg hover:shadow-xl border-2 border-green-700">
+                            📚 View All Services
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Reviews -->
+        <section class="py-16 section-gradient">
+            <div class="max-w-7xl mx-auto px-4">
+                <h3 class="text-3xl font-bold text-center mb-12 text-indigo-600">What Our Customers Say</h3>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-lg border-2 border-yellow-200 border-l-4 border-l-yellow-400">
+                        <div class="flex items-center mb-4 pb-2 border-b-2 border-yellow-300">
+                            <div class="rating-stars text-xl">★★★★★</div>
+                            <span class="ml-2 text-gray-600">5.0</span>
+                        </div>
+                        <p class="text-gray-700 mb-4 p-3 border-2 border-gray-300 rounded-lg bg-gray-50">"Excellent service! They handled everything perfectly for our Boracay trip. Highly recommended!"</p>
+                        <div class="flex items-center border-t-2 border-yellow-300 pt-3">
+                            <div class="w-10 h-10 bg-indigo-500 rounded-full flex items-center justify-center text-white font-bold border-2 border-indigo-300">M</div>
+                            <div class="ml-3 border-l-2 border-yellow-200 pl-3">
+                                <p class="font-semibold border-b border-gray-200 pb-1">Maria Santos</p>
+                                <p class="text-sm text-gray-600 pt-1">Manila</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg border-2 border-green-200 border-l-4 border-l-green-400">
+                        <div class="flex items-center mb-4 pb-2 border-b-2 border-green-300">
+                            <div class="rating-stars text-xl">★★★★★</div>
+                            <span class="ml-2 text-gray-600">5.0</span>
+                        </div>
+                        <p class="text-gray-700 mb-4 p-3 border-2 border-gray-300 rounded-lg bg-gray-50">"Amazing experience with their Japan tour package. Very professional and organized!"</p>
+                        <div class="flex items-center border-t-2 border-green-300 pt-3">
+                            <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white font-bold border-2 border-green-300">J</div>
+                            <div class="ml-3 border-l-2 border-green-200 pl-3">
+                                <p class="font-semibold border-b border-gray-200 pb-1">John Dela Cruz</p>
+                                <p class="text-sm text-gray-600 pt-1">Quezon City</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg border-2 border-purple-200 border-l-4 border-l-purple-400">
+                        <div class="flex items-center mb-4 pb-2 border-b-2 border-purple-300">
+                            <div class="rating-stars text-xl">★★★★☆</div>
+                            <span class="ml-2 text-gray-600">4.8</span>
+                        </div>
+                        <p class="text-gray-700 mb-4 p-3 border-2 border-gray-300 rounded-lg bg-gray-50">"Great value for money. The Santiago branch staff were very helpful and accommodating."</p>
+                        <div class="flex items-center border-t-2 border-purple-300 pt-3">
+                            <div class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold border-2 border-purple-300">A</div>
+                            <div class="ml-3 border-l-2 border-purple-200 pl-3">
+                                <p class="font-semibold border-b border-gray-200 pb-1">Anna Rodriguez</p>
+                                <p class="text-sm text-gray-600 pt-1">Santiago City</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- About Us Tab -->
+    <div id="about" class="tab-content">
+        <div class="max-w-7xl mx-auto px-4 py-16">
+            <h2 class="text-4xl font-bold text-center mb-12">About Gracious Angeli Travel & Tours</h2>
+            
+            <!-- Our Story -->
+            <section class="mb-16">
+                <h3 class="text-2xl font-bold mb-6 text-indigo-600 border-b-2 border-indigo-300 pb-2">Our Story</h3>
+                <div class="bg-white p-8 rounded-lg shadow-lg border-2 border-indigo-200 border-l-4 border-l-indigo-400">
+                    <p class="text-gray-700 leading-relaxed p-4 border-2 border-gray-200 rounded-lg bg-gray-50">
+                        Gracious Angeli' Travel and Tours is a company with great potential for higher growth and development. Founded in June 1999 and having achieved high standards of development in the tourism industry, it can truly be described as one of the leading travel agencies in the Luzon area. Ms. Judith Balisong Balabag, the general manager and owner of the company, was in charge of the operation for twenty-six (26) years. With these 26 years, she has garnered a lot of working experience to enable her to succeed in her endeavor. When the pandemic ravaged the globe, she has been working on her own and has been able to penetrate into certain fora and platform in this business which she was never aware of, and which are great for this company now.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Mission, Vision, Objective -->
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-blue-50 p-6 rounded-lg border-2 border-blue-200 border-l-4 border-l-blue-400 shadow-lg">
+                    <h4 class="text-xl font-bold mb-4 text-blue-600 border-b-2 border-blue-300 pb-2">Mission</h4>
+                    <p class="text-gray-700 p-3 border-2 border-blue-200 rounded-lg bg-white">Gracious Angeli' Travel & Tours is committed to providing our clients with affordable and transparent travel experiences, while ensuring that every detail of their itinerary is managed with utmost care. We strongly believe that travel should be accessible to everyone, regardless of budget, and we strive to create itineraries that are both exciting and cost effective.</p>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg border-2 border-green-200 border-l-4 border-l-green-400 shadow-lg">
+                    <h4 class="text-xl font-bold mb-4 text-green-600 border-b-2 border-green-300 pb-2">Vision</h4>
+                    <p class="text-gray-700 p-3 border-2 border-green-200 rounded-lg bg-white">We aim to produce world class travel consultants and become a preferred travel service provider.</p>
+                </div>
+                <div class="bg-purple-50 p-6 rounded-lg border-2 border-purple-200 border-l-4 border-l-purple-400 shadow-lg">
+                    <h4 class="text-xl font-bold mb-4 text-purple-600 border-b-2 border-purple-300 pb-2">Objective</h4>
+                    <p class="text-gray-700 p-3 border-2 border-purple-200 rounded-lg bg-white">The major objective of GRACIOUS ANGELI TRAVEL AND TOURS is to provide Domestic and International Air Ticketing, Local and International Packaged Tours, Visa Assistance and other ancillary tourism-related services to the members of the public.</p>
+                </div>
+            </div>
+
+            <!-- Target Market -->
+            <section class="mb-16">
+                <h3 class="text-2xl font-bold mb-6 text-indigo-600">The Market</h3>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <p class="text-gray-700 mb-4">Our target market is the general public, which includes the public and private sector. Corporate booking is very essential for the business to survive. Therefore, our target market are as follows:</p>
+                    <ul class="grid md:grid-cols-2 gap-2 text-gray-700">
+                        <li class="flex items-center"><span class="text-indigo-600 mr-2">•</span>Corporate (Private Companies) sector</li>
+                        <li class="flex items-center"><span class="text-indigo-600 mr-2">•</span>The Public Sector/Government Agencies</li>
+                        <li class="flex items-center"><span class="text-indigo-600 mr-2">•</span>Civic Organizations</li>
+                        <li class="flex items-center"><span class="text-indigo-600 mr-2">•</span>Religious Organizations</li>
+                        <li class="flex items-center"><span class="text-indigo-600 mr-2">•</span>Local NGO's</li>
+                        <li class="flex items-center"><span class="text-indigo-600 mr-2">•</span>Families/Individuals</li>
+                        <li class="flex items-center"><span class="text-indigo-600 mr-2">•</span>Social and Professional Organizations</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Management Team -->
+            <section class="mb-16">
+                <h3 class="text-2xl font-bold mb-6 text-indigo-600">Our Management Team</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex items-start mb-4">
+                            <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center text-white text-2xl font-bold flex-shrink-0">BA</div>
+                            <div class="ml-4 flex-1">
+                                <h4 class="text-lg font-bold leading-tight">BALISONG & ASSOCIATES</h4>
+                                <p class="text-gray-600 text-sm">LAW OFFICE - Legal Adviser</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex items-start mb-4">
+                            <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl font-bold flex-shrink-0">BM</div>
+                            <div class="ml-4 flex-1">
+                                <h4 class="text-lg font-bold leading-tight">Branch Managers</h4>
+                                <p class="text-gray-600 text-sm">GATT Branch Managers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex items-start mb-4">
+                            <div class="w-16 h-16 bg-teal-500 rounded-full flex items-center justify-center text-white text-2xl font-bold flex-shrink-0">TC</div>
+                            <div class="ml-4 flex-1">
+                                <h4 class="text-lg font-bold leading-tight">Travel Consultants</h4>
+                                <p class="text-gray-600 text-sm">GATT Travel Consultants</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex items-start mb-4">
+                            <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center text-white text-2xl font-bold flex-shrink-0">VS</div>
+                            <div class="ml-4 flex-1">
+                                <h4 class="text-lg font-bold leading-tight">Visa Specialists</h4>
+                                <p class="text-gray-600 text-sm">Visa & Immigration Experts</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex items-start mb-4">
+                            <div class="w-16 h-16 bg-pink-500 rounded-full flex items-center justify-center text-white text-2xl font-bold flex-shrink-0">CS</div>
+                            <div class="ml-4 flex-1">
+                                <h4 class="text-lg font-bold leading-tight">Customer Service</h4>
+                                <p class="text-gray-600 text-sm">Support & Assistance Team</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Our Offices -->
+            <section>
+                <h3 class="text-2xl font-bold mb-6 text-indigo-600">Our Offices</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h4 class="font-bold text-lg mb-2">Main Office</h4>
+                        <p class="text-gray-700">Skyworld Commercial Center<br>Session Road, Baguio City 2600</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h4 class="font-bold text-lg mb-2">SM City Branch</h4>
+                        <p class="text-gray-700">Upper Basement (Opposite DFA)<br>SM City, Baguio City 2600</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h4 class="font-bold text-lg mb-2">YMCA Branch</h4>
+                        <p class="text-gray-700">Ground Floor, YMCA Bldg.<br>Upper Session Road, Baguio City 2600</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg border-2 border-indigo-200">
+                        <h4 class="font-bold text-lg mb-2 text-indigo-600">Santiago Branch</h4>
+                        <p class="text-gray-700">Level 2 Robinsons Mall, Maharlika Highway<br>Santiago City, Isabela 3311</p>
+                    </div>
+                </div>
+            </section>
+
+            
+                
+                <!-- Call to Action -->
+                <div class="text-center bg-gradient-to-r from-blue-50 to-cyan-50 p-8 rounded-lg border-2 border-blue-200 mt-24 philippines-section">
+                    <div class="text-4xl mb-4">🇵🇭</div>
+                    <h4 class="text-2xl font-bold text-blue-600 mb-4">Ready to Explore the Philippines?</h4>
+                    <p class="text-gray-700 mb-6">From the world-famous beaches of Boracay to the underground rivers of Palawan, and the rich history of Cebu, the Philippines offers unforgettable experiences!</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button onclick="handlePackageClick('philippines')" class="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-8 py-3 rounded-lg hover:from-blue-700 hover:to-cyan-700 font-semibold transition-all shadow-lg hover:shadow-xl">
+                            📞 Get Your Philippines Quote Now
+                        </button>
+                        <button onclick="showTab('services')" class="bg-gradient-to-r from-green-600 to-teal-600 text-white px-8 py-3 rounded-lg hover:from-green-700 hover:to-teal-700 font-semibold transition-all shadow-lg hover:shadow-xl">
+                            📋 View All Packages
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Services Tab -->
+    <div id="services" class="tab-content">
+        <!-- Services Content -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4">
+
+            <!-- Comprehensive Services Grid -->
+            <div class="mb-16">
+                <div class="text-center mb-12">
+                    <div class="text-6xl mb-4">🌟</div>
+                    <h3 class="text-4xl font-bold text-indigo-600 mb-4">Our Complete Travel Services</h3>
+                    <p class="text-xl text-gray-700">Everything you need for your perfect journey, all in one place</p>
+                </div>
+                
+                <!-- Services Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mb-8">
+                    <!-- Flight Booking -->
+                    <div class="service-card bg-white p-6 rounded-xl shadow-xl border-2 border-blue-200 border-l-4 border-l-blue-400 transform hover:scale-110 transition-all duration-300 hover:shadow-2xl">
+                        <div class="text-5xl mb-4 text-center border-b-2 border-blue-300 pb-3">✈️</div>
+                        <h3 class="text-xl font-bold mb-3 text-center border-b-2 border-gray-300 pb-2 text-blue-600">Flight Booking</h3>
+                        <p class="text-gray-600 text-center p-3 border border-gray-200 rounded-lg bg-blue-50 font-medium">International and Domestic</p>
+                    </div>
+                    
+                    <!-- PSA & Passport -->
+                    <div class="service-card bg-white p-6 rounded-xl shadow-xl border-2 border-green-200 border-l-4 border-l-green-400 transform hover:scale-110 transition-all duration-300 hover:shadow-2xl">
+                        <div class="text-5xl mb-4 text-center border-b-2 border-green-300 pb-3">📄</div>
+                        <h3 class="text-xl font-bold mb-3 text-center border-b-2 border-gray-300 pb-2 text-green-600">PSA & Passport</h3>
+                        <p class="text-gray-600 text-center p-3 border border-gray-200 rounded-lg bg-green-50 font-medium">Online Assistance</p>
+                    </div>
+                    
+                    <!-- Travel Insurance -->
+                    <div class="service-card bg-white p-6 rounded-xl shadow-xl border-2 border-purple-200 border-l-4 border-l-purple-400 transform hover:scale-110 transition-all duration-300 hover:shadow-2xl">
+                        <div class="text-5xl mb-4 text-center border-b-2 border-purple-300 pb-3">🛡️</div>
+                        <h3 class="text-xl font-bold mb-3 text-center border-b-2 border-gray-300 pb-2 text-purple-600">Travel Insurance</h3>
+                        <p class="text-gray-600 text-center p-3 border border-gray-200 rounded-lg bg-purple-50 font-medium">Comprehensive coverage</p>
+                    </div>
+                    
+                    <!-- Study Visa -->
+                    <div class="service-card bg-white p-6 rounded-xl shadow-xl border-2 border-yellow-200 border-l-4 border-l-yellow-400 transform hover:scale-110 transition-all duration-300 hover:shadow-2xl">
+                        <div class="text-5xl mb-4 text-center border-b-2 border-yellow-300 pb-3">🎓</div>
+                        <h3 class="text-xl font-bold mb-3 text-center border-b-2 border-gray-300 pb-2 text-yellow-600">Study Visa</h3>
+                        <p class="text-gray-600 text-center p-3 border border-gray-200 rounded-lg bg-yellow-50 font-medium">Educational opportunities abroad</p>
+                    </div>
+                    
+                    <!-- Immigrant Visa -->
+                    <div class="service-card bg-white p-6 rounded-xl shadow-xl border-2 border-indigo-200 border-l-4 border-l-indigo-400 transform hover:scale-110 transition-all duration-300 hover:shadow-2xl">
+                        <div class="text-5xl mb-4 text-center border-b-2 border-indigo-300 pb-3">🏠</div>
+                        <h3 class="text-xl font-bold mb-3 text-center border-b-2 border-gray-300 pb-2 text-indigo-600">Immigrant Visa</h3>
+                        <p class="text-gray-600 text-center p-3 border border-gray-200 rounded-lg bg-indigo-50 font-medium">Permanent residency assistance</p>
+                    </div>
+                    
+                    <!-- Skilled Worker Visa -->
+                    <div class="service-card bg-white p-6 rounded-xl shadow-xl border-2 border-orange-200 border-l-4 border-l-orange-400 transform hover:scale-110 transition-all duration-300 hover:shadow-2xl">
+                        <div class="text-5xl mb-4 text-center border-b-2 border-orange-300 pb-3">👷</div>
+                        <h3 class="text-xl font-bold mb-3 text-center border-b-2 border-gray-300 pb-2 text-orange-600">Skilled Worker Visa</h3>
+                        <p class="text-gray-600 text-center p-3 border border-gray-200 rounded-lg bg-orange-50 font-medium">Work opportunities overseas</p>
+                    </div>
+                    
+                    <!-- Tourist Visa -->
+                    <div class="service-card bg-white p-6 rounded-xl shadow-xl border-2 border-teal-200 border-l-4 border-l-teal-400 transform hover:scale-110 transition-all duration-300 hover:shadow-2xl">
+                        <div class="text-5xl mb-4 text-center border-b-2 border-teal-300 pb-3">🌍</div>
+                        <h3 class="text-xl font-bold mb-3 text-center border-b-2 border-gray-300 pb-2 text-teal-600">Tourist Visa</h3>
+                        <p class="text-gray-600 text-center p-3 border border-gray-200 rounded-lg bg-teal-50 font-medium">Vacation and leisure travel</p>
+                    </div>
+                    
+                    <!-- Package Tour -->
+                    <div class="service-card bg-white p-6 rounded-xl shadow-xl border-2 border-pink-200 border-l-4 border-l-pink-400 transform hover:scale-110 transition-all duration-300 hover:shadow-2xl">
+                        <div class="text-5xl mb-4 text-center border-b-2 border-pink-300 pb-3">🏖️</div>
+                        <h3 class="text-xl font-bold mb-3 text-center border-b-2 border-gray-300 pb-2 text-pink-600">Package Tour</h3>
+                        <p class="text-gray-600 text-center p-3 border border-gray-200 rounded-lg bg-pink-50 font-medium">International and Domestic</p>
+                    </div>
+                    
+                    <!-- 2GO Ferry Booking -->
+                    <div class="service-card bg-white p-6 rounded-xl shadow-xl border-2 border-cyan-200 border-l-4 border-l-cyan-400 transform hover:scale-110 transition-all duration-300 hover:shadow-2xl">
+                        <div class="text-5xl mb-4 text-center border-b-2 border-cyan-300 pb-3">⛴️</div>
+                        <h3 class="text-xl font-bold mb-3 text-center border-b-2 border-gray-300 pb-2 text-cyan-600">2GO Ferry Booking</h3>
+                        <p class="text-gray-600 text-center p-3 border border-gray-200 rounded-lg bg-cyan-50 font-medium">Booking Assistance</p>
+                    </div>
+                    
+                    <!-- Hotel Booking -->
+                    <div class="service-card bg-white p-6 rounded-xl shadow-xl border-2 border-red-200 border-l-4 border-l-red-400 transform hover:scale-110 transition-all duration-300 hover:shadow-2xl">
+                        <div class="text-5xl mb-4 text-center border-b-2 border-red-300 pb-3">🏨</div>
+                        <h3 class="text-xl font-bold mb-3 text-center border-b-2 border-gray-300 pb-2 text-red-600">Hotel Booking</h3>
+                        <p class="text-gray-600 text-center p-3 border border-gray-200 rounded-lg bg-red-50 font-medium">& Reservation</p>
+                    </div>
+                </div>
+                
+                <!-- Call to Action -->
+                <div class="text-center bg-gradient-to-r from-indigo-50 to-blue-50 p-8 rounded-xl border-2 border-indigo-200 shadow-lg">
+                    <div class="text-4xl mb-4">🚀</div>
+                    <h4 class="text-2xl font-bold text-indigo-600 mb-4">Ready to Start Your Journey?</h4>
+                    <p class="text-gray-700 mb-6 text-lg">Contact us today and let our expert team help you plan your perfect trip!</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button onclick="showTab('contact')" class="bg-gradient-to-r from-indigo-600 to-blue-600 text-white px-8 py-3 rounded-lg hover:from-indigo-700 hover:to-blue-700 font-semibold transition-all shadow-lg hover:shadow-xl transform hover:scale-105">
+                            📞 Get Started Now
+                        </button>
+                        <button onclick="showTab('about')" class="bg-gradient-to-r from-green-600 to-teal-600 text-white px-8 py-3 rounded-lg hover:from-green-700 hover:to-teal-700 font-semibold transition-all shadow-lg hover:shadow-xl transform hover:scale-105">
+                            🏢 Learn More About Us
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Package Category Header Section -->
+
+
+            <!-- Asia Packages Section -->
+            <div class="mb-16">
+                <div class="text-center mb-8">
+                    <h3 class="text-3xl font-bold text-red-600 mb-2">🏮 Asia Packages</h3>
+                    <p class="text-gray-700">Discover the vibrant cultures and stunning landscapes of Asia</p>
+                </div>
+                <div class="relative">
+                    <!-- Navigation Buttons -->
+                    <button id="asiaPrevBtn" onclick="slidePackages('prev', 'asia')" 
+                            class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all border-2 border-red-200 hover:border-red-400">
+                        <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                    </button>
+                    
+                    <button id="asiaNextBtn" onclick="slidePackages('next', 'asia')" 
+                            class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all border-2 border-red-200 hover:border-red-400">
+                        <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                    
+                    <!-- Package Cards Container -->
+                    <div class="overflow-hidden mx-12 px-4">
+                        <div id="asiaPackageCarousel" class="flex space-x-5 transition-transform duration-300 ease-in-out">
+                            <!-- Asia package cards will be dynamically inserted here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Europe Packages Section -->
+            <div class="mb-16">
+                <div class="text-center mb-8">
+                    <h3 class="text-3xl font-bold text-blue-600 mb-2">🏰 Europe Packages</h3>
+                    <p class="text-gray-700">Experience the rich history and culture of Europe</p>
+                </div>
+                <div class="relative">
+                    <!-- Navigation Buttons -->
+                    <button id="europePrevBtn" onclick="slidePackages('prev', 'europe')" 
+                            class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all border-2 border-blue-200 hover:border-blue-400">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                    </button>
+                    
+                    <button id="europeNextBtn" onclick="slidePackages('next', 'europe')" 
+                            class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all border-2 border-blue-200 hover:border-blue-400">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                    
+                    <!-- Package Cards Container -->
+                            <div class="overflow-hidden mx-12 px-4">
+            <div id="europePackageCarousel" class="flex space-x-3 transition-transform duration-300 ease-in-out">
+                <!-- Europe package cards will be dynamically inserted here -->
+            </div>
+        </div>
+                </div>
+            </div>
+
+            <!-- Philippines Packages Section -->
+            <div class="mb-16">
+                <div class="text-center mb-8">
+                    <h3 class="text-3xl font-bold text-green-600 mb-2">🏝️ Philippines Packages</h3>
+                    <p class="text-gray-700">Explore the beautiful islands and destinations of the Philippines</p>
+                </div>
+                <div class="relative">
+                    <!-- Navigation Buttons -->
+                    <button id="philippinesPrevBtn" onclick="slidePackages('prev', 'philippines')" 
+                            class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all border-2 border-green-200 hover:border-green-400">
+                        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                    </button>
+                    
+                    <button id="philippinesNextBtn" onclick="slidePackages('next', 'philippines')" 
+                            class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all border-2 border-green-200 hover:border-green-400">
+                        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                    
+                    <!-- Package Cards Container -->
+                    <div class="overflow-hidden mx-12 px-4">
+                        <div id="philippinesPackageCarousel" class="flex space-x-5 transition-transform duration-300 ease-in-out">
+                            <!-- Philippines package cards will be dynamically inserted here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            </div>
+        </section>
+    </div>
+
+    <!-- Partners Tab -->
+    <div id="partners" class="tab-content">
+        <div class="max-w-7xl mx-auto px-4 py-16">
+            <h2 class="text-4xl font-bold text-center mb-12">Our Partners</h2>
+            
+            <!-- Department of Tourism Accreditation -->
+            <section class="mb-16">
+                                 <div class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-8 rounded-lg shadow-lg mb-8">
+                     <div class="flex items-center justify-center mb-6">
+                         <img src="assets/GATT WEBSITE UPDATES/PARTNERS/401-4016979_tourism-quality-seal-department-of-tourism-philippines-hd-removebg-preview.png" alt="DOT Accreditation Seal" class="w-20 h-20 mr-4 object-contain bg-white p-2 rounded-lg">
+                         <div>
+                             <h3 class="text-3xl font-bold">Department of Tourism Accreditation</h3>
+                             <p class="text-blue-100">Government-Recognized Travel Agency</p>
+                         </div>
+                     </div>
+                 </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+                        Gracious Angeli Travel & Tours is officially accredited by the Department of Tourism (DOT), Philippines. 
+                        Our DOT accreditation ensures you are booking with a trusted, government-recognized travel agency committed to quality and safety.
+                    </p>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-indigo-500">
+                        <p class="text-gray-700 italic leading-relaxed">
+                            "Know all men by these present that Gracious Angeli Travel & Tours with address at Level 2 Robinson Place, Maharlika Highway, Brgy. Mabini, Santiago City having complied with the requirements prescribed by the Department of Tourism in hereby granted regular accreditation as a travel and tour agency pursuant to the provisions of Republic Act No. 9593 and rules regulations promulgated by the Department of Tourism to implement the intent and purpose of the said Republic Act."
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Our Partners Section -->
+            <section class="mb-16">
+                <h3 class="text-3xl font-bold text-center mb-8 text-indigo-600">Our Partners</h3>
+                <p class="text-center text-gray-700 mb-12 text-lg">We proudly collaborate with reputable organizations to provide you with trusted and quality travel services.</p>
+                
+                <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+                                         <!-- NITAS -->
+                     <div class="bg-white p-8 rounded-lg shadow-lg border-2 border-indigo-200 border-l-4 border-l-indigo-400">
+                         <div class="text-center mb-6 border-b-2 border-indigo-300 pb-4">
+                             <img src="assets/GATT WEBSITE UPDATES/PARTNERS/NITAS.jpg" alt="NITAS Logo" class="w-24 h-24 mx-auto mb-4 object-contain">
+                             <h4 class="text-2xl font-bold text-indigo-600 border-b border-indigo-200 pb-2">NITAS</h4>
+                             <p class="text-sm text-gray-600 pt-2">Network of Independent Travel and Allied Services</p>
+                         </div>
+                         <p class="text-gray-700 leading-relaxed p-3 border-2 border-gray-200 rounded-lg bg-gray-50">
+                             Network of Independent Travel and Allied Services, Philippines, Inc. or NITAS for short was established in 1986. It is a business travel association who's 400 members are small to medium to medium high companies scattered all over the country.
+                         </p>
+                     </div>
+                     
+                     <!-- TPBPHL -->
+                     <div class="bg-white p-8 rounded-lg shadow-lg border-2 border-indigo-200 border-l-4 border-l-indigo-400">
+                         <div class="text-center mb-6 border-b-2 border-indigo-300 pb-4">
+                             <img src="assets/GATT WEBSITE UPDATES/PARTNERS/TPBPHL.png" alt="TPBPHL Logo" class="w-24 h-24 mx-auto mb-4 object-contain">
+                             <h4 class="text-2xl font-bold text-indigo-600 border-b border-indigo-200 pb-2">TPBPHL</h4>
+                             <p class="text-sm text-gray-600 pt-2">Tourism Promotions Board Philippines</p>
+                         </div>
+                         <p class="text-gray-700 leading-relaxed p-3 border-2 border-gray-200 rounded-lg bg-gray-50">
+                             An attached agency of the Department of Tourism, the Tourism Promotions Board (TPB) exists to market and promote the Philippines domestically and internationally as a world-class tourism and MICE destination, in strategic partnership with private and public stakeholders to deliver a unique high-value experience for visitors, significantly contributing to increased arrivals, receipts and investments to the country.
+                         </p>
+                     </div>
+                     
+                     <!-- Love the Philippines -->
+                     <div class="bg-white p-8 rounded-lg shadow-lg border-2 border-indigo-200 border-l-4 border-l-indigo-400">
+                         <div class="text-center mb-6 border-b-2 border-indigo-300 pb-4">
+                             <img src="assets/GATT WEBSITE UPDATES/PARTNERS/love-the-philippines.webp" alt="Love the Philippines Logo" class="w-24 h-24 mx-auto mb-4 object-contain">
+                             <h4 class="text-2xl font-bold text-indigo-600 border-b border-indigo-200 pb-2">LOVE THE PHILIPPINES</h4>
+                             <p class="text-sm text-gray-600 pt-2">Department of Tourism Campaign</p>
+                         </div>
+                         <p class="text-gray-700 leading-relaxed p-3 border-2 border-gray-200 rounded-lg bg-gray-50">
+                             The new tourism campaign slogan of the Department of Tourism. The "enhanced" tourism campaign slogan, launched by the department during its 50th-anniversary celebration at the Manila Hotel on Tuesday (June 27, 2023), replaces the 11-year-old It's More Fun in the Philippines.
+                         </p>
+                     </div>
+                </div>
+            </section>
+
+            <!-- Management Team -->
+            <section class="mb-16">
+                <h3 class="text-3xl font-bold text-center mb-8 text-indigo-600">Our Management Team</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center text-white text-2xl font-bold">BA</div>
+                            <div class="ml-4">
+                                <h4 class="text-xl font-bold">BALISONG & ASSOCIATES</h4>
+                                <p class="text-gray-600">LAW OFFICE - Legal Adviser</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl font-bold">BM</div>
+                            <div class="ml-4">
+                                <h4 class="text-xl font-bold">GATT Branch Managers</h4>
+                                <p class="text-gray-600">Professional Branch Management Team</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-16 h-16 bg-teal-500 rounded-full flex items-center justify-center text-white text-2xl font-bold">TC</div>
+                            <div class="ml-4">
+                                <h4 class="text-xl font-bold">GATT Travel Consultants</h4>
+                                <p class="text-gray-600">Travel & Immigration Experts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Our Offices -->
+            <section>
+                <h3 class="text-3xl font-bold text-center mb-8 text-indigo-600">Our Offices</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h4 class="font-bold text-lg mb-2 text-indigo-600">Main Office</h4>
+                        <h5 class="font-semibold mb-2">Gracious Angeli Travel And Tours</h5>
+                         <p class="text-gray-700 mb-3"><img src="assets/GATT WEBSITE UPDATES/ICONS/pin.png" alt="Location" class="inline-block w-5 h-5 mr-2"> Skyworld Commercial Center<br>Session Road, Baguio City 2600</p>
+                         <button onclick="openGoogleMaps('GRACIOUS ANGELI\' Travel & Tours, Skyworld Commercial Center, Session Rd, Baguio, 2600 Benguet')" class="text-indigo-600 hover:text-indigo-800 font-medium hover:underline">Get Directions →</button>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h4 class="font-bold text-lg mb-2 text-indigo-600">YMCA Branch</h4>
+                        <h5 class="font-semibold mb-2">Gracious Angeli Travel And Tours</h5>
+                         <p class="text-gray-700 mb-3"><img src="assets/GATT WEBSITE UPDATES/ICONS/pin.png" alt="Location" class="inline-block w-5 h-5 mr-2"> Ground Floor, YMCA Bldg.<br>Upper Session Road, Baguio City 2600</p>
+                         <button onclick="openGoogleMaps('YMCA Bldg, Upper Session Road, Baguio City 2600')" class="text-indigo-600 hover:text-indigo-800 font-medium hover:underline">Get Directions →</button>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h4 class="font-bold text-lg mb-2 text-indigo-600">SM City Branch</h4>
+                        <h5 class="font-semibold mb-2">Gracious Angeli Travel And Tours</h5>
+                         <p class="text-gray-700 mb-3"><img src="assets/GATT WEBSITE UPDATES/ICONS/pin.png" alt="Location" class="inline-block w-5 h-5 mr-2"> Upper Basement (Opposite DFA)<br>SM City, Baguio City 2600</p>
+                         <button onclick="openGoogleMaps('SM City, Baguio City 2600')" class="text-indigo-600 hover:text-indigo-800 font-medium hover:underline">Get Directions →</button>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-lg border-2 border-indigo-200">
+                        <h4 class="font-bold text-lg mb-2 text-indigo-600">Santiago City Branch</h4>
+                        <h5 class="font-semibold mb-2">Gracious Angeli Travel And Tours</h5>
+                         <p class="text-gray-700 mb-3"><img src="assets/GATT WEBSITE UPDATES/ICONS/pin.png" alt="Location" class="inline-block w-5 h-5 mr-2"> Level 2 Robinsons Mall, Maharlika Highway<br>Santiago City, Isabela</p>
+                         <button onclick="openGoogleMaps('Gracious Angeli Travel Tours, Level 2, Robinsons Place, Santiago 1, Santiago, Isabela')" class="text-indigo-600 hover:text-indigo-800 font-medium hover:underline">Get Directions →</button>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Call to Action -->
+            <div class="text-center bg-gradient-to-r from-blue-50 to-cyan-50 p-8 rounded-lg border-2 border-blue-200 mt-24 philippines-section">
+                    <div class="text-4xl mb-4">🇵🇭</div>
+                    <h4 class="text-2xl font-bold text-blue-600 mb-4">Ready to Explore the Philippines?</h4>
+                    <p class="text-gray-700 mb-6">From the world-famous beaches of Boracay to the underground rivers of Palawan, and the rich history of Cebu, the Philippines offers unforgettable experiences!</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button onclick="showTab('contact')" class="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-8 py-3 rounded-lg hover:from-blue-700 hover:to-cyan-700 font-semibold transition-all shadow-lg hover:shadow-xl">
+                            📞 Get Your Philippines Quote Now
+                        </button>
+                        <button class="bg-gradient-to-r from-green-600 to-teal-600 text-white px-8 py-3 rounded-lg hover:from-green-700 hover:to-teal-700 font-semibold transition-all shadow-lg hover:shadow-xl">
+                            📋 View All Domestic Packages
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Contact Us Tab -->
+    <div id="contact" class="tab-content">
+        <div class="max-w-7xl mx-auto px-4 py-16">
+            <h2 class="text-4xl font-bold text-center mb-12">Contact Us</h2>
+            
+            <!-- Interactive Map Section -->
+            <section class="mb-16">
+                <h3 class="text-3xl font-bold text-center mb-8 text-indigo-600">Find Our Locations</h3>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-indigo-200">
+                    <!-- Map Container -->
+                    <div class="relative h-96 bg-gradient-to-br from-green-100 via-blue-100 to-green-200 border-b-2 border-indigo-300">
+                        <!-- Animated Wave Background -->
+                        <div class="absolute inset-0 overflow-hidden">
+                            <svg class="absolute bottom-0 w-full h-32" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                                <path d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z" fill="rgba(59, 130, 246, 0.1)" class="wave-animation">
+                                    <animate attributeName="d" dur="10s" repeatCount="indefinite" 
+                                        values="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z;
+                                                M0,60 C300,0 900,120 1200,60 L1200,120 L0,120 Z;
+                                                M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z"/>
+                                </path>
+                            </svg>
+                            <svg class="absolute bottom-0 w-full h-24" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                                <path d="M0,40 C400,100 800,20 1200,40 L1200,120 L0,120 Z" fill="rgba(99, 102, 241, 0.15)" class="wave-animation-2">
+                                    <animate attributeName="d" dur="8s" repeatCount="indefinite" 
+                                        values="M0,40 C400,100 800,20 1200,40 L1200,120 L0,120 Z;
+                                                M0,40 C400,20 800,100 1200,40 L1200,120 L0,120 Z;
+                                                M0,40 C400,100 800,20 1200,40 L1200,120 L0,120 Z"/>
+                                </path>
+                            </svg>
+                        </div>
+                        
+                        <!-- Map Content -->
+                        <div class="relative z-10 h-full flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="text-6xl mb-4 animate-bounce">🗺️</div>
+                                <h4 class="text-2xl font-bold text-indigo-600 mb-2">Interactive Location Map</h4>
+                                <p class="text-gray-600 mb-6">Click on the locations below to view on map</p>
+                                
+                                <!-- Location Buttons -->
+                                <div class="grid grid-cols-2 gap-4 max-w-md mx-auto">
+                                    <button onclick="showBaguioLocations()" class="location-btn bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition-all shadow-lg hover:shadow-xl border-2 border-indigo-700">
+                                        📍 Baguio City
+                                    </button>
+                                    <button onclick="showLocation('santiago')" class="location-btn bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-all shadow-lg hover:shadow-xl border-2 border-green-700">
+                                        📍 Santiago City
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Location Cards -->
+                    <div class="p-6 bg-gray-50 border-t-2 border-indigo-300">
+                        <div class="grid md:grid-cols-4 gap-4">
+                            <div class="bg-white p-4 rounded-lg shadow border-l-4 border-l-indigo-400 hover:shadow-lg transition-all cursor-pointer" onclick="showLocation('main-office')">
+                                <h5 class="font-bold text-indigo-600 border-b border-indigo-200 pb-1">Main Office</h5>
+                                <p class="text-sm text-gray-600 pt-1">Skyworld Commercial Center</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow border-l-4 border-l-blue-400 hover:shadow-lg transition-all cursor-pointer" onclick="showLocation('sm-city')">
+                                <h5 class="font-bold text-blue-600 border-b border-blue-200 pb-1">SM City Branch</h5>
+                                <p class="text-sm text-gray-600 pt-1">Upper Basement</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow border-l-4 border-l-purple-400 hover:shadow-lg transition-all cursor-pointer" onclick="showLocation('ymca')">
+                                <h5 class="font-bold text-purple-600 border-b border-purple-200 pb-1">YMCA Branch</h5>
+                                <p class="text-sm text-gray-600 pt-1">Ground Floor, YMCA Bldg.</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow border-l-4 border-l-green-400 hover:shadow-lg transition-all cursor-pointer" onclick="showLocation('santiago')">
+                                <h5 class="font-bold text-green-600 border-b border-green-200 pb-1">Santiago Branch</h5>
+                                <p class="text-sm text-gray-600 pt-1">Level 2 Robinsons Mall</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Map Modal -->
+            <div id="mapModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+                <div class="flex items-center justify-center min-h-screen p-4">
+                    <div class="bg-white rounded-lg shadow-xl max-w-4xl w-full max-h-[90vh] overflow-hidden">
+                        <!-- Modal Header -->
+                        <div class="flex justify-between items-center p-6 border-b-2 border-indigo-300 bg-gradient-to-r from-indigo-50 to-blue-50">
+                            <h3 id="mapTitle" class="text-2xl font-bold text-indigo-600">Santiago Branch</h3>
+                            <button onclick="hideLocation()" class="text-gray-500 hover:text-gray-700 text-2xl border-2 border-gray-300 rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-100 transition-all">
+                                ×
+                            </button>
+                        </div>
+                        
+                        <!-- Modal Content -->
+                        <div class="flex flex-col lg:flex-row h-[calc(90vh-120px)]">
+                            <!-- Map Container -->
+                            <div class="flex-1 p-4">
+                                <div id="map" class="w-full h-full rounded-lg border-2 border-indigo-200" style="min-height: 400px;">
+                                    <!-- Map will be loaded here -->
+                                    <div class="w-full h-full flex items-center justify-center bg-gray-100 rounded-lg">
+                                        <div class="text-center">
+                                            <div class="text-4xl mb-2">🗺️</div>
+                                            <p class="text-gray-600">Loading map...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Location Info Panel -->
+                            <div class="w-full lg:w-80 p-4 bg-gray-50 border-l-2 border-indigo-200">
+                                <div id="locationDetailsContent" class="space-y-4">
+                                    <!-- Location details will be loaded here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Get in Touch</h3>
+                    <div class="space-y-6">
+                        <!-- Main Office -->
+                        <div class="bg-white p-6 rounded-lg shadow-lg border-2 border-indigo-200 border-l-4 border-l-indigo-400 hover:shadow-xl transition-all cursor-pointer" onclick="showLocation('main-office')">
+                            <h4 class="font-bold text-lg mb-2 text-indigo-600 border-b-2 border-indigo-300 pb-2">Main Office</h4>
+                                                         <p class="text-gray-700 p-3 border-2 border-gray-200 rounded-lg bg-gray-50"><img src="assets/GATT WEBSITE UPDATES/ICONS/pin.png" alt="Location" class="inline-block w-5 h-5 mr-2"> Skyworld Commercial Center<br>Session Road, Baguio City 2600</p>
+                            <div class="mt-3 space-y-1 text-sm">
+                                <p class="text-gray-600 border-b border-gray-200 pb-1">📞 +63-9175061996</p>
+                                <p class="text-gray-600">🕒 9:00 AM - 6:00 PM (Monday to Saturday)</p>
+                            </div>
+                        </div>
+                        
+                        <!-- SM City Branch -->
+                        <div class="bg-white p-6 rounded-lg shadow-lg border-2 border-blue-200 border-l-4 border-l-blue-400 hover:shadow-xl transition-all cursor-pointer" onclick="showLocation('sm-city')">
+                            <h4 class="font-bold text-lg mb-2 text-blue-600 border-b-2 border-blue-300 pb-2">SM City Branch</h4>
+                                                         <p class="text-gray-700 p-3 border-2 border-gray-200 rounded-lg bg-gray-50"><img src="assets/GATT WEBSITE UPDATES/ICONS/pin.png" alt="Location" class="inline-block w-5 h-5 mr-2"> Upper Basement (Opposite DFA)<br>SM City, Baguio City 2600</p>
+                            <div class="mt-3 space-y-1 text-sm">
+                                <p class="text-blue-600 border-b border-blue-200 pb-1">📞 +63-9171583664</p>
+                                <p class="text-gray-600">🕒 10:00 AM - 10:00 PM (Monday to Sunday)</p>
+                            </div>
+                        </div>
+                        
+                        <!-- YMCA Branch -->
+                        <div class="bg-white p-6 rounded-lg shadow-lg border-2 border-purple-200 border-l-4 border-l-purple-400 hover:shadow-xl transition-all cursor-pointer" onclick="showLocation('ymca')">
+                            <h4 class="font-bold text-lg mb-2 text-purple-600 border-b-2 border-purple-300 pb-2">YMCA Branch</h4>
+                                                         <p class="text-gray-700 p-3 border-2 border-gray-200 rounded-lg bg-gray-50"><img src="assets/GATT WEBSITE UPDATES/ICONS/pin.png" alt="Location" class="inline-block w-5 h-5 mr-2"> Ground Floor, YMCA Bldg.<br>Upper Session Road, Baguio City 2600</p>
+                            <div class="mt-3 space-y-1 text-sm">
+                                <p class="text-purple-600 border-b border-purple-200 pb-1">📞 +63-9171060994</p>
+                                <p class="text-gray-600">🕒 9:00 AM - 5:00 PM (Monday to Saturday)</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Santiago Branch -->
+                        <div class="bg-white p-6 rounded-lg shadow-lg border-2 border-green-200 border-l-4 border-l-green-400 hover:shadow-xl transition-all cursor-pointer" onclick="showLocation('santiago')">
+                            <h4 class="font-bold text-lg mb-2 text-green-600 border-b-2 border-green-300 pb-2">Santiago Branch</h4>
+                                                         <p class="text-gray-700 p-3 border-2 border-gray-200 rounded-lg bg-gray-50"><img src="assets/GATT WEBSITE UPDATES/ICONS/pin.png" alt="Location" class="inline-block w-5 h-5 mr-2"> Level 2 Robinsons Mall, Maharlika Highway<br>Santiago City, Isabela 3311</p>
+                            <div class="mt-3 space-y-1 text-sm">
+                                <p class="text-gray-600 border-b border-gray-200 pb-1">📞 +63-9958424115</p>
+                                <p class="text-gray-600">🕒 10:00 AM - 9:00 PM (Monday to Sunday)</p>
+                            </div>
+                        </div>
+                        
+                        <!-- General Contact Information -->
+                        <div class="bg-white p-6 rounded-lg shadow-lg border-2 border-orange-200 border-l-4 border-l-orange-400">
+                            <h4 class="font-bold text-lg mb-2 text-orange-600 border-b-2 border-orange-300 pb-2">General Contact Information</h4>
+                            <div class="p-3 border-2 border-gray-200 rounded-lg bg-gray-50">
+                                <p class="text-gray-700 border-b border-gray-300 pb-2">📞 Primary Phone: +63-9958424115</p>
+                                <p class="text-gray-700 pt-2">📧 Email: graciousangeli.santiago@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                                             </div>
+                 </div>
+                 <div>
+                     <h3 class="text-2xl font-bold mb-6">Send us a Message</h3>
+                     <form id="contactForm" class="bg-white p-6 rounded-lg shadow-lg space-y-4 border-2 border-indigo-200 border-l-4 border-l-indigo-400">
+                         <div>
+                             <label class="block text-sm font-medium text-gray-700 mb-2 border-b border-gray-200 pb-1">Name</label>
+                             <input type="text" name="name" class="w-full p-3 border-2 border-gray-300 rounded-lg" required>
+                         </div>
+                         <div>
+                             <label class="block text-sm font-medium text-gray-700 mb-2 border-b border-gray-200 pb-1">Email</label>
+                             <input type="email" name="email" class="w-full p-3 border-2 border-gray-300 rounded-lg" required>
+                         </div>
+                         <div>
+                             <label class="block text-sm font-medium text-gray-700 mb-2 border-b border-gray-200 pb-1">Subject</label>
+                             <input type="text" name="subject" id="subject" class="w-full p-3 border-2 border-gray-300 rounded-lg" required>
+                         </div>
+                         <div>
+                             <label class="block text-sm font-medium text-gray-700 mb-2 border-b border-gray-200 pb-1">Message</label>
+                             <textarea name="message" rows="4" class="w-full p-3 border-2 border-gray-300 rounded-lg" required></textarea>
+                         </div>
+                         <button type="submit" class="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700 border-2 border-indigo-700">Send Message</button>
+                     </form>
+                     
+                     <!-- Connect with us Section -->
+                     <div class="bg-white p-6 rounded-lg shadow-lg border-2 border-purple-200 border-l-4 border-l-purple-400 mt-6">
+                         <h4 class="font-bold text-lg mb-4 text-purple-600 border-b-2 border-purple-300 pb-2">Connect with us</h4>
+                         <div class="grid grid-cols-2 gap-4">
+                            <a href="https://www.facebook.com/share/16nvCamFwg/" target="_blank" class="social-link flex items-center justify-center p-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all shadow-md hover:shadow-lg border-2 border-blue-700 transform hover:scale-105">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-8 h-8 bg-white rounded flex items-center justify-center">
+                                        <span class="text-blue-600 font-bold text-lg">f</span>
+                                    </div>
+                                    <span class="font-semibold">Facebook</span>
+                                </div>
+                            </a>
+                             <a href="mailto:graciousangeli.santiago@gmail.com" class="social-link flex items-center justify-center p-4 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-all shadow-md hover:shadow-lg border-2 border-red-700 transform hover:scale-105">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-8 h-8 bg-white rounded flex items-center justify-center">
+                                        <svg class="w-5 h-5 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                                        </svg>
+                                    </div>
+                                    <span class="font-semibold">Gmail</span>
+                                </div>
+                            </a>
+                         </div>
+                         <div class="mt-3 p-2 bg-purple-50 rounded border border-purple-200">
+                             <p class="text-xs text-purple-600 text-center">💡 Click to connect with us on social media</p>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-gray-800 via-blue-900 to-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Gracious Angeli Travel & Tours</h3>
+                    <p class="text-gray-300">Your trusted travel partner since 1999. We make your travel dreams come true with personalized service and exceptional experiences.</p>
+                    <p class="text-gray-300 font-semibold mt-2">DOT Accredited Travel Agency</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>Air Ticketing</li>
+                        <li>Tour Packages</li>
+                        <li>Visa Assistance</li>
+                        <li>Hotel Booking</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Locations</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>Baguio City (Main)</li>
+                        <li>SM City Baguio</li>
+                        <li>YMCA Baguio</li>
+                        <li>Santiago City</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>📞 +63-9958424115</li>
+                        <li>📧 graciousangeli.santiago@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2025 Gracious Angeli Travel & Tours. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top bg-indigo-600 hover:bg-indigo-700 text-white p-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+
+    <!-- OpenStreetMap and Leaflet for maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <!-- EmailJS for contact forms -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("cOQ8p3hVrola3ffha");
+        })();
+    </script>
+
+    
+    <script src="assets/script.js"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96d5e185a7fd8241',t:'MTc1NDg5NTg4OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+
+    <!-- Survey Popup Modal -->
+    <div id="surveyModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+            <!-- Modal Header -->
+            <div class="bg-gradient-to-r from-indigo-600 to-blue-600 text-white p-6 rounded-t-2xl">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h2 class="text-2xl font-bold">🌟 We'd Love Your Feedback!</h2>
+                        <p class="text-indigo-100 mt-2">Help us improve our services with your valuable input</p>
+                    </div>
+                    <button onclick="closeSurveyModal()" class="text-white hover:text-indigo-200 text-2xl font-bold p-2 hover:bg-white hover:bg-opacity-20 rounded-full transition-all">
+                        ×
+                    </button>
+                </div>
+            </div>
+
+            <!-- Survey Form -->
+            <div class="p-6">
+                <form id="surveyForm" class="space-y-6">
+                    <!-- Hidden overall rating field -->
+                    <input type="hidden" id="overallRating" name="overall_rating" value="0">
+                    
+                    <!-- Question 1 -->
+                    <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-l-indigo-400">
+                        <label class="block text-lg font-semibold text-gray-800 mb-3">1. How easy was it to book your trip with us?</label>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                            <label class="flex items-center p-3 border-2 border-gray-200 rounded-lg hover:border-indigo-300 hover:bg-indigo-50 cursor-pointer transition-all">
+                                <input type="radio" name="booking-ease" value="very-easy" class="mr-3 text-indigo-600" data-rating="5">
+                                <span class="text-gray-700">Very Easy</span>
+                            </label>
+                            <label class="flex items-center p-3 border-2 border-gray-200 rounded-lg hover:border-indigo-300 hover:bg-indigo-50 cursor-pointer transition-all">
+                                <input type="radio" name="booking-ease" value="easy" class="mr-3 text-indigo-600" data-rating="4">
+                                <span class="text-gray-700">Easy</span>
+                            </label>
+                            <label class="flex items-center p-3 border-2 border-gray-200 rounded-lg hover:border-indigo-300 hover:bg-indigo-50 cursor-pointer transition-all">
+                                <input type="radio" name="booking-ease" value="neutral" class="mr-3 text-indigo-600" data-rating="3">
+                                <span class="text-gray-700">Neutral</span>
+                            </label>
+                            <label class="flex items-center p-3 border-2 border-gray-200 rounded-lg hover:border-indigo-300 hover:bg-indigo-50 cursor-pointer transition-all">
+                                <input type="radio" name="booking-ease" value="difficult" class="mr-3 text-indigo-600" data-rating="2">
+                                <span class="text-gray-700">Difficult</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-l-green-400">
+                        <label class="block text-lg font-semibold text-gray-800 mb-3">2. Was the information provided about your trip clear and accurate?</label>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                            <label class="flex items-center p-3 border-2 border-gray-200 rounded-lg hover:border-green-300 hover:bg-green-50 cursor-pointer transition-all">
+                                <input type="radio" name="information-clarity" value="very-clear" class="mr-3 text-green-600" data-rating="5">
+                                <span class="text-gray-700">Very Clear</span>
+                            </label>
+                            <label class="flex items-center p-3 border-2 border-gray-200 rounded-lg hover:border-green-300 hover:bg-green-50 cursor-pointer transition-all">
+                                <input type="radio" name="information-clarity" value="clear" class="mr-3 text-green-600" data-rating="4">
+                                <span class="text-gray-700">Clear</span>
+                            </label>
+                            <label class="flex items-center p-3 border-2 border-gray-200 rounded-lg hover:border-green-300 hover:bg-green-50 cursor-pointer transition-all">
+                                <input type="radio" name="information-clarity" value="neutral" class="mr-3 text-green-600" data-rating="3">
+                                <span class="text-gray-700">Neutral</span>
+                            </label>
+                            <label class="flex items-center p-3 border-2 border-gray-200 rounded-lg hover:border-green-300 hover:bg-green-50 cursor-pointer transition-all">
+                                <input type="radio" name="information-clarity" value="unclear" class="mr-3 text-green-600" data-rating="2">
+                                <span class="text-gray-700">Unclear</span>
+                            </label>
+                        </div>
+                    </div>
+
+                                         <!-- Question 3 -->
+                     <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-l-purple-400">
+                         <label class="block text-lg font-semibold text-gray-800 mb-3">3. How would you rate the value for money of our services?</label>
+                         <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                             <label class="flex items-center p-3 border-2 border-gray-200 rounded-lg hover:border-purple-300 hover:bg-purple-50 cursor-pointer transition-all">
+                                 <input type="radio" name="value-money" value="excellent-value" class="mr-3 text-purple-600" data-rating="5">
+                                 <span class="text-gray-700">Excellent Value</span>
+                             </label>
+                             <label class="flex items-center p-3 border-2 border-gray-200 rounded-lg hover:border-purple-300 hover:bg-purple-50 cursor-pointer transition-all">
+                                 <input type="radio" name="value-money" value="good-value" class="mr-3 text-purple-600" data-rating="4">
+                                 <span class="text-gray-700">Good Value</span>
+                             </label>
+                             <label class="flex items-center p-3 border-2 border-gray-200 rounded-lg hover:border-purple-300 hover:bg-purple-50 cursor-pointer transition-all">
+                                 <input type="radio" name="value-money" value="fair" class="mr-3 text-purple-600" data-rating="3">
+                                 <span class="text-gray-700">Fair</span>
+                             </label>
+                             <label class="flex items-center p-3 border-2 border-gray-200 rounded-lg hover:border-purple-300 hover:bg-purple-50 cursor-pointer transition-all">
+                                 <input type="radio" name="value-money" value="poor-value" class="mr-3 text-purple-600" data-rating="2">
+                                 <span class="text-gray-700">Poor Value</span>
+                             </label>
+                         </div>
+                     </div>
+
+                     <!-- Overall Rating Display -->
+                     <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-l-yellow-400">
+                         <label class="block text-lg font-semibold text-gray-800 mb-3">⭐ Overall Rating</label>
+                         <div class="flex items-center justify-center space-x-2 mb-3">
+                             <span class="star-rating-display text-3xl text-gray-300" id="starDisplay">★★★★★</span>
+                             <span class="rating-text ml-3 text-lg font-semibold text-gray-600" id="ratingText">Select your ratings above</span>
+                         </div>
+                         <div class="text-center text-sm text-gray-500">
+                             Your overall rating will be calculated based on your answers above
+                         </div>
+                     </div>
+
+                    <!-- Question 4 -->
+                    <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-l-yellow-400">
+                        <label class="block text-lg font-semibold text-gray-800 mb-3">4. Which part of your experience stood out the most?</label>
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                            <label class="flex items-center p-3 border-2 border-gray-200 rounded-lg hover:border-yellow-300 hover:bg-yellow-50 cursor-pointer transition-all">
+                                <input type="checkbox" name="standout-experience" value="friendly-staff" class="mr-3 text-yellow-600">
+                                <span class="text-gray-700">Friendly Staff</span>
+                            </label>
+                            <label class="flex items-center p-3 border-2 border-gray-200 rounded-lg hover:border-yellow-300 hover:bg-yellow-50 cursor-pointer transition-all">
+                                <input type="checkbox" name="standout-experience" value="fast-response" class="mr-3 text-yellow-600">
+                                <span class="text-gray-700">Fast Response</span>
+                            </label>
+                            <label class="flex items-center p-3 border-gray-200 rounded-lg hover:border-yellow-300 hover:bg-yellow-50 cursor-pointer transition-all">
+                                <input type="checkbox" name="standout-experience" value="affordable-price" class="mr-3 text-yellow-600">
+                                <span class="text-gray-700">Affordable Price</span>
+                            </label>
+                            <label class="flex items-center p-3 border-2 border-gray-200 rounded-lg hover:border-yellow-300 hover:bg-yellow-50 cursor-pointer transition-all">
+                                <input type="checkbox" name="standout-experience" value="smooth-process" class="mr-3 text-yellow-600">
+                                <span class="text-gray-700">Smooth Process</span>
+                            </label>
+                            <label class="flex items-center p-3 border-2 border-gray-200 rounded-lg hover:border-yellow-300 hover:bg-yellow-50 cursor-pointer transition-all">
+                                <input type="checkbox" name="standout-experience" value="good-travel-options" class="mr-3 text-yellow-600">
+                                <span class="text-gray-700">Good Travel Options</span>
+                            </label>
+                            <label class="flex items-center p-3 border-2 border-gray-200 rounded-lg hover:border-yellow-300 hover:bg-yellow-50 cursor-pointer transition-all">
+                                <input type="checkbox" name="standout-experience" value="none" class="mr-3 text-yellow-600">
+                                <span class="text-gray-700">None</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 5 -->
+                    <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-l-red-400">
+                        <label class="block text-lg font-semibold text-gray-800 mb-3">5. What is your travel experience level?</label>
+                        <select name="experience" class="w-full p-3 border-2 border-gray-200 rounded-lg focus:border-red-400 focus:outline-none transition-all">
+                            <option value="">Select your experience level</option>
+                            <option value="first-time-traveler">First-time Traveler</option>
+                            <option value="occasional-traveler">Occasional Traveler</option>
+                            <option value="frequent-traveler">Frequent Traveler</option>
+                            <option value="expert-traveler">Expert Traveler</option>
+                        </select>
+                    </div>
+
+                    <!-- Question 6 -->
+                    <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-l-blue-400">
+                        <label class="block text-lg font-semibold text-gray-800 mb-3">6. Any suggestions for improvement?</label>
+                        <textarea name="improvements" rows="3" placeholder="Share your thoughts on how we can improve our services..." class="w-full p-3 border-2 border-gray-200 rounded-lg focus:border-blue-400 focus:outline-none transition-all resize-none"></textarea>
+                    </div>
+
+                    <!-- Email Field -->
+                    <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-l-teal-400">
+                        <label class="block text-lg font-semibold text-gray-800 mb-3">7. Your Email Address <span class="text-red-500">*</span></label>
+                        <input type="email" name="user_email" placeholder="Enter your email address..." required class="w-full p-3 border-2 border-gray-200 rounded-lg focus:border-teal-400 focus:outline-none transition-all">
+                        <p class="text-sm text-gray-500 mt-2">We'll use this to follow up on your feedback if needed</p>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="text-center pt-4">
+                        <button type="submit" class="bg-gradient-to-r from-indigo-600 to-blue-600 text-white px-8 py-3 rounded-lg hover:from-indigo-700 hover:to-blue-700 font-semibold text-lg transition-all shadow-lg hover:shadow-xl transform hover:scale-105">
+                            📤 Submit Feedback
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
