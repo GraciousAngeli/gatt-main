@@ -1046,10 +1046,10 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Send survey via EmailJS - using the same pattern as Contact form
             console.log('Sending survey data:', templateParams);
-            console.log('Service ID:', 'service_l7tgzys');
-            console.log('Template ID:', 'template_ni8iegk');
+            console.log('Service ID:', 'service_5koq38i');
+            console.log('Template ID:', 'template_y0okyee');
             
-            emailjs.send('service_l7tgzys', 'template_ni8iegk', templateParams)
+            emailjs.send('service_5koq38i', 'template_y0okyee', templateParams)
                 .then(function(response) {
                     console.log('Survey EmailJS success:', response.status, response.text);
                     showNotification('✅ Thank you for your feedback! We appreciate your input and will use it to improve our services.', 'success');
@@ -1118,10 +1118,10 @@ if (contactForm) {
         };
         
         console.log('Sending contact form data:', templateParams);
-        console.log('Service ID:', 'service_l7tgzys');
-        console.log('Template ID:', 'template_ld0fd4g');
+        console.log('Service ID:', 'service_5koq38i');
+        console.log('Template ID:', 'template_uc9hdxs');
         
-        emailjs.send('service_l7tgzys', 'template_ld0fd4g', templateParams)
+        emailjs.send('service_5koq38i', 'template_uc9hdxs', templateParams)
             .then(function(response) {
                 console.log('EmailJS success:', response.status, response.text);
                 showNotification('✅ Thank you for your message! We will get back to you soon.', 'success');
@@ -1140,8 +1140,8 @@ if (contactForm) {
                     text: error.text,
                     response: error.response
                 });
-                console.log('Service ID:', 'service_l7tgzys');
-                console.log('Template ID:', 'template_ld0fd4g');
+                console.log('Service ID:', 'service_5koq38i');
+                console.log('Template ID:', 'template_uc9hdxs');
                 console.log('Template Params:', templateParams);
                 showNotification('❌ Sorry, there was an error sending your message. Please try again or contact us directly.', 'error');
                 submitButton.innerHTML = 'Send Message';
@@ -1174,7 +1174,7 @@ function testEmailJS() {
     
     console.log('Sending test data:', templateParams);
     
-    emailjs.send('service_l7tgzys', 'template_ni8iegk', templateParams)
+    emailjs.send('service_5koq38i', 'template_y0okyee', templateParams)
         .then(function(response) {
             console.log('✅ Test EmailJS success:', response.status, response.text);
             alert('Test email sent successfully! Check your email.');
@@ -1202,7 +1202,7 @@ function testContactEmailJS() {
     
     console.log('Sending test contact data:', templateParams);
     
-    emailjs.send('service_l7tgzys', 'template_ld0fd4g', templateParams)
+    emailjs.send('service_5koq38i', 'template_uc9hdxs', templateParams)
         .then(function(response) {
             console.log('✅ Test Contact EmailJS success:', response.status, response.text);
             alert('Test contact email sent successfully! Check your email.');
@@ -1233,7 +1233,7 @@ function debugEmailJS() {
     }
     
     // Test service connection
-    emailjs.send('service_l7tgzys', 'template_ld0fd4g', {
+    emailjs.send('service_5koq38i', 'template_uc9hdxs', {
         from_name: 'Debug Test',
         from_email: 'debug@test.com',
         subject: 'Debug Test',
