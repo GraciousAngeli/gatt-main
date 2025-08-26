@@ -1388,9 +1388,7 @@ Please provide information about:
 • Work opportunities during studies
 
 Thank you for your assistance.
-
-Best regards,
-[Your Name]`;
+`;
             } else if (packageType === 'canada') {
                 subject = 'Study Abroad Inquiry - Canada';
                 message = `Hello,
@@ -1411,9 +1409,7 @@ Please provide information about:
 • Post-graduation work opportunities
 
 Thank you for your assistance.
-
-Best regards,
-[Your Name]`;
+`;
             } else if (packageType === 'philippines') {
                 subject = 'Philippines Travel Inquiry';
                 message = `Hello,
@@ -1434,9 +1430,7 @@ Please provide information about:
 • Booking process and requirements
 
 Thank you for your assistance.
-
-Best regards,
-[Your Name]`;
+`;
             }
             
             if (messageField && message) {
