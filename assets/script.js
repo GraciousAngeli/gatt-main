@@ -77,45 +77,23 @@ const travelPackages = {
         {
             country: 'TOKYO - JAPAN',
             location: 'ASIA',
-            duration: '4 DAYS 3 NIGHTS',
+            duration: '5 DAYS 4 NIGHTS',
             minPax: 'MIN OF 2 PAX',
             price: 'Start at 49,999/Pax',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Tokyo, Japan.png',
-            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Half Day City Tour', 'Visa Surcharge', 'Travel Tax'],
-            exclusions: ['Roundtrip Flight Ticket', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours', 'Other Personal Expenses']
-        },
-        // Japan - Hokkaido
-        {
-            country: 'JAPAN - HOKKAIDO',
-            location: 'ASIA',
-            duration: '4 DAYS 3 NIGHTS',
-            minPax: 'MIN OF 2 PAX',
-            price: 'Start at 49,999/Pax',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Hokkaido, Japan.png',
-            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Halfday City Tour', 'Visa Surcharge', 'Travel Tax'],
-            exclusions: ['Roundtrip Flight Ticket', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours', 'Other Personal Expenses']
-        },
-        // Japan - Kyoto
-        {
-            country: 'JAPAN - KYOTO',
-            location: 'ASIA',
-            duration: '4 DAYS 3 NIGHTS',
-            minPax: 'MIN OF 2 PAX',
-            price: 'Start at 49,999/Pax',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Kyoto, Japan.png',
-            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Half Day City Tour', 'Visa Surcharge', 'Travel Tax'],
-            exclusions: ['Roundtrip Flight Ticket', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours', 'Other Personal Expenses']
+            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', '2 Whole Day Tours', 'Travel Tax'],
+            exclusions: ['Roundtrip Flight Ticket', 'Visa Surcharge', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours', 'Other Personal Expenses']
         },
         // Japan - Osaka
         {
-            country: 'JAPAN - OSAKA',
+            country: 'JAPAN - OSAKA - KYOTO - NARA',
             location: 'ASIA',
-            duration: '4 DAYS 3 NIGHTS',
+            duration: '5 DAYS 4 NIGHTS',
             minPax: 'MIN OF 2 PAX',
             price: 'Start at 49,999/Pax',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Osaka, Japan.png',
-            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Half Day City Tour', 'Visa Surcharge', 'Travel Tax'],
-            exclusions: ['Roundtrip Flight Ticket', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours', 'Other Personal Expenses']
+            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Half Day City Tour',  'Travel Tax'],
+            exclusions: ['Roundtrip Flight Ticket', 'Visa Surcharge', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours', 'Other Personal Expenses']
         },
         // Hong Kong - Free & Easy
         {
