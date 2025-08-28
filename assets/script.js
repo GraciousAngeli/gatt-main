@@ -31,8 +31,8 @@ const travelPackages = {
         },
         // Vietnam - Da Nang
         {
-            country: 'DA NANG',
-            location: 'ASIA - VIETNAM',
+            country: 'VIETNAM - DA NANG',
+            location: 'ASIA',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
             price: 'Start at 12,999/Pax',
@@ -42,8 +42,8 @@ const travelPackages = {
         },
         // Vietnam - Ha Noi
         {
-            country: 'HA NOI',
-            location: 'ASIA - VIETNAM',
+            country: 'VIETNAM - HA NOI',
+            location: 'ASIA',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
             price: 'Start at 13,999/Pax',
@@ -53,8 +53,8 @@ const travelPackages = {
         },
         // Vietnam - Sapa
         {
-            country: 'SAPA',
-            location: 'ASIA - VIETNAM',
+            country: 'VIETNAM - SAPA',
+            location: 'ASIA',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
             price: 'Start at 18,999/Pax',
@@ -84,13 +84,13 @@ const travelPackages = {
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', '2 Whole Day Tours', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Visa Surcharge', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours', 'Other Personal Expenses']
         },
-        // Japan - Osaka
+        // Japan - Osaka - kyoto - nara
         {
             country: 'JAPAN - OSAKA - KYOTO - NARA',
             location: 'ASIA',
             duration: '5 DAYS 4 NIGHTS',
             minPax: 'MIN OF 2 PAX',
-            price: 'Start at 49,999/Pax',
+            price: 'Start at 39,999/Pax',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Osaka, Japan.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Half Day City Tour',  'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Visa Surcharge', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours', 'Other Personal Expenses']
@@ -428,7 +428,7 @@ const travelPackages = {
             minPax: 'MIN OF 2 PAX',
             price: '12,999',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Roxas City.png',
-            inclusions: ['Hotel Accommodation', 'Daily Breakfast', 'All Transfers', 'Environmental & Entrance Fees', 'City Tour'],
+            inclusions: ['Hotel Accommodation', 'Daily Breakfast', 'All Transfers', 'Island Hopping', 'Land Tours'],
             exclusions: ['Roundtrip Airfare Ticket', 'Lunch and Dinner', 'Other Personal Expenses', 'Tips']
         }
     ]
