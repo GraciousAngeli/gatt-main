@@ -443,6 +443,59 @@ let currentPackageSlides = {
 
 
 
+// Helper function to determine font size based on country count for Europe packages
+function getEuropeFontSize(countryText) {
+    const countryCount = countryText.split(',').length;
+    
+    if (countryCount <= 2) {
+        return 'text-2xl font-extrabold'; // Extra large font for 2 or fewer countries
+    } else if (countryCount <= 3) {
+        return 'text-xl font-bold'; // Large font for 3 countries (one line)
+    } else if (countryCount <= 5) {
+        return 'text-lg font-semibold'; // Medium font for 4-5 countries (2-3 lines)
+    } else if (countryCount <= 7) {
+        return 'text-base font-medium'; // Base font for 6-7 countries (3-4 lines)
+    } else {
+        return 'text-sm font-medium'; // Small font for 8+ countries (3-4 lines)
+    }
+}
+
+// Helper function to format country text for Europe packages
+function formatEuropeCountryText(countryText, countryCount) {
+    if (countryCount <= 3) {
+        // For 3 or fewer countries, keep them on one line
+        return countryText;
+    } else if (countryCount <= 7) {
+        // For 4-7 countries, break after every 2 countries (2-4 lines max)
+        const countries = countryText.split(',').map(c => c.trim());
+        let formatted = '';
+        for (let i = 0; i < countries.length; i++) {
+            formatted += countries[i];
+            if (i < countries.length - 1) {
+                formatted += ', ';
+                if ((i + 1) % 2 === 0) {
+                    formatted += '<br>';
+                }
+            }
+        }
+        return formatted;
+    } else {
+        // For 8+ countries, break after every 3 countries (3-4 lines max)
+        const countries = countryText.split(',').map(c => c.trim());
+        let formatted = '';
+        for (let i = 0; i < countries.length; i++) {
+            formatted += countries[i];
+            if (i < countries.length - 1) {
+                formatted += ', ';
+                if ((i + 1) % 3 === 0) {
+                    formatted += '<br>';
+                }
+            }
+        }
+        return formatted;
+    }
+}
+
 // Render Packages
 function renderPackages(category) {
     const packages = travelPackages[category];
@@ -462,9 +515,9 @@ function renderPackages(category) {
     // Render each package card
     packages.forEach((pkg, index) => {
         const cardElement = document.createElement('div');
-        cardElement.className = `package-card bg-white rounded-lg shadow-lg border-2 border-gray-200 overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-xl ${category === 'europe' ? 'min-w-[220px]' : 'min-w-[280px]'} flex-shrink-0`;
+        cardElement.className = `package-card bg-white rounded-lg shadow-lg border-2 border-gray-200 overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-xl ${category === 'europe' ? 'min-w-[380px] max-w-[450px] h-[600px]' : 'min-w-[280px]'} flex-shrink-0 flex flex-col`;
         cardElement.setAttribute('data-index', index);
-        cardElement.style.display = 'block'; // Ensure visibility
+        cardElement.style.display = 'flex'; // Ensure visibility and proper flex layout
         
         cardElement.innerHTML = `
             <div class="relative">
@@ -472,31 +525,40 @@ function renderPackages(category) {
                 <div class="absolute top-2 left-2 bg-white px-2 py-1 rounded text-xs font-bold text-indigo-600">${pkg.location}</div>
             </div>
             
-            <div class="p-4">
-                <h3 class="font-bold text-lg text-center text-gray-800 mb-2 border-b border-gray-200 pb-2">${pkg.country}</h3>
-                <p class="text-sm text-center text-gray-600 mb-4">${pkg.duration} | ${pkg.minPax}</p>
-                
-                <div class="grid grid-cols-2 gap-2 mb-4 text-xs">
-                    <div class="border border-green-200 rounded-lg p-2 bg-green-50">
-                        <h5 class="font-semibold text-green-600 mb-1">INCLUSION</h5>
-                        <ul class="text-gray-600 space-y-0.5">
-                            ${pkg.inclusions.slice(0, 5).map(item => `<li>• ${item}</li>`).join('')}
-                        </ul>
+            <div class="${category === 'europe' ? 'p-4 flex flex-col h-full' : 'p-4'}">
+                <div class="${category === 'europe' ? 'flex-grow flex flex-col' : ''}">
+                    <h3 class="${category === 'europe' ? getEuropeFontSize(pkg.country) : 'font-bold text-lg'} text-center text-gray-800 mb-2 border-b border-gray-200 pb-2 ${category === 'europe' ? 'leading-tight min-h-[64px] flex items-center justify-center px-2' : ''}">${category === 'europe' ? formatEuropeCountryText(pkg.country, pkg.country.split(',').length) : pkg.country}</h3>
+                    <div class="text-center mb-4">
+                        <div class="inline-flex items-center gap-2 bg-gradient-to-r from-blue-100 to-indigo-100 px-3 py-2 rounded-lg border border-blue-200">
+                            <span class="text-xs text-blue-600 font-semibold">⏱️</span>
+                            <span class="text-sm font-bold text-blue-700">${pkg.duration}</span>
+                            <span class="text-xs text-gray-400">|</span>
+                            <span class="text-xs text-gray-600">${pkg.minPax}</span>
+                        </div>
                     </div>
-                    <div class="border border-red-200 rounded-lg p-2 bg-red-50">
-                        <h5 class="font-semibold text-red-600 mb-1">EXCLUSION</h5>
-                        <ul class="text-gray-600 space-y-0.5">
-                            ${pkg.exclusions.slice(0, 5).map(item => `<li>• ${item}</li>`).join('')}
-                        </ul>
+                    
+                    <div class="grid grid-cols-2 gap-2 mb-4 text-xs ${category === 'europe' ? 'flex-1' : ''}">
+                        <div class="border border-green-200 rounded-lg p-2 bg-green-50">
+                            <h5 class="font-semibold text-green-600 mb-1">INCLUSION</h5>
+                            <ul class="text-gray-600 space-y-0.5">
+                                ${pkg.inclusions.slice(0, 5).map(item => `<li>• ${item}</li>`).join('')}
+                            </ul>
+                        </div>
+                        <div class="border border-red-200 rounded-lg p-2 bg-red-50">
+                            <h5 class="font-semibold text-red-600 mb-1">EXCLUSION</h5>
+                            <ul class="text-gray-600 space-y-0.5">
+                                ${pkg.exclusions.slice(0, 5).map(item => `<li>• ${item}</li>`).join('')}
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="flex gap-2">
+                <div class="flex gap-2 ${category === 'europe' ? 'mt-auto flex-shrink-0' : ''}" style="display: flex !important; visibility: visible !important;">
                     <div class="bg-gradient-to-r ${getPriceColor(pkg.location)} text-white py-2 px-3 rounded-lg font-bold text-sm flex-1 flex items-center justify-center">
                         START AT ${pkg.price} /PAX
                     </div>
                     <button onclick="bookSpecificTour('${pkg.country}', '${pkg.price}')" 
-                            class="bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition-all font-semibold whitespace-nowrap">
+                            class="bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition-all font-semibold whitespace-nowrap min-w-[100px]">
                         📞 Book Now
                     </button>
                 </div>
