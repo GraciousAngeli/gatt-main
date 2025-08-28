@@ -424,9 +424,13 @@ button:focus, input:focus, textarea:focus {
     flex-direction: column;
 }
 
-/* Ensure Europe package cards have consistent layout */
+/* Ensure Europe and Philippines package cards have consistent layout */
 .package-card[style*="h-[600px]"] {
     height: 600px !important;
+}
+
+.package-card[style*="h-[580px]"] {
+    height: 580px !important;
 }
 
 .package-card .p-4 {
