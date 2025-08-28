@@ -92,8 +92,8 @@ const travelPackages = {
             minPax: 'MIN OF 2 PAX',
             price: 'Start at 39,999/Pax',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Osaka, Japan.png',
-            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Half Day City Tour',  'Travel Tax'],
-            exclusions: ['Roundtrip Flight Ticket', 'Visa Surcharge', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours', 'Other Personal Expenses']
+            inclusions: ['Hotel Accommodation', 'Airport Transfer', 'Half Day City Tour',  'Travel Tax'],
+            exclusions: ['Roundtrip Flight Ticket', 'Meals', 'Visa Surcharge', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours', 'Other Personal Expenses']
         },
         // Hong Kong - Free & Easy
         {
