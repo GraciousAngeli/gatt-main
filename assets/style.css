@@ -399,3 +399,57 @@ button:focus, input:focus, textarea:focus {
         margin-top: 4rem !important; /* 64px for mobile */
     }
 }
+
+/* Europe Package Cards - Uniform styling */
+.package-card h3 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+/* Europe package text container styling */
+.europe-country-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.2;
+    height: 100%;
+    width: 100%;
+}
+
+/* Uniform card heights for Europe packages */
+.package-card {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ensure Europe package cards have consistent layout */
+.package-card[style*="h-[600px]"] {
+    height: 600px !important;
+}
+
+.package-card .p-4 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Europe package specific layout for button alignment */
+.package-card .h-full {
+    height: 100% !important;
+}
+
+.package-card .flex-grow {
+    flex-grow: 1;
+}
+
+.package-card .flex-shrink-0 {
+    flex-shrink: 0;
+}
+
+/* Make sure inclusion/exclusion grid fills available space in Europe cards */
+.package-card .grid.flex-1 {
+    align-content: start;
+    flex: 1;
+}
