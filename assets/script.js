@@ -157,7 +157,7 @@ const travelPackages = {
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
             price: 'Start at 19,999/Pax',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Singapore.png',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/DUBAI.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Transfers', 'Half Day City Tour', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Visa Surcharge', 'Travel Insurance', 'Compulsory Tipping', 'Optional Tours', 'Other Personal Expenses']
         },
@@ -190,7 +190,7 @@ const travelPackages = {
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
             price: '15,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Dubai.png',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/singapore.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Transfers', 'Half Day City Tour', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Any Surcharge', 'Travel Insurance', 'Compulsory Tipping', 'Optional Tours', 'Other Personal Expenses']
         }
@@ -405,7 +405,7 @@ const travelPackages = {
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
             price: '24,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Puerto Prinsesa & El NIdo.png',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/BATANES.png',
             inclusions: ['Hotel Accommodation (Mid-Range Hotel)', 'Full Board Meals', 'All Transfers', 'Batan North Private Tour', 'Batan South Private Tour', 'Sabtang Island Tour', 'DOT Tourguide', 'Travel Tax'],
             exclusions: ['Roundtrip Airfare Ticket', 'Any Kind of Tips', 'Other Personal Expenses',]
         },
@@ -416,7 +416,7 @@ const travelPackages = {
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
             price: '9,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Camiguin.png',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/ILOILO.png',
             inclusions: ['Hotel Accommodation', 'Daily Breakfast', 'Airport Transfers', 'Environmental & Entrance Fees', 'Half Day City Tour'],
             exclusions: ['Roundtrip Airfare Ticket', 'Lunch and Dinner', 'Other Personal Expenses', 'Tips']
         },
@@ -427,7 +427,7 @@ const travelPackages = {
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
             price: '10,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Iloilo.png',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/ROXAS CITY.png',
             inclusions: ['Hotel Accommodation', 'Daily Breakfast', 'ALL Transfers', 'whole Day Tour', 'DOT Tourguide', 'Tax Inclusive'],
             exclusions: ['Roundtrip Airfare Ticket', 'Lunch and Dinner', 'Other Personal Expenses', 'Tips']
         },
@@ -438,7 +438,7 @@ const travelPackages = {
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
             price: '12,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Roxas City.png',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/SIARGAO.png',
             inclusions: ['Hotel Accommodation', 'Daily Breakfast', 'All Transfers', 'Island Hopping', 'Land Tours'],
             exclusions: ['Roundtrip Airfare Ticket', 'Lunch and Dinner', 'Other Personal Expenses', 'Tips']
         }
