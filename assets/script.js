@@ -182,6 +182,17 @@ const travelPackages = {
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Thailand.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Temple Hopping', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Any Surcharge', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours', 'Other Personal Expenses']
+        },
+        // Singapore
+        {
+            country: 'SINGAPORE',
+            location: 'ASIA',
+            duration: '4 DAYS 3 NIGHTS',
+            minPax: 'MIN OF 2 PAX',
+            price: '15,999',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Dubai.png',
+            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Transfers', 'Half Day City Tour', 'Travel Tax'],
+            exclusions: ['Roundtrip Flight Ticket', 'Any Surcharge', 'Travel Insurance', 'Compulsory Tipping', 'Optional Tours', 'Other Personal Expenses']
         }
     ],
     
