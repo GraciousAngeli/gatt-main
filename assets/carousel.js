@@ -1,8 +1,37 @@
-  // Reviews Carousel
+// Reviews Carousel
 const CarouselSystem = {
     reviews: [],
     currentIndex: 0,
     slidesToShow: window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1,
+
+    setReviews(reviewsData) {
+        this.reviews = reviewsData;
+        this.renderReviews();
+        this.updateDots();
+    },
+
+    renderReviews() {
+        if (!this.track) return;
+        
+        this.track.innerHTML = this.reviews.map((review, index) => `
+            <div class="review-slide min-w-full md:min-w-[50%] lg:min-w-[33.333%] p-3">
+                <div class="bg-white p-6 rounded-xl shadow-lg border-2 border-blue-200 hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-1">
+                            <h4 class="font-bold text-lg text-gray-800">${review.name}</h4>
+                            <div class="flex items-center">
+                                ${'★'.repeat(review.rating)}${'☆'.repeat(5 - review.rating)}
+                            </div>
+                        </div>
+                        <div class="text-sm text-gray-500">${review.date}</div>
+                    </div>
+                    <p class="text-gray-600">${review.text}</p>
+                </div>
+            </div>
+        `).join('');
+
+        this.updateSlidePositions();
+    },
 
     init() {
         this.track = document.querySelector('.review-track');

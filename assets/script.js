@@ -1,5 +1,46 @@
 // Custom Scripts for Gracious Angeli Travel & Tours
 
+// Reviews Data
+const customerReviews = [
+    {
+        name: "Vicnet Mark Ignacio",
+        rating: 5,
+        text: "Such a great and quick response for my requested documents. Thank you for patiently answering my queries and for preparing my requirements on time.",
+        date: "2024-01-15"
+    },
+    {
+        name: "Abelle Orbegoso",
+        rating: 5,
+        text: "Thank you so much for such a good service, quick response and very patient in answering our queries. From flight tickets to hotel bookings, highly recommended!",
+        date: "2024-01-14"
+    },
+    {
+        name: "Jerico Landong",
+        rating: 5,
+        text: "Very professional and accommodating staff. They helped me process my South Korea visa and it was approved! Special thanks to Ms. Krystal.",
+        date: "2024-01-12"
+    },
+    {
+        name: "Wendy Moreno",
+        rating: 5,
+        text: "Very reliable agency! I got my Visa approved. Thank you so much! 100% recommended.",
+        date: "2024-01-10"
+    },
+    {
+        name: "Regine del Rosario",
+        rating: 5,
+        text: "I highly recommend this travel agency! They helped me get my Korean Visa and I got approved right away. Very accommodating and responsive staff.",
+        date: "2024-01-08"
+    }
+];
+
+// Initialize reviews on page load
+document.addEventListener('DOMContentLoaded', () => {
+    if (CarouselSystem && typeof CarouselSystem.setReviews === 'function') {
+        CarouselSystem.setReviews(customerReviews);
+    }
+});
+
 // EmailJS Configuration - Now initialized in HTML file
 
 // Google Maps Directions Function
