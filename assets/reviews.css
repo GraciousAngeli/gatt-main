@@ -1,0 +1,64 @@
+/* Reviews Carousel Styles */
+.review-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.review-slide {
+    flex-shrink: 0;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.review-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #e2e8f0;
+    border: none;
+    margin: 0 4px;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+.review-dot.active {
+    background-color: #4f46e5;
+    transform: scale(1.2);
+}
+
+.review-prev,
+.review-next {
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.review-track:hover ~ .review-prev,
+.review-track:hover ~ .review-next,
+.review-prev:hover,
+.review-next:hover {
+    opacity: 1;
+}
+
+@media (max-width: 640px) {
+    .review-prev,
+    .review-next {
+        display: none;
+    }
+}
+
+/* Review card hover effects */
+.review-slide > div {
+    transition: all 0.3s ease;
+}
+
+.review-slide > div:hover {
+    transform: translateY(-5px);
+}

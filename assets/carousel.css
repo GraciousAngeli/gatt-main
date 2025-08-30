@@ -1,0 +1,72 @@
+/* Reviews Carousel Styles */
+.review-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.review-slide {
+    flex-shrink: 0;
+    padding: 1rem;
+}
+
+.review-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #e2e8f0;
+    border: none;
+    margin: 0 4px;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+.review-dot.active {
+    background-color: #4f46e5;
+    transform: scale(1.2);
+}
+
+/* Navigation button hover effects */
+.review-prev,
+.review-next {
+    transition: all 0.3s ease;
+    opacity: 0.7;
+}
+
+.review-prev:hover,
+.review-next:hover {
+    opacity: 1;
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* Hide navigation on mobile */
+@media (max-width: 640px) {
+    .review-prev,
+    .review-next {
+        display: none;
+    }
+}
+
+/* Review card animations */
+.review-slide {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Smooth scroll snap */
+.review-track {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+}
+
+.review-slide {
+    scroll-snap-align: start;
+}

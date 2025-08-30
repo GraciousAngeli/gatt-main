@@ -1,0 +1,75 @@
+/* Rating System Styles */
+.star-rating {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.star {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.star:hover {
+    transform: scale(1.2);
+}
+
+/* Rating Bars */
+.rating-bar {
+    transition: width 0.3s ease-in-out;
+}
+
+/* Form Styles */
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}
+
+/* Recent Reviews Animation */
+.review-card {
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Star Rating Hover Effect */
+.star-rating .star {
+    position: relative;
+}
+
+.star-rating .star::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 35px;
+    height: 35px;
+    background: rgba(250, 204, 21, 0.2);
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+.star-rating .star:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Rating Statistics Animation */
+.rating-bar {
+    animation: growWidth 1s ease-out;
+    transform-origin: left;
+}
+
+@keyframes growWidth {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+}
