@@ -352,11 +352,12 @@
                     <!-- Rating Statistics -->
                     <div class="bg-white p-8 rounded-lg shadow-lg">
                         <h3 class="text-2xl font-bold mb-6 text-gray-800">Customer Reviews</h3>
+                        <!-- Average Rating Display -->
                         <div class="flex items-center gap-4 mb-8">
                             <div class="average-rating text-4xl font-bold text-yellow-400">5.0</div>
                             <div>
                                 <div class="flex text-2xl text-yellow-400">★★★★★</div>
-                                <div class="total-ratings text-gray-600">21 Ratings</div>
+                                <div class="total-ratings text-gray-600">5,143 Total Reviews</div>
                             </div>
                         </div>
                         
@@ -365,38 +366,59 @@
                             <div class="flex items-center gap-2">
                                 <span class="w-12 text-sm text-gray-600">FIVE</span>
                                 <div class="flex-1 h-4 bg-gray-200 rounded-full overflow-hidden">
-                                    <div class="h-full bg-yellow-400 rounded-full" style="width: 85%;"></div>
+                                    <div class="h-full bg-yellow-400 rounded-full" style="width: 95%;"></div>
                                 </div>
                                 <span class="w-12 text-sm text-gray-600 text-right">569</span>
                             </div>
                             <div class="flex items-center gap-2">
                                 <span class="w-12 text-sm text-gray-600">FOUR</span>
                                 <div class="flex-1 h-4 bg-gray-200 rounded-full overflow-hidden">
-                                    <div class="h-full bg-yellow-400 rounded-full" style="width: 65%;"></div>
+                                    <div class="h-full bg-yellow-400 rounded-full" style="width: 85%;"></div>
                                 </div>
                                 <span class="w-12 text-sm text-gray-600 text-right">4.5K</span>
                             </div>
                             <div class="flex items-center gap-2">
                                 <span class="w-12 text-sm text-gray-600">THREE</span>
                                 <div class="flex-1 h-4 bg-gray-200 rounded-full overflow-hidden">
-                                    <div class="h-full bg-yellow-400 rounded-full" style="width: 25%;"></div>
+                                    <div class="h-full bg-yellow-400 rounded-full" style="width: 15%;"></div>
                                 </div>
                                 <span class="w-12 text-sm text-gray-600 text-right">50</span>
                             </div>
                             <div class="flex items-center gap-2">
                                 <span class="w-12 text-sm text-gray-600">TWO</span>
                                 <div class="flex-1 h-4 bg-gray-200 rounded-full overflow-hidden">
-                                    <div class="h-full bg-yellow-400 rounded-full" style="width: 15%;"></div>
+                                    <div class="h-full bg-yellow-400 rounded-full" style="width: 5%;"></div>
                                 </div>
                                 <span class="w-12 text-sm text-gray-600 text-right">16</span>
                             </div>
                             <div class="flex items-center gap-2">
                                 <span class="w-12 text-sm text-gray-600">ONE</span>
                                 <div class="flex-1 h-4 bg-gray-200 rounded-full overflow-hidden">
-                                    <div class="h-full bg-yellow-400 rounded-full" style="width: 5%;"></div>
+                                    <div class="h-full bg-yellow-400 rounded-full" style="width: 2%;"></div>
                                 </div>
                                 <span class="w-12 text-sm text-gray-600 text-right">8</span>
                             </div>
+
+                        <!-- Review Card Carousel -->
+                        <div class="mt-8">
+                            <h4 class="text-xl font-semibold mb-4">What Our Customers Say</h4>
+                            <div class="relative">
+                                <div class="review-track flex gap-4 overflow-x-hidden">
+                                    <!-- Reviews will be dynamically populated here -->
+                                </div>
+                                <button class="review-prev absolute left-0 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-lg">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                                    </svg>
+                                </button>
+                                <button class="review-next absolute right-0 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-lg">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="review-dots flex justify-center gap-2 mt-4"></div>
+                        </div>
                         </div>
                     </div>
 

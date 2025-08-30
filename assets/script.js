@@ -1,38 +1,156 @@
 // Custom Scripts for Gracious Angeli Travel & Tours
 
-// Reviews Data
+// Reviews Data and Statistics
+const reviewStats = {
+    fiveStars: 569,
+    fourStars: 4500,
+    threeStars: 50,
+    twoStars: 16,
+    oneStars: 8
+};
+
+// Total reviews: 5143
 const customerReviews = [
+    // 5-star reviews (showing 21 of the 569)
     {
-        name: "Vicnet Mark Ignacio",
+        name: "Shain Joy Pigao",
         rating: 5,
-        text: "Such a great and quick response for my requested documents. Thank you for patiently answering my queries and for preparing my requirements on time.",
+        text: "Highly recommended travel agency",
+        date: "2024-01-21"
+    },
+    {
+        name: "Marvie Cariaga Tomas",
+        rating: 5,
+        text: "Highly recommended Travel agency",
+        date: "2024-01-20"
+    },
+    {
+        name: "Rastine Maddumba",
+        rating: 5,
+        text: "Highly recommended Travel agency ❤️",
+        date: "2024-01-19"
+    },
+    {
+        name: "Jonathan Ricona",
+        rating: 5,
+        text: "Trusted Agency highly recommended",
+        date: "2024-01-18"
+    },
+    {
+        name: "Noela De Vera",
+        rating: 5,
+        text: "Highly recommended Travel agency! Love it 😊✈️",
+        date: "2024-01-17"
+    },
+    {
+        name: "KlydeClarence Labitan",
+        rating: 5,
+        text: "Smooth transaction and thank you for kindness talagang pinagkakatiwalaan 🥰",
+        date: "2024-01-16"
+    },
+    {
+        name: "Escombien Rocky",
+        rating: 5,
+        text: "Highly recommend Travel Agency ❤️ Thank you so much for your trusted services.",
         date: "2024-01-15"
     },
     {
-        name: "Abelle Orbegoso",
+        name: "Kristen Caroline Labitan",
         rating: 5,
-        text: "Thank you so much for such a good service, quick response and very patient in answering our queries. From flight tickets to hotel bookings, highly recommended!",
+        text: "Highly recommend Travel Agency ❤️ Thank you so much for your trusted services.",
         date: "2024-01-14"
     },
     {
-        name: "Jerico Landong",
+        name: "Novie Regs",
         rating: 5,
-        text: "Very professional and accommodating staff. They helped me process my South Korea visa and it was approved! Special thanks to Ms. Krystal.",
+        text: "Highly recommend Travel Agency ❤️. Thank you so much for your trusted services.",
+        date: "2024-01-13"
+    },
+    {
+        name: "Vicnet Mark Ignacio",
+        rating: 5,
+        text: "Highly recommended Travel Agency ❤️ Thank you so much for your trusted services.",
         date: "2024-01-12"
     },
     {
-        name: "Wendy Moreno",
+        name: "Letty Aguirre Peralta",
         rating: 5,
-        text: "Very reliable agency! I got my Visa approved. Thank you so much! 100% recommended.",
+        text: "I highly recommend gracious angeli travel and tours, santiago. They will turn your trip into an unforgettable experience!",
+        date: "2024-01-11"
+    },
+    {
+        name: "Lorence Traspe",
+        rating: 5,
+        text: "Impeccable agency and meticulous planning for stress-free travel. Highly recommend!",
         date: "2024-01-10"
     },
     {
-        name: "Regine del Rosario",
+        name: "Johm Bueno",
         rating: 5,
-        text: "I highly recommend this travel agency! They helped me get my Korean Visa and I got approved right away. Very accommodating and responsive staff.",
+        text: "Highly recommend, so book now. ❤️",
+        date: "2024-01-09"
+    },
+    {
+        name: "Jennyvieve De Leon",
+        rating: 5,
+        text: "emphasis on safety and security for worry-free exploration",
         date: "2024-01-08"
+    },
+    {
+        name: "Yokul Sunico",
+        rating: 5,
+        text: "awesome! smooth transaction, thanks for the kindness and good services.",
+        date: "2024-01-07"
+    },
+    {
+        name: "Norz Vicente",
+        rating: 5,
+        text: "Smooth and fast transaction. Highly recommend",
+        date: "2024-01-06"
+    },
+    {
+        name: "Raye Lestnaire Vicente",
+        rating: 5,
+        text: "Smooth and fast transaction. Highly recommend. thank you so much for your kindness and good services 🥰",
+        date: "2024-01-05"
+    },
+    {
+        name: "Shin Lamuel Sevilla",
+        rating: 5,
+        text: "Highly recommend travel agency. Thank you so much for your trusted services",
+        date: "2024-01-04"
+    },
+    {
+        name: "Ka Jaymar Andaya",
+        rating: 5,
+        text: "Highly recommended guys. Try niyo sa kanila para hassle free travel niyo",
+        date: "2024-01-03"
+    },
+    {
+        name: "Gloria Sacatani",
+        rating: 5,
+        text: "Impeccable agency and meticulous planning for stress-free travel. Highly recommend!",
+        date: "2024-01-02"
+    },
+    {
+        name: "Fernando Sacatani Jr.",
+        rating: 5,
+        text: "Smooth and fast transaction. High recommend!!!",
+        date: "2024-01-01"
     }
 ];
+
+// Calculate average rating
+const totalReviews = reviewStats.fiveStars + reviewStats.fourStars + 
+                    reviewStats.threeStars + reviewStats.twoStars + 
+                    reviewStats.oneStars;
+const averageRating = (
+    (5 * reviewStats.fiveStars) +
+    (4 * reviewStats.fourStars) +
+    (3 * reviewStats.threeStars) +
+    (2 * reviewStats.twoStars) +
+    (1 * reviewStats.oneStars)
+) / totalReviews;
 
 // Initialize reviews on page load
 document.addEventListener('DOMContentLoaded', () => {
