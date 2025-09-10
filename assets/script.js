@@ -190,7 +190,7 @@ const travelPackages = {
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
             price: '15,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/singapore.png',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Singapore.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Transfers', 'Half Day City Tour', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Any Surcharge', 'Travel Insurance', 'Compulsory Tipping', 'Optional Tours', 'Other Personal Expenses']
         }
