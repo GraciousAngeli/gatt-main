@@ -24,7 +24,7 @@ const travelPackages = {
             location: 'ASIA',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
-            price: 'Start at 19,999/Pax',
+            price: '19,999',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Taiwan.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Taipei City Tour', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours', 'Other Personal Expenses']
@@ -35,7 +35,7 @@ const travelPackages = {
             location: 'ASIA',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
-            price: 'Start at 12,999/Pax',
+            price: '12,999',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Vietnaman Da Nang.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Ba Na Hills Tour', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours', 'Other Personal Expenses']
@@ -46,7 +46,7 @@ const travelPackages = {
             location: 'ASIA',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
-            price: 'Start at 13,999/Pax',
+            price: '13,999',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Vietnam Ha Noi.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'City Tour', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours', 'Other Personal Expenses']
@@ -57,7 +57,7 @@ const travelPackages = {
             location: 'ASIA',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
-            price: 'Start at 18,999/Pax',
+            price: '18,999',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Sapa.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Trekking Tour', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours', 'Other Personal Expenses']
@@ -68,7 +68,7 @@ const travelPackages = {
             location: 'ASIA - FREE & EASY',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
-            price: 'Start at 9,999/Pax',
+            price: '9,999',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Indonesia Bali.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Half Day City Tour', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours', 'Other Personal Expenses']
@@ -79,7 +79,7 @@ const travelPackages = {
             location: 'ASIA',
             duration: '5 DAYS 4 NIGHTS',
             minPax: 'MIN OF 2 PAX',
-            price: 'Start at 49,999/Pax',
+            price: '49,999',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Tokyo, Japan.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', '2 Whole Day Tours', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Visa Surcharge', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours', 'Other Personal Expenses']
@@ -90,7 +90,7 @@ const travelPackages = {
             location: 'ASIA',
             duration: '5 DAYS 4 NIGHTS',
             minPax: 'MIN OF 2 PAX',
-            price: 'Start at 39,999/Pax',
+            price: '39,999',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Osaka, Japan.png',
             inclusions: ['Hotel Accommodation', 'Airport Transfer', 'Half Day City Tour',  'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Meals', 'Visa Surcharge', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours', 'Other Personal Expenses']
@@ -101,7 +101,7 @@ const travelPackages = {
             location: 'ASIA',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
-            price: 'Start at 12,999/Pax',
+            price: '12,999',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Hongkong Free&Easy.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Half Day City Tour', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Any Surcharge', 'Travel Insurance', 'Compulsory Tipping', 'Other Personal Expenses']
@@ -112,7 +112,7 @@ const travelPackages = {
             location: 'ASIA',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
-            price: 'Start at 16,999/Pax',
+            price: '16,999',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Hongkong OceanPark.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Half Day City Tour', 'Ocean Park', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Any Surcharge', 'Travel Insurance', 'Compulsory Tipping', 'Other Personal Expenses']
@@ -123,7 +123,7 @@ const travelPackages = {
             location: 'ASIA',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
-            price: 'Start at 19,999/Pax',
+            price: '19,999',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Hongkong Disneyland.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Half Day City Tour', 'Disneyland', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Any Surcharge', 'Travel Insurance', 'Compulsory Tipping', 'Other Personal Expenses']
@@ -134,7 +134,7 @@ const travelPackages = {
             location: 'ASIA',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
-            price: 'Start at 19,999/Pax',
+            price: '19,999',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Hongkong Macau.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfers', 'Half Day City Tour', 'Macau Tour with Lunch', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Any Surcharge', 'Travel Insurance', 'Compulsory Tipping', 'Other Personal Expenses']
@@ -145,7 +145,7 @@ const travelPackages = {
             location: 'ASIA',
             duration: '5 DAYS 4 NIGHTS',
             minPax: 'MIN OF 2 PAX',
-            price: 'Start at 39,999/Pax',
+            price: '39,999',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/South Korea.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'City Tour', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Visa Surcharge', 'Travel Insurance', 'Compulsory Tipping', 'Other Personal Expenses']
@@ -156,7 +156,7 @@ const travelPackages = {
             location: 'ASIA',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
-            price: 'Start at 19,999/Pax',
+            price: '19,999',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/DUBAI.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Transfers', 'Half Day City Tour', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Visa Surcharge', 'Travel Insurance', 'Compulsory Tipping', 'Optional Tours', 'Other Personal Expenses']
@@ -568,9 +568,9 @@ function renderPackages(category) {
                     <div class="bg-gradient-to-r ${getPriceColor(pkg.location)} text-white py-2 px-3 rounded-lg font-bold text-sm flex-1 flex items-center justify-center">
                         START AT ${pkg.price} /PAX
                     </div>
-                    <button onclick="bookSpecificTour('${pkg.country}', '${pkg.price}')" 
+                    <button onclick="bookSpecificTour('${pkg.country}', '${pkg.price}')"
                             class="bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition-all font-semibold whitespace-nowrap min-w-[100px]">
-                        📞 Book Now
+                        <img src="assets/GATT WEBSITE UPDATES/ICONS/book-now.png" alt="Book Now" class="inline w-4 h-4 mr-1"> Book Now
                     </button>
                 </div>
             </div>
