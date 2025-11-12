@@ -29,13 +29,39 @@
     <link rel="stylesheet" href="assets/style.css">
          <!-- Back to Top Button CSS moved to external stylesheet -->
     <script>
-        // Video scroll control
+        // Video control on tab change
         document.addEventListener('DOMContentLoaded', function() {
             const video = document.getElementById('golfVideo');
             if (!video) return;
 
-            // Function to handle video visibility
+            // Store original showTab function
+            const originalShowTab = window.showTab;
+            
+            // Override showTab to control video
+            window.showTab = function(tabName) {
+                // Always pause and mute video when switching tabs
+                if (video) {
+                    video.pause();
+                    video.muted = true;
+                }
+                
+                // Call original function
+                if (originalShowTab) {
+                    originalShowTab.call(this, tabName);
+                }
+            };
+
+            // Function to handle video visibility on scroll
             const handleVideoVisibility = () => {
+                const homeTab = document.getElementById('home');
+                
+                // Only play if home tab is active
+                if (!homeTab || homeTab.classList.contains('hidden') || !homeTab.classList.contains('active')) {
+                    video.pause();
+                    video.muted = true;
+                    return;
+                }
+                
                 const rect = video.getBoundingClientRect();
                 const isVisible = (
                     rect.top >= 0 &&
@@ -132,7 +158,7 @@
                            <!-- Golf Package -->
        <div class="flex flex-col group">
            <div class="rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105">
-               <video id="golfVideo" class="w-full h-[600px] object-cover" autoplay loop playsinline>
+               <video id="golfVideo" class="w-full h-[600px] object-cover" autoplay loop playsinline preload="auto">
                    <source src="assets/GATT WEBSITE UPDATES/HOME/golf-vid.mp4" type="video/mp4">
                </video>
            </div>
