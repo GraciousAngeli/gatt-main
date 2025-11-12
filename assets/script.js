@@ -206,7 +206,7 @@ const travelPackages = {
             price: '125,999',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe - Blue Line.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Transfers', 'Tours (Tagalog)', 'Guided Tours', 'Travel Tax'],
-            exclusions: ['Roundtrip Flight Ticket', 'Other Personal Expenses', 'Travel Insurance', 'Optional Tours', 'Tipping', 'Hotel City Tax']
+            exclusions: ['Roundtrip Flight Ticket', 'Other Personal Expenses', 'Visa Fees', 'Optional Tours', 'Tipping', 'Hotel City Tax']
         },
         // Blue + Red Line
         {
