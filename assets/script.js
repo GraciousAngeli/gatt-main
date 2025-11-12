@@ -204,9 +204,9 @@ const travelPackages = {
             duration: '10 DAYS',
             minPax: 'MIN OF 2 PAX',
             price: '125,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe - Blue Line.png',
-            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Transfers', 'Tours (Tagalog)', 'Guided Tours', 'Travel Tax'],
-            exclusions: ['Roundtrip Flight Ticket', 'Other Personal Expenses', 'Travel Insurance', 'Optional Tours', 'Tipping', 'Hotel City Tax']
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe/Blue Line.png',
+            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Airport Transfers', 'Tour Activities', 'Guided Tours(English)', 'Travel Tax'],
+            exclusions: ['Roundtrip Flight Ticket', 'Other Personal Expenses', 'Visa Fee', 'Optional Tours', 'Tippings', 'Hotel City Tax']
         },
         // Blue + Red Line
         {
@@ -215,9 +215,9 @@ const travelPackages = {
             duration: '17 DAYS',
             minPax: 'MIN OF 2 PAX',
             price: '180,840',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe - Blue - Red Line.png',
-            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Transfers', 'Tours (Tagalog)', 'Guided Tours', 'Travel Tax'],
-            exclusions: ['Roundtrip Flight Ticket', 'Other Personal Expenses', 'Travel Insurance', 'Optional Tours', 'Tipping', 'Hotel City Tax']
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe/Blue_Red Line.png',
+            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Airport Transfers', 'Tour Activities', 'Guided Tours(English)', 'Travel Tax'],
+            exclusions: ['Roundtrip Flight Ticket', 'Other Personal Expenses', 'Visa Fee', 'Optional Tours', 'Tippings', 'Hotel City Tax']
         },
         // Yellow Line - Portugal, Spain, Morocco
         {
@@ -226,9 +226,9 @@ const travelPackages = {
             duration: '12 DAYS',
             minPax: 'MIN OF 2 PAX',
             price: '165,250',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe - Yellow Line 12 Days.png',
-            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Transfers', 'Tours (Tagalog)', 'Guided Tours', 'Travel Tax'],
-            exclusions: ['Roundtrip Flight Ticket', 'Other Personal Expenses', 'Travel Insurance', 'Optional Tours', 'Tipping', 'Hotel City Tax']
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe/Yellow Line 12 Days.png',
+            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Airport Transfers', 'Tour Acivities', 'Guided Tours(English)', 'Travel Tax'],
+            exclusions: ['Roundtrip Flight Ticket', 'Other Personal Expenses', 'Visa Fee', 'Optional Tours', 'Tippings', 'Hotel City Tax']
         },
         // Yellow Line - Spain, Portugal
         {
@@ -237,9 +237,9 @@ const travelPackages = {
             duration: '10 DAYS',
             minPax: 'MIN OF 2 PAX',
             price: '125,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe - Yellow Line 10 Days.png',
-            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Transfers', 'Tours (Tagalog)', 'Guided Tours', 'Travel Tax'],
-            exclusions: ['Roundtrip Flight Ticket', 'Other Personal Expenses', 'Travel Insurance', 'Optional Tours', 'Tipping', 'Hotel City Tax']
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe/Yellow Line 10 Days.png',
+            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Airport Transfers', 'Tour Activities', 'Guided Tours(English)', 'Travel Tax'],
+            exclusions: ['Roundtrip Flight Ticket', 'Other Personal Expenses', 'Visa Fee', 'Optional Tours', 'Tippings', 'Hotel City Tax']
         },
         // Green Line - Switzerland, Monaco, Vatican City, France, Italy
         {
@@ -248,8 +248,8 @@ const travelPackages = {
             duration: '10 DAYS',
             minPax: 'MIN OF 2 PAX',
             price: '125,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe - Green Line.png',
-            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Airport Transfer', 'Tours (English)', 'Guided Tours', 'Travel Tax'],
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe/Green Line.png',
+            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Airport Transfer', 'Tour Activities', 'Guided Tours(English)', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Other Personal Expenses', 'Visa Fee', 'Optional Tours', 'Tippings', 'Hotel City Tax']
         },
         // Orange Line - France, Spain, Andorra
@@ -259,8 +259,8 @@ const travelPackages = {
             duration: '10 DAYS',
             minPax: 'MIN OF 2 PAX',
             price: '125,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe - Orange Line.png',
-            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Airport Transfer', 'Tours (English)', 'Guided Tours', 'Travel Tax'],
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe/Orange Line.png',
+            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Airport Transfer', 'Tour Activities', 'Guided Tours(English)', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Other Personal Expenses', 'Visa Fee', 'Optional Tours', 'Tippings', 'Hotel City Tax']
         },
         // Red Line - Luxembourg, France, Belgium, Germany, Netherlands
@@ -270,8 +270,8 @@ const travelPackages = {
             duration: '12 DAYS',
             minPax: 'MIN OF 2 PAX',
             price: '165,250',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe - Red Line.png',
-            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Airport Transfer', 'Tours (English)', 'Guided Tours', 'Travel Tax'],
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe/Red Line.png',
+            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Airport Transfer', 'Tour Activities', 'Guided Tours(English)', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Other Personal Expenses', 'Visa Fee', 'Optional Tours', 'Tippings', 'Hotel City Tax']
         },
         // Pink Line - Denmark, Sweden, Norway
@@ -281,8 +281,8 @@ const travelPackages = {
             duration: '10 DAYS',
             minPax: 'MIN OF 2 PAX',
             price: '125,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe - Pink Line.png',
-            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Airport Transfer', 'Tours (English)', 'Guided Tours', 'Travel Tax'],
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe/Pink Line.png',
+            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Airport Transfer', 'Tour Activities', 'Guided Tours(English)', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Other Personal Expenses', 'Visa Fee', 'Optional Tours', 'Tippings', 'Hotel City Tax']
         }
     ],
