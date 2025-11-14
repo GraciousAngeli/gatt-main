@@ -18,159 +18,82 @@ function openGoogleMaps(destination) {
 //dito ka mag eedit ng packages
 const travelPackages = {
     asia: [
-        // Taiwan
-        {
-            country: 'TAIWAN',
-            location: 'ASIA',
-            duration: '4 DAYS 3 NIGHTS',
-            minPax: 'MIN OF 2 PAX',
-            price: '19,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Taiwan.png',
-            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Taipei City Tour', 'Travel Tax'],
-            exclusions: ['Roundtrip Flight Ticket', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours', 'Other Personal Expenses']
-        },
-        // Vietnam - Da Nang
-        {
-            country: 'VIETNAM - DA NANG',
-            location: 'ASIA',
-            duration: '4 DAYS 3 NIGHTS',
-            minPax: 'MIN OF 2 PAX',
-            price: '12,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Vietnaman Da Nang.png',
-            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Ba Na Hills Tour', 'Travel Tax'],
-            exclusions: ['Roundtrip Flight Ticket', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours', 'Other Personal Expenses']
-        },
-        // Vietnam - Ha Noi
-        {
-            country: 'VIETNAM - HA NOI',
-            location: 'ASIA',
-            duration: '4 DAYS 3 NIGHTS',
-            minPax: 'MIN OF 2 PAX',
-            price: '13,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Vietnam Ha Noi.png',
-            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'City Tour', 'Travel Tax'],
-            exclusions: ['Roundtrip Flight Ticket', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours', 'Other Personal Expenses']
-        },
-        // Vietnam - Sapa
-        {
-            country: 'VIETNAM - SAPA',
-            location: 'ASIA',
-            duration: '4 DAYS 3 NIGHTS',
-            minPax: 'MIN OF 2 PAX',
-            price: '18,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Sapa.png',
-            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Trekking Tour', 'Travel Tax'],
-            exclusions: ['Roundtrip Flight Ticket', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours', 'Other Personal Expenses']
-        },
-        // Indonesia - Bali
-        {
-            country: 'INDONESIA - BALI',
-            location: 'ASIA - FREE & EASY',
-            duration: '4 DAYS 3 NIGHTS',
-            minPax: 'MIN OF 2 PAX',
-            price: '9,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Indonesia Bali.png',
-            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Half Day City Tour', 'Travel Tax'],
-            exclusions: ['Roundtrip Flight Ticket', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours', 'Other Personal Expenses']
-        },
-        // Japan - Tokyo
-        {
-            country: 'TOKYO - JAPAN',
-            location: 'ASIA',
-            duration: '5 DAYS 4 NIGHTS',
-            minPax: 'MIN OF 2 PAX',
-            price: '49,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Tokyo, Japan.png',
-            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', '2 Whole Day Tours', 'Travel Tax'],
-            exclusions: ['Roundtrip Flight Ticket', 'Visa Surcharge', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours', 'Other Personal Expenses']
-        },
-        // Japan - Osaka - kyoto - nara
-        {
-            country: 'JAPAN - OSAKA - KYOTO - NARA',
-            location: 'ASIA',
-            duration: '5 DAYS 4 NIGHTS',
-            minPax: 'MIN OF 2 PAX',
-            price: '39,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Osaka, Japan.png',
-            inclusions: ['Hotel Accommodation', 'Airport Transfer', 'Half Day City Tour',  'Travel Tax'],
-            exclusions: ['Roundtrip Flight Ticket', 'Meals', 'Visa Surcharge', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours', 'Other Personal Expenses']
-        },
         // Hong Kong - Free & Easy
         {
-            country: 'HONGKONG - FREE & EASY',
-            location: 'ASIA',
+            country: 'FREE & EASY',
+            location: 'ASIA - HONGKONG',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
             price: '12,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Hongkong Free&Easy.png',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Asia/Free & Easy Hongkong.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Half Day City Tour', 'Travel Tax'],
-            exclusions: ['Roundtrip Flight Ticket', 'Any Surcharge', 'Travel Insurance', 'Compulsory Tipping', 'Other Personal Expenses']
+            exclusions: ['Roundtrip Flight Ticket', 'Any Surcharge', 'Travel Insurance', 'Compulsory Tippings', 'Other Personal Expenses']
         },
         // Hong Kong - Ocean Park
         {
-            country: 'HONGKONG - OCEAN PARK',
-            location: 'ASIA',
+            country: 'OCEAN PARK',
+            location: 'ASIA - HONGKONG',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
             price: '16,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Hongkong OceanPark.png',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Asia/Ocean Park Hongkong.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Half Day City Tour', 'Ocean Park', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Any Surcharge', 'Travel Insurance', 'Compulsory Tipping', 'Other Personal Expenses']
         },
         // Hong Kong - Disneyland
         {
-            country: 'HONGKONG - DISNEYLAND',
-            location: 'ASIA',
+            country: 'DISNEYLAND',
+            location: 'ASIA - HONGKONG',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
             price: '19,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Hongkong Disneyland.png',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Asia/Disneyland Hongkong.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Half Day City Tour', 'Disneyland', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Any Surcharge', 'Travel Insurance', 'Compulsory Tipping', 'Other Personal Expenses']
         },
         // Hong Kong - Macau
         {
-            country: 'HONGKONG - MACAU',
-            location: 'ASIA',
+            country: 'MACAU',
+            location: 'ASIA - HONGKONG',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
             price: '19,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Hongkong Macau.png',
-            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfers', 'Half Day City Tour', 'Macau Tour with Lunch', 'Travel Tax'],
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Asia/Macau Hongkong.png',
+            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfers', 'Half Day City Tour', 'Macau', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Any Surcharge', 'Travel Insurance', 'Compulsory Tipping', 'Other Personal Expenses']
         },
-        // South Korea
+        // Vietnam - Da Nang
         {
-            country: 'SOUTH KOREA',
-            location: 'ASIA',
-            duration: '5 DAYS 4 NIGHTS',
+            country: 'DA NANG',
+            location: 'ASIA - VIETNAM',
+            duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
-            price: '39,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/South Korea.png',
+            price: '12,999',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Asia/Da Nang Vietnam.png',
+            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Ba Na Hills Tour', 'Travel Tax'],
+            exclusions: ['Roundtrip Flight Ticket', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours']
+        },
+        // Vietnam - Ha Noi
+        {
+            country: 'HA NOI',
+            location: 'ASIA - VIETNAM',
+            duration: '4 DAYS 3 NIGHTS',
+            minPax: 'MIN OF 2 PAX',
+            price: '13,999',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Asia/Ha Noi Vietnam.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'City Tour', 'Travel Tax'],
-            exclusions: ['Roundtrip Flight Ticket', 'Visa Surcharge', 'Travel Insurance', 'Compulsory Tipping', 'Other Personal Expenses']
+            exclusions: ['Roundtrip Flight Ticket', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours']
         },
-        // Dubai
+        // Vietnam - Sapa
         {
-            country: 'DUBAI',
-            location: 'ASIA',
+            country: 'SAPA',
+            location: 'ASIA - VIETNAM',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
-            price: '19,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/DUBAI.png',
-            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Transfers', 'Half Day City Tour', 'Travel Tax'],
-            exclusions: ['Roundtrip Flight Ticket', 'Visa Surcharge', 'Travel Insurance', 'Compulsory Tipping', 'Optional Tours', 'Other Personal Expenses']
-        },
-        // Malaysia
-        {
-            country: 'MALAYSIA',
-            location: 'ASIA',
-            duration: '4 DAYS 3 NIGHTS',
-            minPax: 'MIN OF 2 PAX',
-            price: '11,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Malaysia.png',
-            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfers', 'City Tour', 'Travel Tax'],
-            exclusions: ['Roundtrip Flight Ticket', 'Any Surcharge', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours', 'Other Personal Expenses']
+            price: '18,999',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Asia/Sapa Vietnam.png',
+            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Trekking Tour', 'Travel Tax'],
+            exclusions: ['Roundtrip Flight Ticket', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours']
         },
         // Thailand
         {
@@ -179,9 +102,86 @@ const travelPackages = {
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
             price: '14,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Thailand.png',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Asia/Thailand.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Temple Hopping', 'Travel Tax'],
-            exclusions: ['Roundtrip Flight Ticket', 'Any Surcharge', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours', 'Other Personal Expenses']
+            exclusions: ['Roundtrip Flight Ticket', 'Any Surcharge', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours']
+        },
+        // Japan - Tokyo
+        {
+            country: 'JAPAN',
+            location: 'ASIA',
+            duration: '5 DAYS 4 NIGHTS',
+            minPax: 'MIN OF 2 PAX',
+            price: '49,999',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Asia/Japan.png',//note
+            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Whole Day Tours', 'Travel Tax'],
+            exclusions: ['Roundtrip Flight Ticket', 'Visa Surcharge', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner']
+        },
+        // South Korea
+        {
+            country: 'SOUTH KOREA',
+            location: 'ASIA',
+            duration: '5 DAYS 4 NIGHTS',
+            minPax: 'MIN OF 2 PAX',
+            price: '39,999',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Asia/South Korea.png',
+            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Whole-day Tours', 'Travel Tax'],
+            exclusions: ['Roundtrip Flight Ticket', 'Visa Surcharge', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner']
+        },
+        // Dubai
+        {
+            country: 'DUBAI',
+            location: 'ASIA',
+            duration: '7 DAYS 6 NIGHTS',
+            minPax: 'MIN OF 2 PAX',
+            price: '50,999',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Asia/Dubai.png',
+            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Transfers', 'Whole-day Tours', 'Travel Tax'],
+            exclusions: ['Roundtrip Flight Ticket', 'Visa Surcharge', 'Travel Insurance', 'Tips/Gratuities', 'Optional Tours', 'Lunch and Dinner']
+        },
+        // Israel
+        {
+            country: 'ISRAEL',
+            location: 'ASIA',
+            duration: '7 DAYS 6 NIGHTS',
+            minPax: 'MIN OF 2 PAX',
+            price: '50,999',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Asia/Israel.png',
+            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Transfers', 'Whole-day Tours', 'Travel Tax'],
+            exclusions: ['Roundtrip Flight Ticket', 'Visa Surcharge', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours']
+        },
+        // Taiwan
+        {
+            country: 'TAIWAN',
+            location: 'ASIA',
+            duration: '4 DAYS 3 NIGHTS',
+            minPax: 'MIN OF 2 PAX',
+            price: '19,999',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Asia/Taiwan.png',
+            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Taipei City Tour', 'Travel Tax'],
+            exclusions: ['Roundtrip Flight Ticket', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours']
+        },
+        // Malaysia
+        {
+            country: 'MALAYSIA',
+            location: 'ASIA',
+            duration: '4 DAYS 3 NIGHTS',
+            minPax: 'MIN OF 2 PAX',
+            price: '11,999',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Asia/Malaysia.png',
+            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfers', 'City Tour', 'Travel Tax'],
+            exclusions: ['Roundtrip Flight Ticket', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours']
+        },
+        // Indonesia - Bali
+        {
+            country: 'BALI',
+            location: 'ASIA - INDONESIA',
+            duration: '4 DAYS 3 NIGHTS',
+            minPax: 'MIN OF 2 PAX',
+            price: '9,999',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Asia/Bali Indonesia.png',
+            inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Half Day City Tour', 'Travel Tax'],
+            exclusions: ['Roundtrip Flight Ticket', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours']
         },
         // Singapore
         {
@@ -190,9 +190,9 @@ const travelPackages = {
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
             price: '15,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Singapore.png',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Asia/Singapore.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Transfers', 'Half Day City Tour', 'Travel Tax'],
-            exclusions: ['Roundtrip Flight Ticket', 'Any Surcharge', 'Travel Insurance', 'Compulsory Tipping', 'Optional Tours', 'Other Personal Expenses']
+            exclusions: ['Roundtrip Flight Ticket', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours']
         }
     ],
     
@@ -288,159 +288,176 @@ const travelPackages = {
     ],
     
     philippines: [
-        // Dumaguete
-        {
-            country: 'DUMAGUETE',
-            location: 'PHILIPPINES',
-            duration: '4 DAYS 3 NIGHTS',
-            minPax: 'MIN OF 2 PAX',
-            price: '9,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Dumaguete.png',
-            inclusions: ['Hotel Accommodation', 'Daily Breakfast', 'All Transfers', 'Environmental & Entrance Fees', 'City Tour'],
-            exclusions: ['Roundtrip Airfare Ticket', 'Lunch and Dinner','Any Kind Tips', 'Other Personal Expenses']
-        },
-        // Dumaguete & Siquijor
-        {
-            country: 'DUMAGUETE & SIQUIJOR',
-            location: 'PHILIPPINES',
-            duration: '4 DAYS 3 NIGHTS',
-            minPax: 'MIN OF 2 PAX',
-            price: '16,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Dumaguete & Siquijor.png',
-            inclusions: ['Hotel Accommodation', 'Daily Breakfast', 'All Transfers', 'Environmental & Entrance Fees'],
-            exclusions: ['Roundtrip Airfare Ticket', 'Lunch and Dinner', 'Any Kind of Tips', 'Other Personal Expenses']
-        },
-        // Boracay
-        {
-            country: 'BORACAY',
-            location: 'PHILIPPINES',
-            duration: '4 DAYS 3 NIGHTS',
-            minPax: 'MIN OF 2 PAX',
-            price: '9,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Boracay.png',
-            inclusions: ['Hotel Accommodation', 'Daily Breakfast', 'All Transfers', 'Island Hopping', 'Land Tours'],
-            exclusions: ['Roundtrip Airfare Ticket', 'Lunch and Dinner', 'Any Kind of Tips', 'Other Personal Expenses']
-        },
-        // Cebu
-        {
-            country: 'CEBU',
-            location: 'PHILIPPINES',
-            duration: '4 DAYS 3 NIGHTS',
-            minPax: 'MIN OF 2 PAX',
-            price: '11,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Cebu.png',
-            inclusions: ['Hotel Accommodation', 'Daily Breakfast', 'All Transfers', 'Environmental & Entrance Fees', 'Cebu City and Mountain Tour'],
-            exclusions: ['Roundtrip Airfare Ticket', 'Lunch and Dinner', 'Any Kind of Tips', 'Other Personal Expenses', 'Tips']
-        },
-        // Bohol
-        {
-            country: 'BOHOL',
-            location: 'PHILIPPINES',
-            duration: '4 DAYS 3 NIGHTS',
-            minPax: 'MIN OF 2 PAX',
-            price: '12,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Bohol.png',
-            inclusions: ['Hotel Accommodation', 'Daily Breakfast', 'All Transfers', 'Environmental & Entrance Fees', 'Bohol Tour'],
-            exclusions: ['Roundtrip Airfare Ticket', 'Lunch and Dinner', 'Other Personal Expenses', 'Tips']
-        },
-        // Cebu & Bohol
-        {
-            country: 'CEBU & BOHOL',
-            location: 'PHILIPPINES',
-            duration: '4 DAYS 3 NIGHTS',
-            minPax: 'MIN OF 2 PAX',
-            price: '19,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Cebu & Bohol.png',
-            inclusions: ['Hotel Accommodation', 'Daily Breakfast', 'All Transfers', 'Environmental & Entrance Fees', 'Bohol Countryside Tour', 'Cebu City and Mountain Tour'],
-            exclusions: ['Roundtrip Airfare Ticket', 'Lunch and Dinner', 'Other Personal Expenses', 'Tips']
-        },
-        // Puerto Princesa
+        // PUERTO PRINCESA
         {
             country: 'PUERTO PRINCESA',
             location: 'PHILIPPINES - PALAWAN',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
             price: '8,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/PUERTO PRINCESA.png',
-            inclusions: ['Hotel Accommodation', 'Daily Breakfast', 'All Transfers', 'Environmental & Entrance Fees', 'Underground River', 'City Tour'],
-            exclusions: ['Roundtrip Airfare Ticket', 'Lunch and Dinner', 'Other Personal Expenses', 'Tips']
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/Puerto Princesa.png',
+            inclusions: ['Hotel Accommodation', 'Daily Breakfast', 'All Transfers', 'Environmental & Entrance Fees', 'Underground River','City Tour'],
+            exclusions: ['Roundtrip Airfare Ticket', 'Lunch and Dinner','Other Personal Expenses', 'Tips']
         },
-        // El Nido
+        // EL NIDO
         {
             country: 'EL NIDO',
             location: 'PHILIPPINES - PALAWAN',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
             price: '10,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Palawan El Nido.png',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/El Nido.png',
             inclusions: ['Hotel Accommodation', 'Daily Breakfast', 'All Transfers', 'Environmental & Entrance Fees', 'Island Hopping Tour A', 'Island Hopping Tour D'],
             exclusions: ['Roundtrip Airfare Ticket', 'Lunch and Dinner', 'Other Personal Expenses', 'Tips']
         },
-        // Coron
+        // CORON
         {
             country: 'CORON',
             location: 'PHILIPPINES - PALAWAN',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
             price: '12,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Palawan Coron.png',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/Coron.png',
             inclusions: ['Hotel Accommodation', 'Daily Breakfast', 'All Transfers', 'Environmental & Entrance Fees', 'Coron Island Tour A', 'Town Tour'],
             exclusions: ['Roundtrip Airfare Ticket', 'Lunch and Dinner', 'Other Personal Expenses', 'Tips']
         },
-        // Puerto Princesa & El Nido
+        // PUERTO PRINCESA & EL NIDO
         {
             country: 'PUERTO PRINCESA & EL NIDO',
             location: 'PHILIPPINES - PALAWAN',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
             price: '12,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Puerto Prinsesa & El NIdo.png',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/Cebu.png',
             inclusions: ['Hotel Accommodation', 'Daily Breakfast', 'All Transfers', 'Environmental & Entrance Fees', 'Underground River and City Tour', 'Island Hopping Tour A'],
             exclusions: ['Roundtrip Airfare Ticket', 'Lunch and Dinner', 'Other Personal Expenses', 'Tips']
         },
-        // Batanes
+        // BORACAY
+        {
+            country: 'BORACAY',
+            location: 'PHILIPPINES',
+            duration: '4 DAYS 3 NIGHTS',
+            minPax: 'MIN OF 2 PAX',
+            price: '9,999',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/Boracay.png',
+            inclusions: ['Hotel Accommodation', 'Daily Breakfast', 'All Transfers', 'Environmental & Entrance Fees', 'City Tour'],
+            exclusions: ['Roundtrip Airfare Ticket', 'Lunch and Dinner', 'Other Personal Expenses', 'Tips']
+        },
+        // CEBU
+        {
+            country: 'CEBU',
+            location: 'PHILIPPINES',
+            duration: '4 DAYS 3 NIGHTS',
+            minPax: 'MIN OF 2 PAX',
+            price: '11,999',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/Cebu.png',
+            inclusions: ['Hotel Accommodation', 'Daily Breakfast', 'All Transfers', 'Environmental & Entrance Fees', 'Cebu City and Mountain Tour'],
+            exclusions: ['Roundtrip Airfare Ticket', 'Lunch and Dinner', 'Other Personal Expenses', 'Tips']
+        },
+        // CEBU & BOHOL
+        {
+            country: 'CEBU & BOHOL',
+            location: 'PHILIPPINES',
+            duration: '4 DAYS 3 NIGHTS',
+            minPax: 'MIN OF 2 PAX',
+            price: '19,999',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/Bohol.png',
+            inclusions: ['Hotel Accommodation', 'Daily Breakfast', 'All Transfers', 'Environmental & Entrance Fees', 'Bohol Countryside Tour', 'Cebu City and Mountain Tour'],
+            exclusions: ['Roundtrip Airfare Ticket', 'Lunch and Dinner', 'Other Personal Expenses', 'Tips']
+        },
+        // BATANES
         {
             country: 'BATANES',
             location: 'PHILIPPINES',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
             price: '24,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/BATANES.png',
-            inclusions: ['Hotel Accommodation (Mid-Range Hotel)', 'Full Board Meals', 'All Transfers', 'Batan North Private Tour', 'Batan South Private Tour', 'Sabtang Island Tour', 'DOT Tourguide', 'Travel Tax'],
-            exclusions: ['Roundtrip Airfare Ticket', 'Any Kind of Tips', 'Other Personal Expenses',]
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/Batanes.png',
+            inclusions: ['Hotel Accommodation (Mid-Range Hotel)', 'All Transfers','Full Board Meals', 'Batan North Private Tour', 'Batan South Private Tour', 'Sabtang Island Tour', 'DOT Tourguide', 'Travel Tax'],
+            exclusions: ['Roundtrip Airfare Ticket', 'Optional Tours', 'Any kind of Tippings', 'Other Personal Expenses']
         },
-        // Iloilo
+        // ROXAS
         {
-            country: 'ILOILO',
-            location: 'PHILIPPINES',
-            duration: '4 DAYS 3 NIGHTS',
-            minPax: 'MIN OF 2 PAX',
-            price: '9,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/ILOILO.png',
-            inclusions: ['Hotel Accommodation', 'Daily Breakfast', 'Airport Transfers', 'Environmental & Entrance Fees', 'Half Day City Tour'],
-            exclusions: ['Roundtrip Airfare Ticket', 'Lunch and Dinner', 'Other Personal Expenses', 'Tips']
-        },
-        // Roxas City
-        {
-            country: 'ROXAS CITY',
+            country: 'ROXAS',
             location: 'PHILIPPINES',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
             price: '10,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/ROXAS CITY.png',
-            inclusions: ['Hotel Accommodation', 'Daily Breakfast', 'ALL Transfers', 'whole Day Tour', 'DOT Tourguide', 'Tax Inclusive'],
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/Roxas.png',
+            inclusions: ['Hotel Accommodation', 'Daily Breakfast', 'All Transfers', 'Whole Day Tour', 'DOT Tourguide'],
             exclusions: ['Roundtrip Airfare Ticket', 'Lunch and Dinner', 'Other Personal Expenses', 'Tips']
         },
-        // Siargao 
+        // ILO-ILO
+        {
+            country: 'ILO-ILO',
+            location: 'PHILIPPINES',
+            duration: '4 DAYS 3 NIGHTS',
+            minPax: 'MIN OF 2 PAX',
+            price: '9,999',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/ILOILO.png',
+            inclusions: ['Hotel Accommodation', 'Daily Breakfast', 'All Transfers', 'Environmental & Entrance Fees', 'Half Day City Tour'],
+            exclusions: ['Roundtrip Airfare Ticket', 'Lunch and Dinner', 'Other Personal Expenses', 'Tips']
+        },
+        // SIARGAO
         {
             country: 'SIARGAO',
             location: 'PHILIPPINES',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
             price: '12,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/SIARGAO.png',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/Siargao.png',
             inclusions: ['Hotel Accommodation', 'Daily Breakfast', 'All Transfers', 'Island Hopping', 'Land Tours'],
             exclusions: ['Roundtrip Airfare Ticket', 'Lunch and Dinner', 'Other Personal Expenses', 'Tips']
+        },
+        // BAGUIO - ATOK -BENGUET
+        {
+            country: 'BAGUIO - ATOK - BENGUET',
+            location: 'PHILIPPINES - CORDILLERA',
+            duration: '10 HOURS',
+            price: '5,000',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/Baguio-Atok Benguet.png',
+            inclusions: ['Professional Driver', 'Vehicle Rental', 'Trip Fuel', 'Parking Fees', 'Driver Fee','Accomodation Pick up & Drop Baguio'],
+            exclusions: ['5,000 (1-4 PAX)', '6,000 (5-6 PAX)', '7,000 (7-9 PAX)', '7,500 (10-14 PAX)', '12,000 (15-24 PAX)']
+        },
+        // ATOK, BENGUET
+        {
+            country: 'ATOK, BENGUET',
+            location: 'PHILIPPINES - CORDILLERA',
+            duration: '10 HOURS',
+            price: '4,500',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/Atok Benguet.png',
+            inclusions: ['Professional Driver', 'Vehicle Rental', 'Trip Fuel', 'Parking Fees', 'Driver Fee','Accomodation Pick up & Drop Baguio'],
+            exclusions: ['5,000 (1-4 PAX)', '5,500 (5-6 PAX)', '6,000 (7-9 PAX)', '6,500 (10-14 PAX)', '11,000 (15-24 PAX)']
+        },
+        // BAGUIO & LA TRINIDAD 
+        {
+            country: 'BAGUIO & LA TRINIDAD',
+            location: 'PHILIPPINES - CORDILLERA',
+            duration: '8 HOURS',
+            price: '4,500',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/Baguio_La Trinidad.png',
+            inclusions: ['Professional Driver', 'Vehicle Rental', 'Trip Fuel', 'Parking Fees', 'Driver Fee','Accomodation Pick up & Drop Baguio'],
+            exclusions: ['4,500 (1-4 PAX)', '5,500 (5-6 PAX)', '6,000 (7-9 PAX)', '6,500 (10-14 PAX)', '9,000 (15-24 PAX)']
+        },
+        // BAGUIO - ATOK - TRINIDAD
+        {
+            country: 'BAGUIO - ATOK - TRINIDAD',
+            location: 'PHILIPPINES - CORDILLERA',
+            duration: '10 HOURS',
+            price: '5,000',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/Baguio-Atok Benguet.png',
+            inclusions: ['Professional Driver', 'Vehicle Rental', 'Trip Fuel', 'Parking Fees', 'Driver Fee','Accomodation Pick up & Drop Baguio'],
+            exclusions: ['5,000 (1-4 PAX)', '6,000 (5-6 PAX)', '7,000 (7-9 PAX)', '7,500 (10-14 PAX)', '12,000 (15-24 PAX)']
+        },
+        //BAGUIO CITY
+        {
+            country: 'BAGUIO CITY',
+            location: 'PHILIPPINES - CORDILLERA',
+            duration: '8 HOURS',
+            price: '3,500',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/Baguio City.png',
+            inclusions: ['Professional Driver', 'Vehicle Rental', 'Trip Fuel', 'Parking Fees', 'Driver Fee','Accomodation Pick up & Drop Baguio'],
+            exclusions: ['3,500 (1-4 PAX)', '4,500 (5-6 PAX)', '5,000 (7-9 PAX)', '6,000 (10-14 PAX)', '8,000 (15-24 PAX)']
         }
     ]
 };
@@ -530,6 +547,38 @@ function renderPackages(category) {
         cardElement.setAttribute('data-index', index);
         cardElement.style.display = 'flex'; // Ensure visibility and proper flex layout
         
+        // Determine right column label and items: use `rates` if provided, otherwise fall back to `exclusions`.
+        let rightLabel = 'EXCLUSION';
+        let rightLabelClass = 'text-red-600';
+        let rightBg = 'bg-red-50';
+        let rightBorder = 'border-red-200';
+        let rightItems = pkg.exclusions || [];
+
+        if (pkg.rates && Array.isArray(pkg.rates) && pkg.rates.length) {
+            rightLabel = 'RATES';
+            rightLabelClass = 'text-indigo-600';
+            rightBg = 'bg-indigo-50';
+            rightBorder = 'border-indigo-200';
+            rightItems = pkg.rates;
+        } else if (pkg.exclusions && pkg.exclusions.length) {
+            // If exclusions look like numeric rate entries (start with a number), treat them as rates
+            const firstExcl = String(pkg.exclusions[0]).trim();
+            if (/^[0-9\s\.,]+/.test(firstExcl) || /^\d/.test(firstExcl)) {
+                rightLabel = 'RATES';
+                rightLabelClass = 'text-indigo-600';
+                rightBg = 'bg-indigo-50';
+                rightBorder = 'border-indigo-200';
+                rightItems = pkg.exclusions;
+            }
+        }
+
+        // Determine what to show in the minPax area. If the package duration contains hours and minPax is a "MIN" label,
+        // prefer showing the duration (e.g., "10 HOURS") instead of "MIN OF 2 PAX".
+        let minPaxDisplay = pkg.minPax || '';
+        if (pkg.duration && /HOUR/i.test(pkg.duration) && /MIN\s*OF/i.test(String(pkg.minPax))) {
+            minPaxDisplay = pkg.duration;
+        }
+
         cardElement.innerHTML = `
             <div class="relative">
                 <img src="${pkg.image}" alt="${pkg.country}" class="w-full h-48 object-cover" onerror="this.src='https://via.placeholder.com/400x300/cccccc/666666?text=${encodeURIComponent(pkg.country)}'">
@@ -544,7 +593,7 @@ function renderPackages(category) {
                             <span class="text-xs text-blue-600 font-semibold">⏱️</span>
                             <span class="text-sm font-bold text-blue-700">${pkg.duration}</span>
                             <span class="text-xs text-gray-400">|</span>
-                            <span class="text-xs text-gray-600">${pkg.minPax}</span>
+                            <span class="text-xs text-gray-600">${minPaxDisplay}</span>
                         </div>
                     </div>
                     
@@ -555,10 +604,10 @@ function renderPackages(category) {
                                 ${pkg.inclusions.slice(0, 5).map(item => `<li>• ${item}</li>`).join('')}
                             </ul>
                         </div>
-                        <div class="border border-red-200 rounded-lg p-2 bg-red-50">
-                            <h5 class="font-semibold text-red-600 mb-1">EXCLUSION</h5>
+                        <div class="${rightBorder} rounded-lg p-2 ${rightBg}">
+                            <h5 class="font-semibold ${rightLabelClass} mb-1">${rightLabel}</h5>
                             <ul class="text-gray-600 space-y-0.5">
-                                ${pkg.exclusions.slice(0, 5).map(item => `<li>• ${item}</li>`).join('')}
+                                ${rightItems.slice(0, 5).map(item => `<li>• ${item}</li>`).join('')}
                             </ul>
                         </div>
                     </div>
