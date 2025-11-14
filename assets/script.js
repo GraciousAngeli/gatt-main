@@ -204,7 +204,7 @@ const travelPackages = {
             duration: '10 DAYS',
             minPax: 'MIN OF 2 PAX',
             price: '125,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe - Blue Line.png',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe/Blue Line.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Transfers', 'Tours (Tagalog)', 'Guided Tours', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Other Personal Expenses', 'Visa Fees', 'Optional Tours', 'Tipping', 'Hotel City Tax']
         },
@@ -215,7 +215,7 @@ const travelPackages = {
             duration: '17 DAYS',
             minPax: 'MIN OF 2 PAX',
             price: '180,840',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe - Blue - Red Line.png',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe/Blue - Red Line.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Transfers', 'Tours (Tagalog)', 'Guided Tours', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Other Personal Expenses', 'Travel Insurance', 'Optional Tours', 'Tipping', 'Hotel City Tax']
         },
@@ -226,7 +226,7 @@ const travelPackages = {
             duration: '12 DAYS',
             minPax: 'MIN OF 2 PAX',
             price: '165,250',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe - Yellow Line 12 Days.png',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe/Yellow Line 12 Days.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Transfers', 'Tours (Tagalog)', 'Guided Tours', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Other Personal Expenses', 'Travel Insurance', 'Optional Tours', 'Tipping', 'Hotel City Tax']
         },
@@ -237,7 +237,7 @@ const travelPackages = {
             duration: '10 DAYS',
             minPax: 'MIN OF 2 PAX',
             price: '125,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe - Yellow Line 10 Days.png',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe/Yellow Line 10 Days.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Transfers', 'Tours (Tagalog)', 'Guided Tours', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Other Personal Expenses', 'Travel Insurance', 'Optional Tours', 'Tipping', 'Hotel City Tax']
         },
@@ -248,7 +248,7 @@ const travelPackages = {
             duration: '10 DAYS',
             minPax: 'MIN OF 2 PAX',
             price: '125,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe - Green Line.png',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe/Green Line.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Airport Transfer', 'Tours (English)', 'Guided Tours', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Other Personal Expenses', 'Visa Fee', 'Optional Tours', 'Tippings', 'Hotel City Tax']
         },
@@ -259,7 +259,7 @@ const travelPackages = {
             duration: '10 DAYS',
             minPax: 'MIN OF 2 PAX',
             price: '125,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe - Orange Line.png',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe/Orange Line.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Airport Transfer', 'Tours (English)', 'Guided Tours', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Other Personal Expenses', 'Visa Fee', 'Optional Tours', 'Tippings', 'Hotel City Tax']
         },
@@ -270,7 +270,7 @@ const travelPackages = {
             duration: '12 DAYS',
             minPax: 'MIN OF 2 PAX',
             price: '165,250',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe - Red Line.png',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe/Red Line.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Airport Transfer', 'Tours (English)', 'Guided Tours', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Other Personal Expenses', 'Visa Fee', 'Optional Tours', 'Tippings', 'Hotel City Tax']
         },
@@ -281,7 +281,7 @@ const travelPackages = {
             duration: '10 DAYS',
             minPax: 'MIN OF 2 PAX',
             price: '125,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe - Pink Line.png',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe/Pink Line.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Airport Transfer', 'Tours (English)', 'Guided Tours', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Other Personal Expenses', 'Visa Fee', 'Optional Tours', 'Tippings', 'Hotel City Tax']
         }
