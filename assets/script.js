@@ -328,7 +328,7 @@ const travelPackages = {
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
             price: '12,999',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/Cebu.png',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/Puerto Princesa_El Nido.png',
             inclusions: ['Hotel Accommodation', 'Daily Breakfast', 'All Transfers', 'Environmental & Entrance Fees', 'Underground River and City Tour', 'Island Hopping Tour A'],
             exclusions: ['Roundtrip Airfare Ticket', 'Lunch and Dinner', 'Other Personal Expenses', 'Tips']
         },
@@ -579,6 +579,13 @@ function renderPackages(category) {
             minPaxDisplay = pkg.duration;
         }
 
+        // Show more items for Europe packages so important lines like "Travel Tax" and
+        // "Hotel City Tax" are visible. Also show one extra item for Philippines
+        // packages (used by Cordillera entries) so their last inclusion line is visible.
+        const itemDisplayLimit = (category === 'europe' || category === 'philippines') ? 6 : 5;
+        const leftItemsHTML = (pkg.inclusions || []).slice(0, itemDisplayLimit).map(item => `<li>• ${item}</li>`).join('');
+        const rightItemsHTML = (rightItems || []).slice(0, itemDisplayLimit).map(item => `<li>• ${item}</li>`).join('');
+
         cardElement.innerHTML = `
             <div class="relative">
                 <img src="${pkg.image}" alt="${pkg.country}" class="w-full h-48 object-cover" onerror="this.src='https://via.placeholder.com/400x300/cccccc/666666?text=${encodeURIComponent(pkg.country)}'">
@@ -601,13 +608,13 @@ function renderPackages(category) {
                         <div class="border border-green-200 rounded-lg p-2 bg-green-50">
                             <h5 class="font-semibold text-green-600 mb-1">INCLUSION</h5>
                             <ul class="text-gray-600 space-y-0.5">
-                                ${pkg.inclusions.slice(0, 5).map(item => `<li>• ${item}</li>`).join('')}
+                                ${leftItemsHTML}
                             </ul>
                         </div>
                         <div class="${rightBorder} rounded-lg p-2 ${rightBg}">
                             <h5 class="font-semibold ${rightLabelClass} mb-1">${rightLabel}</h5>
                             <ul class="text-gray-600 space-y-0.5">
-                                ${rightItems.slice(0, 5).map(item => `<li>• ${item}</li>`).join('')}
+                                ${rightItemsHTML}
                             </ul>
                         </div>
                     </div>
