@@ -215,7 +215,7 @@ const travelPackages = {
             duration: '17 DAYS',
             minPax: 'MIN OF 2 PAX',
             price: '180,840',
-            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe/Blue - Red Line.png',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Europe/Blue_Red Line.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Transfers', 'Tours (Tagalog)', 'Guided Tours', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Other Personal Expenses', 'Travel Insurance', 'Optional Tours', 'Tipping', 'Hotel City Tax']
         },
