@@ -458,6 +458,28 @@ const travelPackages = {
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/Baguio City.png',
             inclusions: ['Professional Driver', 'Vehicle Rental', 'Trip Fuel', 'Parking Fees', 'Driver Fee','Accomodation Pick up & Drop Baguio'],
             exclusions: ['3,500 (1-4 PAX)', '4,500 (5-6 PAX)', '5,000 (7-9 PAX)', '6,000 (10-14 PAX)', '8,000 (15-24 PAX)']
+        },
+        // DUMAGUETE
+        {
+            country: 'DUMAGUETE',
+            location: 'PHILIPPINES',
+            duration: '4 DAYS 3 NIGHTS',
+            minPax: 'MIN OF 2 PAX',
+            price: '9,999',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/Dumaguete.jpg',
+            inclusions: ['Hotel Accommodation', 'Daily Breakfast', 'All Transfers', 'Valencia Tours', 'Entrance Fee'],
+            exclusions: ['Roundtrip Airfare Ticket', 'Lunch and Dinner', 'Other Personal Expenses', 'Tips']
+        },
+        // DUMAGUETE & SIQUIJOR
+        {
+            country: 'DUMAGUETE & SIQUIJOR',
+            location: 'PHILIPPINES',
+            duration: '4 DAYS 3 NIGHTS',
+            minPax: 'MIN OF 2 PAX',
+            price: '14,999',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/Dumaguete & Siquijor.jpg',
+            inclusions: ['Hotel Accommodation', 'Daily Breakfast', 'Airport Transfers', 'Valencia Tours', 'Environmental & Entrance Fees', 'Siquijor City Tour'],
+            exclusions: ['Roundtrip Airfare Ticket', 'Lunch and Dinner','Optional Tours', 'Other Personal Expenses', 'Tips']
         }
     ]
 };
