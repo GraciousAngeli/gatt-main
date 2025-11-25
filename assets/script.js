@@ -416,7 +416,7 @@ const travelPackages = {
             duration: '10 HOURS',
             price: '5,000',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/Baguio-Atok Benguet.png',
-            inclusions: ['Professional Driver', 'Vehicle Rental', 'Trip Fuel', 'Parking Fees', 'Driver Fee','Accomodation Pick up & Drop Baguio'],
+            inclusions: ['Professional Driver', 'Vehicle Rental', 'Trip Fuel', 'Parking Fees', 'Driver Fee','Accommodation Pick up & Drop Baguio'],
             exclusions: ['5,000 (1-4 PAX)', '6,000 (5-6 PAX)', '7,000 (7-9 PAX)', '7,500 (10-14 PAX)', '12,000 (15-24 PAX)']
         },
         // ATOK, BENGUET
@@ -426,7 +426,7 @@ const travelPackages = {
             duration: '10 HOURS',
             price: '4,500',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/Atok Benguet.png',
-            inclusions: ['Professional Driver', 'Vehicle Rental', 'Trip Fuel', 'Parking Fees', 'Driver Fee','Accomodation Pick up & Drop Baguio'],
+            inclusions: ['Professional Driver', 'Vehicle Rental', 'Trip Fuel', 'Parking Fees', 'Driver Fee','Accommodation Pick up & Drop Baguio'],
             exclusions: ['5,000 (1-4 PAX)', '5,500 (5-6 PAX)', '6,000 (7-9 PAX)', '6,500 (10-14 PAX)', '11,000 (15-24 PAX)']
         },
         // BAGUIO & LA TRINIDAD 
@@ -436,7 +436,7 @@ const travelPackages = {
             duration: '8 HOURS',
             price: '4,500',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/Baguio_La Trinidad.png',
-            inclusions: ['Professional Driver', 'Vehicle Rental', 'Trip Fuel', 'Parking Fees', 'Driver Fee','Accomodation Pick up & Drop Baguio'],
+            inclusions: ['Professional Driver', 'Vehicle Rental', 'Trip Fuel', 'Parking Fees', 'Driver Fee','Accommodation Pick up & Drop Baguio'],
             exclusions: ['4,500 (1-4 PAX)', '5,500 (5-6 PAX)', '6,000 (7-9 PAX)', '6,500 (10-14 PAX)', '9,000 (15-24 PAX)']
         },
         // BAGUIO - ATOK - TRINIDAD
@@ -446,7 +446,7 @@ const travelPackages = {
             duration: '10 HOURS',
             price: '5,000',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/Baguio-Atok Benguet.png',
-            inclusions: ['Professional Driver', 'Vehicle Rental', 'Trip Fuel', 'Parking Fees', 'Driver Fee','Accomodation Pick up & Drop Baguio'],
+            inclusions: ['Professional Driver', 'Vehicle Rental', 'Trip Fuel', 'Parking Fees', 'Driver Fee','Accommodation Pick up & Drop Baguio'],
             exclusions: ['5,000 (1-4 PAX)', '6,000 (5-6 PAX)', '7,000 (7-9 PAX)', '7,500 (10-14 PAX)', '12,000 (15-24 PAX)']
         },
         //BAGUIO CITY
@@ -456,7 +456,7 @@ const travelPackages = {
             duration: '8 HOURS',
             price: '3,500',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/Baguio City.png',
-            inclusions: ['Professional Driver', 'Vehicle Rental', 'Trip Fuel', 'Parking Fees', 'Driver Fee','Accomodation Pick up & Drop Baguio'],
+            inclusions: ['Professional Driver', 'Vehicle Rental', 'Trip Fuel', 'Parking Fees', 'Driver Fee','Accommodation Pick up & Drop Baguio'],
             exclusions: ['3,500 (1-4 PAX)', '4,500 (5-6 PAX)', '5,000 (7-9 PAX)', '6,000 (10-14 PAX)', '8,000 (15-24 PAX)']
         },
         // DUMAGUETE

@@ -116,3 +116,4 @@ test-results/
 .sass-cache/
 *.css.map
 *.js.map
+.github/copilot-instructions.md
