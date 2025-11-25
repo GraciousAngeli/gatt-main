@@ -826,6 +826,21 @@ function updatePackageSlider(category) {
     const containerId = `${category}PackageCarousel`;
     const container = document.getElementById(containerId);
     if (!container) return;
+
+    // Skip transform-based sliding for the Philippines, Asia and Europe carousels;
+    // they use native scroll + scroll-snap behavior handled by `slideCarousel` instead.
+    if (category === 'philippines' || category === 'asia' || category === 'europe') {
+        // Still update button states if needed, but do not apply transform
+        const prevBtn = document.getElementById(`${category}PrevBtn`);
+        const nextBtn = document.getElementById(`${category}NextBtn`);
+        if (prevBtn && nextBtn) {
+            prevBtn.style.opacity = '1';
+            nextBtn.style.opacity = '1';
+            prevBtn.style.pointerEvents = 'auto';
+            nextBtn.style.pointerEvents = 'auto';
+        }
+        return;
+    }
     
     // Get actual card width from rendered elements with proper gap
     const firstCard = container.querySelector('.package-card');
@@ -909,13 +924,45 @@ function addPackageCarouselTouchSupport() {
             
             if (Math.abs(swipeDistance) > swipeThreshold) {
                 if (swipeDistance > 0) {
-                    slidePackages('next', category);
+                    slideCarousel(category, 'next');
                 } else {
-                    slidePackages('prev', category);
+                    slideCarousel(category, 'prev');
                 }
             }
         }, { passive: true });
     });
+}
+
+// Generic scroll-based carousel slide for package carousels (asia, europe, philippines)
+function slideCarousel(category, direction) {
+    const container = document.getElementById(`${category}PackageCarousel`);
+    if (!container) return;
+
+    const firstCard = container.querySelector('.package-card');
+    if (!firstCard) return;
+
+    const gap = category === 'europe' ? 12 : 20; // match CSS spacing assumptions
+    const cardWidth = firstCard.offsetWidth + gap;
+
+    const scrollAmount = direction === 'next' ? cardWidth : -cardWidth;
+    container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+}
+
+
+// Philippines-specific slide function: uses native scroll on the philippines carousel
+function slidePhilippines(direction) {
+    const container = document.getElementById('philippinesPackageCarousel');
+    if (!container) return;
+
+    const firstCard = container.querySelector('.package-card');
+    if (!firstCard) return;
+
+    // Determine gap: this mirrors the gap used in renderPackages (space-x-5 ~= 20px)
+    const gap = 20;
+    const cardWidth = firstCard.offsetWidth + gap;
+
+    const scrollAmount = direction === 'next' ? cardWidth : -cardWidth;
+    container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
 }
 
 // Initialize Packages on DOM Load

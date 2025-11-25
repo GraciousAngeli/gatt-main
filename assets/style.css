@@ -284,6 +284,47 @@ button:focus, input:focus, textarea:focus {
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
+/* Philippines carousel: scroll-snap horizontal carousel style (scoped) */
+#philippinesPackageCarousel {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+#philippinesPackageCarousel::-webkit-scrollbar { display: none; }
+
+#philippinesPackageCarousel .package-card {
+    scroll-snap-align: center;
+    -webkit-scroll-snap-align: center;
+    flex: 0 0 auto; /* keep natural size, avoid shrinking */
+}
+
+/* Small visual tweak: reduce gap when scrolling on mobile for smoother snap */
+@media (max-width: 768px) {
+    #philippinesPackageCarousel { gap: 1rem; }
+}
+
+/* Asia & Europe: reuse same scroll-snap styling as Philippines */
+#asiaPackageCarousel, #europePackageCarousel {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+#asiaPackageCarousel::-webkit-scrollbar, #europePackageCarousel::-webkit-scrollbar { display: none; }
+
+#asiaPackageCarousel .package-card, #europePackageCarousel .package-card {
+    scroll-snap-align: center;
+    -webkit-scroll-snap-align: center;
+    flex: 0 0 auto;
+}
+
+@media (max-width: 768px) {
+    #asiaPackageCarousel, #europePackageCarousel { gap: 1rem; }
+}
+
 /* Back to Top Button - Visible on all devices */
 .back-to-top {
     position: fixed;

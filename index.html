@@ -630,14 +630,14 @@
                 </div>
                 <div class="relative">
                     <!-- Navigation Buttons -->
-                    <button id="asiaPrevBtn" onclick="slidePackages('prev', 'asia')" 
+                        <button id="asiaPrevBtn" onclick="slideCarousel('asia','prev')" 
                             class="hidden md:block absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all border-2 border-red-200 hover:border-red-400">
                         <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                         </svg>
                     </button>
                     
-                    <button id="asiaNextBtn" onclick="slidePackages('next', 'asia')" 
+                        <button id="asiaNextBtn" onclick="slideCarousel('asia','next')" 
                             class="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all border-2 border-red-200 hover:border-red-400">
                         <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -645,9 +645,11 @@
                     </button>
                     
                     <!-- Package Cards Container -->
-                    <div class="overflow-hidden mx-12 px-4">
-                        <div id="asiaPackageCarousel" class="flex space-x-5 transition-transform duration-300 ease-in-out">
-                            <!-- Asia package cards will be dynamically inserted here -->
+                    <div class="relative mx-12">
+                        <div class="overflow-hidden" style="padding-right: 280px; margin-right: -280px;">
+                            <div id="asiaPackageCarousel" class="flex space-x-5 px-4 transition-transform duration-300 ease-in-out">
+                                <!-- Asia package cards will be dynamically inserted here -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -661,14 +663,14 @@
                 </div>
                 <div class="relative">
                     <!-- Navigation Buttons -->
-                    <button id="europePrevBtn" onclick="slidePackages('prev', 'europe')" 
+                        <button id="europePrevBtn" onclick="slideCarousel('europe','prev')" 
                             class="hidden md:block absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all border-2 border-blue-200 hover:border-blue-400">
                         <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                         </svg>
                     </button>
                     
-                    <button id="europeNextBtn" onclick="slidePackages('next', 'europe')" 
+                        <button id="europeNextBtn" onclick="slideCarousel('europe','next')" 
                             class="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all border-2 border-blue-200 hover:border-blue-400">
                         <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -676,11 +678,13 @@
                     </button>
                     
                     <!-- Package Cards Container -->
-                            <div class="overflow-hidden mx-12 px-4">
-            <div id="europePackageCarousel" class="flex space-x-3 transition-transform duration-300 ease-in-out">
-                <!-- Europe package cards will be dynamically inserted here -->
-            </div>
-        </div>
+                    <div class="relative mx-12">
+                        <div class="overflow-hidden" style="padding-right: 280px; margin-right: -280px;">
+                            <div id="europePackageCarousel" class="flex space-x-3 px-4 transition-transform duration-300 ease-in-out">
+                                <!-- Europe package cards will be dynamically inserted here -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -692,14 +696,14 @@
                 </div>
                 <div class="relative">
                     <!-- Navigation Buttons -->
-                    <button id="philippinesPrevBtn" onclick="slidePackages('prev', 'philippines')" 
+                            <button id="philippinesPrevBtn" onclick="slideCarousel('philippines','prev')" 
                             class="hidden md:block absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all border-2 border-green-200 hover:border-green-400">
                         <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                         </svg>
                     </button>
                     
-                    <button id="philippinesNextBtn" onclick="slidePackages('next', 'philippines')" 
+                            <button id="philippinesNextBtn" onclick="slideCarousel('philippines','next')" 
                             class="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all border-2 border-green-200 hover:border-green-400">
                         <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -707,9 +711,11 @@
                     </button>
                     
                     <!-- Package Cards Container -->
-                    <div class="overflow-hidden mx-12 px-4">
-                        <div id="philippinesPackageCarousel" class="flex space-x-5 transition-transform duration-300 ease-in-out">
-                            <!-- Philippines package cards will be dynamically inserted here -->
+                    <div class="relative mx-12">
+                        <div class="overflow-hidden" style="padding-right: 280px; margin-right: -280px;">
+                            <div id="philippinesPackageCarousel" class="flex space-x-5 px-4 transition-transform duration-300 ease-in-out">
+                                <!-- Philippines package cards will be dynamically inserted here -->
+                            </div>
                         </div>
                     </div>
                 </div>
