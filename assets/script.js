@@ -24,7 +24,7 @@ const travelPackages = {
             location: 'ASIA - HONGKONG',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
-            price: '12,999',
+            price: '19,999',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Asia/Free & Easy Hongkong.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Half Day City Tour', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Any Surcharge', 'Travel Insurance', 'Compulsory Tippings', 'Other Personal Expenses']
@@ -35,7 +35,7 @@ const travelPackages = {
             location: 'ASIA - HONGKONG',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
-            price: '16,999',
+            price: '22,999',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Asia/Ocean Park Hongkong.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Half Day City Tour', 'Ocean Park', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Any Surcharge', 'Travel Insurance', 'Compulsory Tipping', 'Other Personal Expenses']
@@ -46,7 +46,7 @@ const travelPackages = {
             location: 'ASIA - HONGKONG',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
-            price: '19,999',
+            price: '24,999',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Asia/Disneyland Hongkong.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Half Day City Tour', 'Disneyland', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Any Surcharge', 'Travel Insurance', 'Compulsory Tipping', 'Other Personal Expenses']
@@ -57,7 +57,7 @@ const travelPackages = {
             location: 'ASIA - HONGKONG',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
-            price: '19,999',
+            price: '24,999',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Asia/Macau Hongkong.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfers', 'Half Day City Tour', 'Macau', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Any Surcharge', 'Travel Insurance', 'Compulsory Tipping', 'Other Personal Expenses']
@@ -68,7 +68,7 @@ const travelPackages = {
             location: 'ASIA - VIETNAM',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
-            price: '12,999',
+            price: '17,999',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Asia/Da Nang Vietnam.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Ba Na Hills Tour', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours']
@@ -79,7 +79,7 @@ const travelPackages = {
             location: 'ASIA - VIETNAM',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
-            price: '13,999',
+            price: '18,999',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Asia/Ha Noi Vietnam.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'City Tour', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours']
@@ -90,7 +90,7 @@ const travelPackages = {
             location: 'ASIA - VIETNAM',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
-            price: '18,999',
+            price: '21,999',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Asia/Sapa Vietnam.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Trekking Tour', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours']
@@ -101,7 +101,7 @@ const travelPackages = {
             location: 'ASIA',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
-            price: '14,999',
+            price: '17,999',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Asia/Thailand.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Temple Hopping', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Any Surcharge', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours']
@@ -123,7 +123,7 @@ const travelPackages = {
             location: 'ASIA',
             duration: '5 DAYS 4 NIGHTS',
             minPax: 'MIN OF 2 PAX',
-            price: '39,999',
+            price: '49,999',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Asia/South Korea.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Whole-day Tours', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Visa Surcharge', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner']
@@ -294,7 +294,7 @@ const travelPackages = {
             location: 'PHILIPPINES - PALAWAN',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
-            price: '8,999',
+            price: '11,999',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/Puerto Princesa.png',
             inclusions: ['Hotel Accommodation', 'Daily Breakfast', 'All Transfers', 'Environmental & Entrance Fees', 'Underground River','City Tour'],
             exclusions: ['Roundtrip Airfare Ticket', 'Lunch and Dinner','Other Personal Expenses', 'Tips']
@@ -305,7 +305,7 @@ const travelPackages = {
             location: 'PHILIPPINES - PALAWAN',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
-            price: '10,999',
+            price: '13,999',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/El Nido.png',
             inclusions: ['Hotel Accommodation', 'Daily Breakfast', 'All Transfers', 'Environmental & Entrance Fees', 'Island Hopping Tour A', 'Island Hopping Tour D'],
             exclusions: ['Roundtrip Airfare Ticket', 'Lunch and Dinner', 'Other Personal Expenses', 'Tips']
@@ -316,7 +316,7 @@ const travelPackages = {
             location: 'PHILIPPINES - PALAWAN',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
-            price: '12,999',
+            price: '15,999',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/Coron.png',
             inclusions: ['Hotel Accommodation', 'Daily Breakfast', 'All Transfers', 'Environmental & Entrance Fees', 'Coron Island Tour A', 'Town Tour'],
             exclusions: ['Roundtrip Airfare Ticket', 'Lunch and Dinner', 'Other Personal Expenses', 'Tips']
@@ -414,10 +414,10 @@ const travelPackages = {
             country: 'BAGUIO - ATOK - BENGUET',
             location: 'PHILIPPINES - CORDILLERA',
             duration: '10 HOURS',
-            price: '5,000',
+            price: '6,000',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/Baguio-Atok Benguet.png',
             inclusions: ['Professional Driver', 'Vehicle Rental', 'Trip Fuel', 'Parking Fees', 'Driver Fee','Accommodation Pick up & Drop Baguio'],
-            exclusions: ['5,000 (1-4 PAX)', '6,000 (5-6 PAX)', '7,000 (7-9 PAX)', '7,500 (10-14 PAX)', '12,000 (15-24 PAX)']
+            exclusions: ['6,000 (1-4 PAX)', '7,000 (5-6 PAX)', '8,000 (7-9 PAX)', '8,500 (10-14 PAX)', '13,000 (15-24 PAX)']
         },
         // ATOK, BENGUET
         {
@@ -427,7 +427,7 @@ const travelPackages = {
             price: '4,500',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/Atok Benguet.png',
             inclusions: ['Professional Driver', 'Vehicle Rental', 'Trip Fuel', 'Parking Fees', 'Driver Fee','Accommodation Pick up & Drop Baguio'],
-            exclusions: ['5,000 (1-4 PAX)', '5,500 (5-6 PAX)', '6,000 (7-9 PAX)', '6,500 (10-14 PAX)', '11,000 (15-24 PAX)']
+            exclusions: ['6,000 (1-4 PAX)', '6,500 (5-6 PAX)', '7,000 (7-9 PAX)', '7,500 (10-14 PAX)', '13,000 (15-24 PAX)']
         },
         // BAGUIO & LA TRINIDAD 
         {
@@ -437,7 +437,7 @@ const travelPackages = {
             price: '4,500',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/Baguio_La Trinidad.png',
             inclusions: ['Professional Driver', 'Vehicle Rental', 'Trip Fuel', 'Parking Fees', 'Driver Fee','Accommodation Pick up & Drop Baguio'],
-            exclusions: ['4,500 (1-4 PAX)', '5,500 (5-6 PAX)', '6,000 (7-9 PAX)', '6,500 (10-14 PAX)', '9,000 (15-24 PAX)']
+            exclusions: ['5,500 (1-4 PAX)', '6,500 (5-6 PAX)', '7,000 (7-9 PAX)', '7,500 (10-14 PAX)', '10,000 (15-24 PAX)']
         },
         // BAGUIO - ATOK - TRINIDAD
         {
@@ -447,17 +447,17 @@ const travelPackages = {
             price: '5,000',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/Baguio-Atok Benguet.png',
             inclusions: ['Professional Driver', 'Vehicle Rental', 'Trip Fuel', 'Parking Fees', 'Driver Fee','Accommodation Pick up & Drop Baguio'],
-            exclusions: ['5,000 (1-4 PAX)', '6,000 (5-6 PAX)', '7,000 (7-9 PAX)', '7,500 (10-14 PAX)', '12,000 (15-24 PAX)']
+            exclusions: ['6,000 (1-4 PAX)', '7,000 (5-6 PAX)', '8,000 (7-9 PAX)', '9,500 (10-14 PAX)', '13,000 (15-24 PAX)']
         },
         //BAGUIO CITY
         {
             country: 'BAGUIO CITY',
             location: 'PHILIPPINES - CORDILLERA',
             duration: '8 HOURS',
-            price: '3,500',
+            price: '4,500',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/Baguio City.png',
             inclusions: ['Professional Driver', 'Vehicle Rental', 'Trip Fuel', 'Parking Fees', 'Driver Fee','Accommodation Pick up & Drop Baguio'],
-            exclusions: ['3,500 (1-4 PAX)', '4,500 (5-6 PAX)', '5,000 (7-9 PAX)', '6,000 (10-14 PAX)', '8,000 (15-24 PAX)']
+            exclusions: ['6,000 (1-4 PAX)', '7,000 (5-6 PAX)', '8,000 (7-9 PAX)', '8,500 (10-14 PAX)', '13,000 (15-24 PAX)']
         },
         // DUMAGUETE
         {
