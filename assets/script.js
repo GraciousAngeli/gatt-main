@@ -167,7 +167,7 @@ const travelPackages = {
             location: 'ASIA',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
-            price: '11,999',
+            price: '17,999',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Asia/Malaysia.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfers', 'City Tour', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours']
@@ -178,7 +178,7 @@ const travelPackages = {
             location: 'ASIA - INDONESIA',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
-            price: '9,999',
+            price: '16,999',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Asia/Bali Indonesia.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'Airport Transfer', 'Half Day City Tour', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours']
@@ -189,7 +189,7 @@ const travelPackages = {
             location: 'ASIA',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
-            price: '15,999',
+            price: '24,999',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Asia/Singapore.png',
             inclusions: ['Hotel Accommodation', 'Daily Hotel Breakfast', 'All Transfers', 'Half Day City Tour', 'Travel Tax'],
             exclusions: ['Roundtrip Flight Ticket', 'Travel Insurance', 'Tips/Gratuities', 'Lunch and Dinner', 'Optional Tours']
@@ -327,7 +327,7 @@ const travelPackages = {
             location: 'PHILIPPINES - PALAWAN',
             duration: '4 DAYS 3 NIGHTS',
             minPax: 'MIN OF 2 PAX',
-            price: '12,999',
+            price: '16,999',
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/Puerto Princesa_El Nido.png',
             inclusions: ['Hotel Accommodation', 'Daily Breakfast', 'All Transfers', 'Environmental & Entrance Fees', 'Underground River and City Tour', 'Island Hopping Tour A'],
             exclusions: ['Roundtrip Airfare Ticket', 'Lunch and Dinner', 'Other Personal Expenses', 'Tips']
