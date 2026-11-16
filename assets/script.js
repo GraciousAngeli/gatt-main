@@ -288,6 +288,34 @@ const travelPackages = {
     ],
     
     philippines: [
+        // CORDILLERA MULTI-DAY TOURS
+        {
+            country: 'BAGUIO • ATOK • SAGADA • MALIGCONG • BUSCALAN',
+            location: 'CORDILLERA TOUR 1',
+            duration: '8 DAYS 7 NIGHTS',
+            minPax: 'MIN OF 8 PAX',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/baguio-atok-sagada-maligcong-buscalan.jpg',
+            inclusions: ['Pick up / Drop off (All Transfer from Pick-up to Drop-off)', 'Accommodation - 7 Nights (Baguio, Sagada, and Maligcong Accommodation)', 'Guided Tours (All Tour Activities)', 'Registration and Entrance Fees', 'Full Board Meals with Bottled Water on board', 'Travel Insurance'],
+            exclusions: ['Flight', 'Snack', 'Personal Expenses', "Anything that didn't mention in Inclusions", 'Tips and gratuities']
+        },
+        {
+            country: 'BAGUIO • ATOK • SAGADA • MALIGCONG',
+            location: 'CORDILLERA TOUR 2',
+            duration: '6 DAYS 5 NIGHTS',
+            minPax: 'MIN OF 10 PAX',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/baguio-atok-sagada-maligcong.jpg',
+            inclusions: ['Pick up / Drop off (All Transfer from Pick-up to Drop-off)', 'Accommodation - 5 Nights (Baguio, Sagada, and Maligcong Accommodation)', 'Guided Tours (All Tour Activities)', 'Registration and Entrance Fees', 'Full Board Meals with Bottled Water on board', 'Travel Insurance'],
+            exclusions: ['Flight', 'Snack', 'Personal Expenses', "Anything that didn't mention in Inclusions", 'Tips and gratuities']
+        },
+        {
+            country: 'BANAUE • BUSCALAN • SAGADA • BAGUIO',
+            location: 'CORDILLERA TOUR 3',
+            duration: '7 DAYS 6 NIGHTS',
+            minPax: 'MIN OF 8 PAX',
+            image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/banaue-buscalan-sagada-baguio.jpg',
+            inclusions: ['Round-trip Transfers: Manila - Banaue - Buscalan - Sagada - Baguio - Manila', 'Bottled Water on board', 'Hotel Accommodations', 'Travel Insurance', 'Tour Coordinator; Meals indicated in Itinerary', 'Local Shuttle Services & Local guide; Local Environmental and Registration Fees; Entrance Fees'],
+            exclusions: ['Meals not indicated as included in the itinerary', 'Beverages not specifically mentioned in the itinerary', 'Tips and gratuities for the driver and tour guides', 'Personal expenses', 'Optional activities and services not specifically included in the package']
+        },
         // PUERTO PRINCESA
         {
             country: 'PUERTO PRINCESA',
@@ -480,7 +508,7 @@ const travelPackages = {
             image: 'assets/GATT WEBSITE UPDATES/SERVICES/Philippines/Dumaguete & Siquijor.jpg',
             inclusions: ['Hotel Accommodation', 'Daily Breakfast', 'Airport Transfers', 'Valencia Tours', 'Environmental & Entrance Fees', 'Siquijor City Tour'],
             exclusions: ['Roundtrip Airfare Ticket', 'Lunch and Dinner','Optional Tours', 'Other Personal Expenses', 'Tips']
-        }
+        },
     ]
 };
 
@@ -565,9 +593,14 @@ function renderPackages(category) {
     // Render each package card
     packages.forEach((pkg, index) => {
         const cardElement = document.createElement('div');
-        cardElement.className = `package-card bg-white rounded-lg shadow-lg border-2 border-gray-200 overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-xl ${category === 'europe' ? 'min-w-[380px] max-w-[450px] h-[600px]' : category === 'philippines' ? 'min-w-[280px] h-[580px]' : 'min-w-[280px]'} flex-shrink-0 flex flex-col`;
+        const isCordilleraPackage = pkg.location.startsWith('CORDILLERA TOUR');
+        cardElement.className = `package-card bg-white rounded-lg shadow-lg border-2 border-gray-200 overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-xl ${category === 'europe' ? 'min-w-[380px] max-w-[450px] h-[600px]' : category === 'philippines' ? 'min-w-[280px] h-[580px]' : 'min-w-[280px]'} ${isCordilleraPackage ? 'cordillera-package-card' : ''} flex-shrink-0 flex flex-col`;
         cardElement.setAttribute('data-index', index);
         cardElement.style.display = 'flex'; // Ensure visibility and proper flex layout
+        if (isCordilleraPackage) {
+            cardElement.style.width = 'min(560px, calc(100vw - 5rem))';
+            cardElement.style.maxWidth = '560px';
+        }
         
         // Determine right column label and items: use `rates` if provided, otherwise fall back to `exclusions`.
         let rightLabel = 'EXCLUSION';
@@ -614,8 +647,8 @@ function renderPackages(category) {
                 <div class="absolute top-2 left-2 bg-white px-2 py-1 rounded text-xs font-bold text-indigo-600">${pkg.location}</div>
             </div>
             
-            <div class="${category === 'europe' || category === 'philippines' ? 'p-4 flex flex-col h-full' : 'p-4'}">
-                <div class="${category === 'europe' || category === 'philippines' ? 'flex-grow flex flex-col' : ''}">
+            <div class="${isCordilleraPackage ? 'p-4 flex flex-col flex-1 min-h-0' : category === 'europe' || category === 'philippines' ? 'p-4 flex flex-col h-full' : 'p-4'}">
+                <div class="${isCordilleraPackage ? 'flex-grow flex flex-col min-h-0' : category === 'europe' || category === 'philippines' ? 'flex-grow flex flex-col' : ''}">
                     <h3 class="${category === 'europe' ? getEuropeFontSize(pkg.country) : 'font-bold text-lg'} text-center text-gray-800 mb-2 border-b border-gray-200 pb-2 ${category === 'europe' ? 'leading-tight min-h-[64px] flex items-center justify-center px-2' : ''}">${category === 'europe' ? formatEuropeCountryText(pkg.country, pkg.country.split(',').length) : pkg.country}</h3>
                     <div class="text-center mb-4">
                         <div class="inline-flex items-center gap-2 bg-gradient-to-r from-blue-100 to-indigo-100 px-3 py-2 rounded-lg border border-blue-200">
@@ -626,7 +659,7 @@ function renderPackages(category) {
                         </div>
                     </div>
                     
-                    <div class="grid grid-cols-2 gap-2 mb-4 text-xs ${category === 'europe' || category === 'philippines' ? 'flex-1' : ''}">
+                    <div class="grid grid-cols-2 gap-2 mb-4 text-xs ${isCordilleraPackage ? 'flex-1 min-h-0' : category === 'europe' || category === 'philippines' ? 'flex-1' : ''}">
                         <div class="border border-green-200 rounded-lg p-2 bg-green-50">
                             <h5 class="font-semibold text-green-600 mb-1">INCLUSION</h5>
                             <ul class="text-gray-600 space-y-0.5">
@@ -644,9 +677,9 @@ function renderPackages(category) {
                 
                 <div class="flex gap-2 ${category === 'europe' || category === 'philippines' ? 'mt-auto flex-shrink-0' : ''}" style="display: flex !important; visibility: visible !important;">
                     <div class="bg-gradient-to-r ${getPriceColor(pkg.location)} text-white py-2 px-3 rounded-lg font-bold text-sm flex-1 flex items-center justify-center">
-                        START AT ${pkg.price} /PAX
+                        ${pkg.price ? `START AT ${pkg.price} /PAX` : 'MESSAGE US FOR INQUIRY'}
                     </div>
-                    <button onclick="bookSpecificTour('${pkg.country}', '${pkg.price}')"
+                    <button onclick="bookSpecificTour('${pkg.country}', '${pkg.price || ''}')"
                             class="bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition-all font-semibold whitespace-nowrap min-w-[100px]">
                         <img src="assets/GATT WEBSITE UPDATES/ICONS/book-now.png" alt="Book Now" class="inline w-4 h-4 mr-1"> Book Now
                     </button>
