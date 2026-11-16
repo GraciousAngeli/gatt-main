@@ -574,6 +574,65 @@ function formatEuropeCountryText(countryText, countryCount) {
     }
 }
 
+function updatePackageIndicators(category) {
+    const container = document.getElementById(`${category}PackageCarousel`);
+    const indicators = document.querySelector(`[data-package-indicators="${category}"]`);
+    if (!container || !indicators) return;
+
+    const cards = [...container.querySelectorAll('.package-card')];
+    if (!cards.length) return;
+
+    const containerCenter = container.getBoundingClientRect().left + container.clientWidth / 2;
+    let activeIndex = 0;
+    let closestDistance = Infinity;
+
+    cards.forEach((card, index) => {
+        const rect = card.getBoundingClientRect();
+        const distance = Math.abs(rect.left + rect.width / 2 - containerCenter);
+        if (distance < closestDistance) {
+            closestDistance = distance;
+            activeIndex = index;
+        }
+    });
+
+    indicators.querySelectorAll('button').forEach((button, index) => {
+        const active = index === activeIndex;
+        button.classList.toggle('active', active);
+        button.setAttribute('aria-pressed', String(active));
+    });
+}
+
+function renderPackageIndicators(category) {
+    const container = document.getElementById(`${category}PackageCarousel`);
+    const indicators = document.querySelector(`[data-package-indicators="${category}"]`);
+    if (!container || !indicators) return;
+
+    const cards = [...container.querySelectorAll('.package-card')];
+    indicators.replaceChildren(...cards.map((_, index) => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'package-carousel-indicator';
+        button.setAttribute('aria-label', `Show ${category} package ${index + 1} of ${cards.length}`);
+        button.setAttribute('aria-pressed', 'false');
+        button.addEventListener('click', () => {
+            const card = cards[index];
+            const containerRect = container.getBoundingClientRect();
+            const cardRect = card.getBoundingClientRect();
+            const left = container.scrollLeft + cardRect.left - containerRect.left -
+                (container.clientWidth - cardRect.width) / 2;
+            container.scrollTo({ left, behavior: 'smooth' });
+        });
+        return button;
+    }));
+
+    if (container.dataset.indicatorsInitialized !== 'true') {
+        container.addEventListener('scroll', () => updatePackageIndicators(category), { passive: true });
+        container.dataset.indicatorsInitialized = 'true';
+    }
+
+    updatePackageIndicators(category);
+}
+
 // Render Packages
 function renderPackages(category) {
     const packages = travelPackages[category];
@@ -696,6 +755,8 @@ function renderPackages(category) {
     
     console.log(`Successfully rendered ${renderedCards.length} cards out of ${packages.length} packages`);
     console.log(`Visible cards: ${visibleCards.length}, Total rendered: ${renderedCards.length}`);
+
+    renderPackageIndicators(category);
     
     // Use requestAnimationFrame to ensure DOM is painted before calculating positions
     requestAnimationFrame(() => {
@@ -998,6 +1059,69 @@ function slidePhilippines(direction) {
     container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
 }
 
+function startMobilePackageAutoplay() {
+    const categories = ['asia', 'europe', 'philippines'];
+    const pauseUntil = new Map();
+    const autoplayInterval = 3000;
+    const manualPauseDuration = 8000;
+
+    categories.forEach(category => {
+        const container = document.getElementById(`${category}PackageCarousel`);
+        if (!container) return;
+
+        const pauseAutoplay = () => pauseUntil.set(category, Date.now() + manualPauseDuration);
+        container.addEventListener('pointerdown', pauseAutoplay, { passive: true });
+        container.addEventListener('touchstart', pauseAutoplay, { passive: true });
+        container.addEventListener('wheel', pauseAutoplay, { passive: true });
+        document.querySelector(`[data-package-indicators="${category}"]`)
+            ?.addEventListener('pointerdown', pauseAutoplay, { passive: true });
+    });
+
+    window.setInterval(() => {
+        if (!window.matchMedia('(max-width: 767px)').matches ||
+            window.matchMedia('(prefers-reduced-motion: reduce)').matches ||
+            document.visibilityState !== 'visible') {
+            return;
+        }
+
+        const servicesTab = document.getElementById('services');
+        if (!servicesTab?.classList.contains('active')) return;
+
+        categories.forEach(category => {
+            const container = document.getElementById(`${category}PackageCarousel`);
+            if (!container || Date.now() < (pauseUntil.get(category) || 0)) return;
+
+            const bounds = container.getBoundingClientRect();
+            if (bounds.bottom <= 0 || bounds.top >= window.innerHeight ||
+                bounds.right <= 0 || bounds.left >= window.innerWidth) {
+                return;
+            }
+
+            const cards = [...container.querySelectorAll('.package-card')];
+            if (cards.length < 2) return;
+
+            const center = bounds.left + container.clientWidth / 2;
+            let currentIndex = 0;
+            let closestDistance = Infinity;
+
+            cards.forEach((card, index) => {
+                const rect = card.getBoundingClientRect();
+                const distance = Math.abs(rect.left + rect.width / 2 - center);
+                if (distance < closestDistance) {
+                    closestDistance = distance;
+                    currentIndex = index;
+                }
+            });
+
+            const nextCard = cards[(currentIndex + 1) % cards.length];
+            const nextRect = nextCard.getBoundingClientRect();
+            const left = container.scrollLeft + nextRect.left - bounds.left -
+                (container.clientWidth - nextRect.width) / 2;
+            container.scrollTo({ left, behavior: 'smooth' });
+        });
+    }, autoplayInterval);
+}
+
 // Initialize Packages on DOM Load
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize packages if on services page with delay to ensure DOM is rendered
@@ -1011,6 +1135,7 @@ document.addEventListener('DOMContentLoaded', function() {
             renderPackages('philippines');
             
             addPackageCarouselTouchSupport();
+            startMobilePackageAutoplay();
             
             // Add window resize listener to recalculate on window resize
             window.addEventListener('resize', function() {

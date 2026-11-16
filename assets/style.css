@@ -328,6 +328,55 @@ button:focus, input:focus, textarea:focus {
         margin-right: 0 !important;
     }
 
+    .package-carousel-indicators {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.125rem;
+        margin: 0.5rem auto 0;
+        max-width: 100%;
+    }
+
+    .package-carousel-indicator {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 1rem;
+        height: 1.5rem;
+        min-width: 1rem !important;
+        min-height: 1.5rem !important;
+        padding: 0;
+        border: 0;
+        background: transparent;
+    }
+
+    .package-carousel-indicator::before {
+        width: 0.375rem;
+        height: 0.375rem;
+        border-radius: 9999px;
+        background: #cbd5e1;
+        content: "";
+        transition: width 0.2s ease, background-color 0.2s ease;
+    }
+
+    .package-carousel-indicator.active::before {
+        width: 0.875rem;
+        border-radius: 9999px;
+        background: #4f46e5;
+    }
+
+    [data-package-indicators="asia"] .package-carousel-indicator.active::before {
+        background: #dc2626;
+    }
+
+    [data-package-indicators="europe"] .package-carousel-indicator.active::before {
+        background: #2563eb;
+    }
+
+    [data-package-indicators="philippines"] .package-carousel-indicator.active::before {
+        background: #059669;
+    }
+
     #asiaPackageCarousel,
     #europePackageCarousel,
     #philippinesPackageCarousel {
@@ -420,6 +469,12 @@ button:focus, input:focus, textarea:focus {
 
     #services .grid.grid-cols-1 {
         row-gap: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .package-carousel-indicators {
+        display: none;
     }
 }
 
