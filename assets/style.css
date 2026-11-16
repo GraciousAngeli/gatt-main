@@ -284,6 +284,71 @@ button:focus, input:focus, textarea:focus {
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
+.travel-highlight-card {
+    position: relative;
+    border-color: #67e8f9;
+    box-shadow: 0 4px 14px rgba(8, 145, 178, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.travel-highlight-card::after {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    padding: 0.375rem 0.625rem;
+    border-radius: 9999px;
+    background: linear-gradient(135deg, #2563eb, #0891b2);
+    color: white;
+    content: "FEATURED";
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-0.375rem);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    z-index: 1;
+}
+
+.travel-highlight-card img {
+    transition: transform 0.5s ease;
+}
+
+.travel-highlight-card:hover,
+.travel-highlight-card:active,
+.travel-highlight-card:focus-within {
+    z-index: 1;
+    border-color: #2563eb;
+    box-shadow: 0 18px 36px rgba(37, 99, 235, 0.24), 0 0 0 3px rgba(34, 211, 238, 0.2);
+    transform: translateY(-0.5rem) scale(1.02);
+}
+
+.travel-highlight-card:hover::after,
+.travel-highlight-card:active::after,
+.travel-highlight-card:focus-within::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.travel-highlight-card:hover img,
+.travel-highlight-card:active img,
+.travel-highlight-card:focus-within img {
+    transform: scale(1.035);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .travel-highlight-card:hover,
+    .travel-highlight-card:focus-within {
+        box-shadow: 0 24px 48px rgba(37, 99, 235, 0.32), 0 0 0 4px rgba(34, 211, 238, 0.24);
+        transform: translateY(-0.75rem) scale(1.05);
+    }
+
+    .travel-highlight-card:hover img,
+    .travel-highlight-card:focus-within img {
+        transform: scale(1.06);
+    }
+}
+
 /* Philippines carousel: scroll-snap horizontal carousel style (scoped) */
 #philippinesPackageCarousel {
     overflow-x: auto;
