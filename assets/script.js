@@ -659,7 +659,7 @@ function renderPackages(category) {
                         </div>
                     </div>
                     
-                    <div class="grid grid-cols-2 gap-2 mb-4 text-xs ${isCordilleraPackage ? 'flex-1 min-h-0' : category === 'europe' || category === 'philippines' ? 'flex-1' : ''}">
+                    <div class="grid grid-cols-2 gap-2 mb-4 text-xs ${isCordilleraPackage ? 'cordillera-package-grid flex-1 min-h-0' : category === 'europe' || category === 'philippines' ? 'flex-1' : ''}">
                         <div class="border border-green-200 rounded-lg p-2 bg-green-50">
                             <h5 class="font-semibold text-green-600 mb-1">INCLUSION</h5>
                             <ul class="text-gray-600 space-y-0.5">

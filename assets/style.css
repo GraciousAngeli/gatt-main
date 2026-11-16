@@ -321,6 +321,108 @@ button:focus, input:focus, textarea:focus {
     flex: 0 0 auto;
 }
 
+@media (max-width: 767px) {
+    .package-carousel-window {
+        width: 100%;
+        padding-right: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    #asiaPackageCarousel,
+    #europePackageCarousel,
+    #philippinesPackageCarousel {
+        gap: 1rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #asiaPackageCarousel .package-card,
+    #europePackageCarousel .package-card,
+    #philippinesPackageCarousel .package-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        height: auto !important;
+    }
+
+    .package-card > .relative img {
+        height: 9rem;
+    }
+
+    .package-card .p-4 {
+        padding: 0.75rem;
+    }
+
+    .package-card > .p-4.h-full {
+        height: auto !important;
+    }
+
+    .package-card h3 {
+        min-height: 0 !important;
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .package-card .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .package-card .grid > div {
+        min-width: 0;
+        padding: 0.5rem;
+    }
+
+    .package-card .grid li {
+        overflow-wrap: anywhere;
+    }
+
+    .package-card > .p-4 > .flex.gap-2 > div,
+    .package-card > .p-4 > .flex.gap-2 > button {
+        font-size: 0.75rem;
+    }
+
+    #services > section {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    #services .service-card {
+        width: calc(100% - 1rem);
+        margin-right: auto;
+        margin-left: auto;
+        padding: 1rem;
+        border-radius: 0.75rem;
+        transform: none;
+    }
+
+    #services .service-card:hover {
+        transform: none;
+    }
+
+    #services .service-card > div {
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.5rem;
+        font-size: 2.5rem;
+    }
+
+    #services .service-card h3 {
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.5rem;
+        font-size: 1.125rem;
+    }
+
+    #services .service-card p {
+        padding: 0.625rem;
+    }
+
+    #services .grid.grid-cols-1 {
+        row-gap: 1rem;
+    }
+}
+
 @media (max-width: 768px) {
     #asiaPackageCarousel, #europePackageCarousel { gap: 1rem; }
 }
