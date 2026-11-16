@@ -1240,6 +1240,11 @@ function toggleMobileMenu() {
 
 // Initialize mobile menu and back to top
 document.addEventListener('DOMContentLoaded', function() {
+    const activeTab = document.querySelector('.tab-content.active');
+    if (activeTab) {
+        observeTabScrollReveal(activeTab);
+    }
+
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     if (mobileMenuBtn) {
         mobileMenuBtn.addEventListener('click', toggleMobileMenu);
@@ -1292,12 +1297,47 @@ document.addEventListener('DOMContentLoaded', function() {
     // updateMainServicesSlider();
 });
 
+let tabContentRevealObserver = null;
+
+function observeTabScrollReveal(tab) {
+    const revealItems = tab.querySelectorAll(
+        'section, .service-card, .travel-highlight-card, .package-card, [class~="grid"] > *'
+    );
+
+    if (!('IntersectionObserver' in window)) {
+        revealItems.forEach(item => item.classList.add('scroll-reveal', 'is-visible'));
+        return;
+    }
+
+    if (!tabContentRevealObserver) {
+        tabContentRevealObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                entry.target.classList.toggle('is-visible', entry.isIntersecting);
+            });
+        }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+    }
+
+    revealItems.forEach(item => {
+        if (!item.classList.contains('scroll-reveal')) {
+            item.classList.add('scroll-reveal');
+            tabContentRevealObserver.observe(item);
+        }
+    });
+}
+
 function showTab(tabName) {
     // Hide all tab contents
     const tabContents = document.querySelectorAll('.tab-content');
     tabContents.forEach(content => {
         content.classList.remove('active');
+        content.querySelectorAll('.scroll-reveal').forEach(item => {
+            item.classList.remove('scroll-reveal', 'is-visible');
+        });
     });
+    if (tabContentRevealObserver) {
+        tabContentRevealObserver.disconnect();
+        tabContentRevealObserver = null;
+    }
 
     // Remove active class from all tab buttons (desktop and mobile)
     const tabButtons = document.querySelectorAll('.tab-button, .tab-button-mobile');
@@ -1306,7 +1346,9 @@ function showTab(tabName) {
     });
 
     // Show selected tab content
-    document.getElementById(tabName).classList.add('active');
+    const selectedTab = document.getElementById(tabName);
+    selectedTab.classList.add('active');
+    observeTabScrollReveal(selectedTab);
 
     // Add active class to clicked button
     event.target.classList.add('active');
@@ -1333,6 +1375,7 @@ function showTab(tabName) {
                     categories.forEach(category => {
                         updatePackageSlider(category);
                     });
+                    observeTabScrollReveal(selectedTab);
                 }, 100);
             }
         }, 150); // Small delay to ensure DOM is ready

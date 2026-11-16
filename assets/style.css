@@ -182,6 +182,23 @@
 .tab-content.active {
     display: block;
 }
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(2rem);
+    transition: opacity 0.75s ease, transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.scroll-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+    .scroll-reveal,
+    .scroll-reveal.is-visible {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
 .tab-button.active {
     background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
     color: white;
